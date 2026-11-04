@@ -1,0 +1,70 @@
+.update-check {
+  display: block;
+  margin: 16px auto;
+  padding: 8px 12px;
+  background: transparent;
+  color: #b7c1ad;
+  border: 1px solid #3d4936;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.update-check:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+.update-portable {
+  display: block;
+  text-align: center;
+  color: #b7c1ad;
+  margin: 8px 20px;
+}
+.update-notice {
+  position: fixed;
+  z-index: 120;
+  right: 24px;
+  bottom: 24px;
+  width: min(420px, calc(100vw - 32px));
+  padding: 22px;
+  border: 1px solid #758c52;
+  border-radius: 18px;
+  background: #1e281b;
+  color: #f4f7ed;
+  box-shadow: 0 16px 60px #0008;
+}
+.update-notice p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #c8d0c0;
+  margin: 10px 0 16px;
+}
+.update-notice progress {
+  width: 100%;
+  accent-color: #bce17c;
+  margin-bottom: 12px;
+}
+.update-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.update-actions button {
+  padding: 10px 16px;
+  border-radius: 9px;
+  border: 0;
+  background: #c4e792;
+  color: #182313;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.update-actions .update-later {
+  background: transparent;
+  color: #d6dfce;
+  border: 1px solid #647359;
+}
+@media (max-width: 600px) {
+  .update-notice {
+    right: 16px;
+    bottom: 16px;
+  }
+}

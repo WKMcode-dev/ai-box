@@ -1,7 +1,7 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Catálogo de inteligências artificiais com acesso gratuito",
   "author": "WKMcode-dev",
@@ -9,7 +9,8 @@
   "main": "src/main.mjs",
   "scripts": {
     "start": "electron .",
-    "dist": "electron-builder --win --publish never"
+    "dist": "electron-builder --win --publish never",
+    "test": "node --test tests/*.test.mjs"
   },
   "devDependencies": {
     "electron": "45.2.2",
@@ -61,6 +62,17 @@
     },
     "portable": {
       "artifactName": "AI-BOX-${version}-${arch}-portable.${ext}"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "WKMcode-dev",
+        "repo": "ai-box",
+        "releaseType": "release"
+      }
+    ]
+  },
+  "dependencies": {
+    "electron-updater": "6.8.12"
   }
 }

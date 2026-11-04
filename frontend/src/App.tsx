@@ -7,6 +7,7 @@ import { Hero } from "./components/hero/Hero";
 import { CatalogSection } from "./features/catalog/components/CatalogSection";
 import { ToolModal } from "./features/catalog/components/ToolModal";
 import { useCatalog } from "./features/catalog/hooks/useCatalog";
+import { UpdateNotice } from "./features/updates/UpdateNotice";
 export default function App() {
   const catalog = useCatalog();
   const [selected, setSelected] = useState<Tool | null>(null);
@@ -32,6 +33,7 @@ export default function App() {
             onSelect={setSelected}
           />
           <Footer />
+          <UpdateNotice />
         </main>
       </div>
       {selected && (

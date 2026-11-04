@@ -21,3 +21,13 @@ A criação de uma tag `v1.0.0` dispara o workflow Windows. Ele testa, compila i
 
 Edite o JSON original, adicione a logo quando houver um símbolo próprio verificado e atualize as fontes. Publique a mudança em `main` para atualizar o site. Para distribuir o catálogo novo no Windows, aumente `desktop/package.json` e crie uma nova tag de versão.
 
+
+## Atualizações automáticas (a partir da 1.1.0)
+
+A edição instalada (NSIS, Windows x64) usa electron-updater com o repositório público WKMcode-dev/ai-box. Verifica ao abrir (após dez segundos) e a cada quatro horas. O usuário autoriza o download e depois clica em Reiniciar e instalar. Não baixa nem instala ao fechar sem essa escolha. Falhas de rede mostram um aviso e permitem nova tentativa.
+
+A edição portátil não substitui o próprio executável: use o instalador para receber atualizações automáticas. Quem tem 1.0.0 precisa instalar 1.1.0 manualmente uma vez, pois a edição antiga não contém o atualizador.
+
+Para cada nova versão, aumente desktop/package.json, atualize o lockfile e crie docs/releases/vX.Y.Z.md. Publique a tag correspondente ou execute o workflow informando essa versão. A versão da tag deve corresponder ao pacote. Distribua o instalador, seu blockmap e latest.yml juntos: são necessários para a atualização. Não substitua os arquivos de uma versão já instalada; publique uma versão maior. O catálogo desktop vem no pacote: alterações de catálogo destinadas ao desktop também precisam de um lançamento.
+
+O preload expõe somente consulta, download e instalação, sem acesso genérico ao IPC. O processo principal valida a origem da janela. A configuração de atualização fica no pacote, sem tokens no aplicativo. Os downloads são conferidos pelo checksum do manifesto; esta edição ainda não possui assinatura comercial.

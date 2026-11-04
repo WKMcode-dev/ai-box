@@ -12,6 +12,7 @@ export function createWindow() {
     autoHideMenuBar: true,
     show: false,
     webPreferences: {
+      preload: fileURLToPath(new URL("./preload.cjs", import.meta.url)),
       nodeIntegration: false,
       contextIsolation: true,
       sandbox: true,

@@ -7,7 +7,7 @@ on:
       version:
         description: Versão a publicar
         required: true
-        default: v1.0.0
+        default: v1.1.0
 permissions:
   contents: write
 jobs:
@@ -28,7 +28,10 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: AI-BOX-Windows
-          path: desktop/release/*.exe
+          path: |
+            desktop/release/*.exe
+            desktop/release/*.blockmap
+            desktop/release/latest.yml
           if-no-files-found: error
       - name: Publicar versão
         shell: pwsh
@@ -38,11 +41,11 @@ jobs:
           RELEASE_COMMIT: ${{ github.sha }}
           GH_REPO: ${{ github.repository }}
         run: |
-          $files = Get-ChildItem desktop/release/*.exe | ForEach-Object FullName
+          $files = Get-ChildItem desktop/release/* -File | Where-Object { $_.Name -match "\.(exe|blockmap)$" -or $_.Name -eq "latest.yml" } | ForEach-Object FullName
+          $notes = "docs/releases/$env:RELEASE_TAG.md"
           gh release view $env:RELEASE_TAG *> $null
           if ($LASTEXITCODE -eq 0) {
             gh release upload $env:RELEASE_TAG @files --clobber
           } else {
-            gh release create $env:RELEASE_TAG @files --target $env:RELEASE_COMMIT --title "A.I BOX $env:RELEASE_TAG — Windows e Web" --notes-file docs/releases/v1.0.0.md
+            gh release create $env:RELEASE_TAG @files --target $env:RELEASE_COMMIT --title "A.I BOX $env:RELEASE_TAG — Windows e Web" --notes-file $notes
           }
-

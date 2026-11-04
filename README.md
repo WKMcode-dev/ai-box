@@ -4,6 +4,8 @@
 
 ## Windows e GitHub Pages
 
+A partir da versão 1.1.0, a edição instalada avisa quando há uma nova versão e permite baixar, reiniciar e instalar pelo próprio aplicativo. Quem usa 1.0.0 precisa instalar a nova edição uma vez. A versão portátil usa atualização manual.
+
 O projeto inclui aplicativo Electron em janela própria e edição estática para GitHub Pages. `npm run desktop` abre a edição desktop; `npm run dist:desktop` gera instalador e portátil; `npm run build:pages` prepara o site estático. As instruções de lançamento estão em [docs/publishing.md](docs/publishing.md).
 
 Catálogo público de IAs em português, sem login. React + TypeScript + Vite no Front-End e Node.js + TypeScript no Back-End. Dados em JSON, sem banco.

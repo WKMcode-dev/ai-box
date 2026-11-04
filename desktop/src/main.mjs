@@ -1,6 +1,7 @@
 import { app, BrowserWindow, protocol } from "electron";
 import { registerContentProtocol } from "./protocol.mjs";
 import { createWindow } from "./window.mjs";
+import { initializeUpdates } from "./updates.mjs";
 protocol.registerSchemesAsPrivileged([
   {
     scheme: "aibox",
@@ -24,6 +25,7 @@ else {
   });
   app.whenReady().then(() => {
     registerContentProtocol();
+    initializeUpdates();
     createWindow();
     app.on("activate", () => {
       if (!BrowserWindow.getAllWindows().length) createWindow();
