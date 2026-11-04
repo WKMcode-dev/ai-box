@@ -14,7 +14,7 @@ No Front-End, a feature de catálogo contém API, hooks, regras de busca e compo
 
 - Node HTTP nativo: suficiente para a pequena API pública, sem adicionar um framework de servidor.
 - JSON lido a cada consulta: edição simples e uma única fonte, sem sincronização com banco. Evoluir para cache ou banco apenas quando o volume ou a frequência de acesso justificar.
-- Filtros no cliente: 108 entradas são pequenas; a interface responde imediatamente depois do carregamento.
+- Filtros no cliente: 109 entradas são pequenas; a interface responde imediatamente depois do carregamento.
 - SVGs locais: evita falha de CDN em tempo de execução e permite rastrear a origem de cada marca.
 - Produção em uma origem: o Back-End entrega `frontend/dist` e `/api`, evitando configuração de CORS. No desenvolvimento o proxy do Vite faz essa ligação.
 - Gratuidade explícita: modelos locais e edições comunitárias são separados de serviços online com plano gratuito limitado. Só as modalidades `free` e `freemium` são aceitas pela API, com fonte de evidência.

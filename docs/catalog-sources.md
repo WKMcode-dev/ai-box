@@ -1,6 +1,6 @@
 # Fontes do catálogo — revisão de 04/11/2026
 
-Catálogo com **108 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
+Catálogo com **109 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
 
 Foram consultados sites, documentação, repositórios dos autores e model cards. Cada item guarda `sourceUrl`, `pricingSourceUrl`, `checkedAt`, `access`, `pricing` e `usageNote`. Esta é uma revisão das informações públicas, sem instalação ou teste de todas as IAs. Os sites podem exigir conta, ter limites regionais ou alterar suas condições.
 
@@ -13,7 +13,7 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 | Texto         |       26 |
 | Imagem        |       19 |
 | Vídeo         |       11 |
-| Áudio         |       12 |
+| Áudio         |       13 |
 | Código        |       16 |
 | Produtividade |       14 |
 | Pesquisa      |       10 |
@@ -132,3 +132,7 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 | [Magnific · antigo Freepik AI](https://www.freepik.com/ai)                                   | online      | Plano gratuito com limites | [Fonte](https://www.freepik.com/ai/docs/is-freepik-for-free)                                                            | Plano Free com acesso diário limitado a ferramentas elegíveis e créditos de IA. Modelos, recursos premium e cotas maiores dependem de planos pagos.                                 |
 
 Candidatos, exclusões e pendências: [catalog-coverage.md](catalog-coverage.md). Origem das logos: [atribuições](../frontend/public/logos/ATTRIBUTION.md).
+
+## Inclusão: Fish Audio
+
+[Fish Audio](https://fish.audio/) — Áudio, serviço online com plano gratuito limitado e planos pagos opcionais. [Condições oficiais](https://fish.audio/plan/) consultadas em 04/11/2026. A tabela e o FAQ divergem sobre uso comercial; não prometemos licença comercial no plano gratuito.

@@ -209,3 +209,5 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 - tactiq.svg — https://tactiq.io/_next/static/immutable/media/vercel-logo-0-1.13jsycl3-murh.svg — encontrado no site oficial https://tactiq.io/; SHA-256 `346b43481c9c45cc44271e1668078c7626c45e2e0797d8b1d19a2416a1e6f33f`.
 - napkin.svg — https://www.napkin.ai/assets/napkin-logo-white-2024.svg — encontrado no site oficial https://www.napkin.ai/; SHA-256 `77e6db5a013973355a2b1d4b68edf7bcefcdf178048df69479da1447229f14d8`.
 - consensus.svg — https://consensus.app/favicon.svg — encontrado no site oficial https://consensus.app/; SHA-256 `196fdd2f621818686bac9555bc8fad6f5ea2f745758283b3024e45c20632a8a8`.
+
+- Fish Audio: símbolo extraído do componente SVG oficial https://fish.audio/assets/nav-fish-audio-icon-Dnr-Wt9w.js em 04/11/2026; formas e proporções preservadas, cores invertidas para o tema escuro. Arquivo: `fish-audio.svg`.

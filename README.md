@@ -67,7 +67,7 @@ docs/                   arquitetura e fontes da pesquisa
 
 ## Catálogo e gratuidade
 
-108 entradas em sete categorias: aplicativos, modelos e frameworks. Inclui ChatGPT, Claude, Gemini, Copilot, ferramentas de mídia, programação, produtividade e pesquisa, além de projetos e modelos locais. É uma seleção ampla com fontes documentadas, não uma promessa de conter todas as IAs existentes.
+109 entradas em sete categorias: aplicativos, modelos e frameworks. Inclui ChatGPT, Claude, Gemini, Copilot, ferramentas de mídia, programação, produtividade e pesquisa, além de projetos e modelos locais. É uma seleção ampla com fontes documentadas, não uma promessa de conter todas as IAs existentes.
 
 Os cards distinguem `free` (gratuito na modalidade indicada) de `freemium` (acesso/plano gratuito com limites e oferta paga opcional). O filtro de gratuidade permite separá-los. Nenhuma entrada é classificada como exclusivamente paga. Créditos de cadastro finitos, limites de geração, necessidade de conta e condições de uso são informados no modal, com um link de evidência oficial. Planos e disponibilidade podem mudar.
 

@@ -1,11 +1,12 @@
 import { readFile, access } from "node:fs/promises";
+const original = JSON.parse(await readFile(new URL("../backend/data/catalog.json", import.meta.url), "utf8"));
 for (const target of process.argv.slice(2)) {
   const root = new URL(`../frontend/dist-${target}/`, import.meta.url);
   const html = await readFile(new URL("index.html", root), "utf8");
   const data = JSON.parse(
     await readFile(new URL("catalog.json", root), "utf8"),
   );
-  if (data.tools.length !== 108)
+  if (JSON.stringify(data.tools) !== JSON.stringify(original))
     throw new Error(`${target}: catálogo incompleto`);
   for (const tool of data.tools)
     if (tool.logo) await access(new URL(tool.logo.replace(/^\//, ""), root));

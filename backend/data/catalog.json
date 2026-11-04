@@ -2647,5 +2647,30 @@
     "sourceUrl": "https://www.freepik.com/ai",
     "pricingSourceUrl": "https://www.freepik.com/ai/docs/is-freepik-for-free",
     "checkedAt": "2026-11-04"
+  },
+  {
+    "id": "fish-audio",
+    "name": "Fish Audio",
+    "maker": "Fish Audio",
+    "category": "Áudio",
+    "description": "Transforme textos em fala natural e crie vozes personalizadas para narrações e projetos de áudio.",
+    "url": "https://fish.audio/",
+    "logo": "/logos/fish-audio.svg",
+    "logoLabel": "Fish Audio",
+    "logoKind": "brand",
+    "tags": [
+      "Texto para fala",
+      "Voz",
+      "Narração"
+    ],
+    "color": "mint",
+    "featured": false,
+    "access": "online",
+    "kind": "Aplicativo",
+    "pricing": "freemium",
+    "usageNote": "Plano gratuito com créditos mensais e limites por geração; exige conta. Há planos pagos opcionais. Consulte as condições atuais de uso comercial: a tabela e as perguntas frequentes oficiais apresentam informações divergentes.",
+    "sourceUrl": "https://fish.audio/",
+    "pricingSourceUrl": "https://fish.audio/plan/",
+    "checkedAt": "2026-11-04"
   }
 ]
