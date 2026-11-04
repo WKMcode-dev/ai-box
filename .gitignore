@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+.npm-cache/
+
+frontend/dist-pages/
+frontend/dist-desktop/
+desktop/release/
+*.zip
+preview-*.png

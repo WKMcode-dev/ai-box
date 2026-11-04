@@ -1,0 +1,48 @@
+name: Aplicativo Windows
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Versão a publicar
+        required: true
+        default: v1.0.0
+permissions:
+  contents: write
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run dist:desktop
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+      - run: node scripts/verify-static.mjs desktop
+      - uses: actions/upload-artifact@v4
+        with:
+          name: AI-BOX-Windows
+          path: desktop/release/*.exe
+          if-no-files-found: error
+      - name: Publicar versão
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ inputs.version || github.ref_name }}
+          RELEASE_COMMIT: ${{ github.sha }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          $files = Get-ChildItem desktop/release/*.exe | ForEach-Object FullName
+          gh release view $env:RELEASE_TAG *> $null
+          if ($LASTEXITCODE -eq 0) {
+            gh release upload $env:RELEASE_TAG @files --clobber
+          } else {
+            gh release create $env:RELEASE_TAG @files --target $env:RELEASE_COMMIT --title "A.I BOX $env:RELEASE_TAG — Windows e Web" --notes-file docs/releases/v1.0.0.md
+          }
+

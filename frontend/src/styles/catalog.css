@@ -1,0 +1,259 @@
+.catalog {
+  padding-top: 34px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section-heading h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -0.9px;
+  margin: 10px 0 25px;
+}
+.section-heading h2 > span {
+  color: var(--lime);
+}
+.catalog-total {
+  font-size: 10px;
+  color: #949b8b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.catalog-total svg {
+  color: #a0b18b;
+}
+.search-row {
+  display: flex;
+  gap: 14px;
+}
+.search {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid #33392e;
+  background: #191c16;
+  border-radius: 7px;
+  padding: 0 16px;
+  flex: 1;
+  height: 48px;
+  color: #858e7b;
+}
+.search:focus-within {
+  border-color: #96bd64;
+}
+.search input {
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  color: #eee;
+  outline: none;
+  font-size: 12px;
+}
+.search input::placeholder {
+  color: #77806e;
+}
+.search button {
+  background: none;
+  display: flex;
+  padding: 4px;
+}
+.search kbd {
+  font-family: inherit;
+  font-size: 7px;
+  letter-spacing: 1px;
+  border: 1px solid #363e2e;
+  padding: 4px;
+  border-radius: 3px;
+}
+.sort {
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  white-space: nowrap;
+}
+.sort span {
+  font-size: 9px;
+  color: #7f8875;
+}
+.sort select {
+  background: transparent;
+  border: 0;
+  color: #c6cfbb;
+  font-size: 11px;
+  max-width: 125px;
+  padding: 8px 0;
+}
+.sort option {
+  background: #1b2016;
+}
+.chips {
+  display: flex;
+  gap: 8px;
+  margin: 18px 0 26px;
+  flex-wrap: wrap;
+}
+.chip {
+  font-size: 10px;
+  padding: 8px 15px;
+  border: 1px solid #30362a;
+  border-radius: 5px;
+  background: transparent;
+  color: #a1aa95;
+}
+.chip:hover {
+  border-color: #8da66d;
+}
+.chip.selected {
+  background: var(--lime);
+  border-color: var(--lime);
+  color: #293a1c;
+  font-weight: 600;
+}
+.results-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  margin-bottom: 17px;
+}
+.results-line > span:last-child {
+  font-size: 9px;
+  color: #78836d;
+}
+.result-count {
+  font-size: 9px;
+  border: 1px solid #363e2e;
+  background: #20271a;
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #aebf9a;
+  margin-left: 7px;
+}
+.empty {
+  padding: 60px 20px;
+  text-align: center;
+  border: 1px dashed #414b36;
+  border-radius: 12px;
+  color: #9daf8d;
+}
+.empty svg {
+  color: var(--lime);
+}
+.empty h3 {
+  color: #dde8d3;
+  font-size: 18px;
+}
+.empty p {
+  font-size: 12px;
+}
+.empty button {
+  margin-top: 12px;
+}
+@media (max-width: 1150px) {
+  .catalog-total {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .catalog {
+    padding-top: 28px;
+  }
+}
+@media (max-width: 760px) {
+  .section-heading h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .search-row {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 760px) {
+  .search {
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .sort {
+    height: 34px;
+    margin-left: auto;
+  }
+}
+@media (max-width: 760px) {
+  .chips {
+    gap: 6px;
+    margin-top: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .chip {
+    padding: 8px 11px;
+  }
+}
+@media (max-width: 760px) {
+  .results-line > span:last-child {
+    max-width: 50%;
+    overflow-wrap: anywhere;
+    text-align: right;
+  }
+}
+@media (max-width: 420px) {
+  .search kbd {
+    display: none;
+  }
+}
+.access-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: -10px 0 24px;
+}
+.access-filter label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11px;
+  color: #a7b59a;
+}
+.access-filter select {
+  max-width: 190px;
+  border: 1px solid var(--line);
+  background: #1a2015;
+  padding: 7px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+.access-filter > span {
+  font-size: 10px;
+  color: #9aa98c;
+}
+.pricing-filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #b9c8aa;
+  font-size: 11px;
+  margin: -9px 0 20px;
+}
+.pricing-filter select {
+  background: #1a2015;
+  color: #d7e9c4;
+  border: 1px solid #3a472e;
+  border-radius: 5px;
+  padding: 8px;
+  max-width: 100%;
+  font-size: 11px;
+}

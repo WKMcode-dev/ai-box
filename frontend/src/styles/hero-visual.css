@@ -1,0 +1,81 @@
+.hero-visual {
+  height: 290px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse, #89ad2b15, transparent 65%);
+}
+.cube {
+  width: 235px;
+  transform: rotate(-9deg);
+  filter: drop-shadow(0 20px 35px #a7dc3620);
+  z-index: 1;
+}
+.visual-orbit {
+  position: absolute;
+  width: 310px;
+  height: 160px;
+  border: 1px solid #6f87472b;
+  border-radius: 50%;
+  transform: rotate(-28deg);
+}
+.orbit-two {
+  transform: rotate(40deg);
+  width: 330px;
+  height: 195px;
+  border-style: dashed;
+}
+.floating {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 1px solid #414c31;
+  background: #20271c;
+  padding: 11px 15px;
+  border-radius: 7px;
+  font-size: 10px;
+  z-index: 2;
+  box-shadow: 0 8px 18px #0003;
+  color: #d6e9c2;
+}
+.floating svg {
+  width: 16px;
+  color: var(--lime);
+}
+.float-one {
+  top: 32px;
+  right: 0;
+  transform: rotate(8deg);
+}
+.float-two {
+  bottom: 32px;
+  left: 0;
+  transform: rotate(-9deg);
+}
+.float-three {
+  bottom: 28px;
+  right: 0;
+  transform: rotate(5deg);
+}
+.spark {
+  position: absolute;
+  color: var(--lime);
+}
+.spark-one {
+  top: 26px;
+  left: 38px;
+  font-size: 42px;
+}
+.spark-two {
+  right: 42px;
+  top: 145px;
+  font-size: 27px;
+}
+.visual-caption {
+  position: absolute;
+  bottom: -9px;
+  font-size: 7px;
+  letter-spacing: 2px;
+  color: #758362;
+}

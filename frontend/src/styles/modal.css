@@ -1,0 +1,84 @@
+dialog {
+  border: 1px solid #49533d;
+  background: #191e15;
+  color: #eef2e8;
+  padding: 0;
+  border-radius: 15px;
+  width: min(480px, calc(100% - 32px));
+  max-height: 90dvh;
+  box-shadow: 0 30px 100px #0008;
+}
+dialog::backdrop {
+  background: #050804bb;
+  backdrop-filter: blur(7px);
+}
+.modal-art {
+  height: 195px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  place-items: center;
+  background: #10180fa8;
+  border: 1px solid #ffffff30;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+}
+.modal-body {
+  padding: 27px;
+}
+.modal-body h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 30px;
+  letter-spacing: -1px;
+  margin: 11px 0;
+}
+.modal-body p {
+  color: #b4beaa;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.modal-body .tags {
+  margin: 20px 0;
+}
+.official {
+  display: flex;
+  width: 100%;
+  margin-top: 26px;
+  font-size: 13px;
+}
+.modal-body small {
+  display: block;
+  font-size: 10px;
+  color: #89967c;
+  line-height: 1.6;
+  margin-top: 14px;
+}
+.usage-note {
+  border: 1px solid #3d4c30;
+  background: #222d1b;
+  border-radius: 7px;
+  padding: 14px;
+  margin-top: 18px;
+}
+.usage-note strong {
+  font-size: 11px;
+  color: var(--lime);
+}
+.usage-note p {
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 8px 0 0;
+}
+.pricing-source {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  color: #b9db98;
+}

@@ -1,0 +1,66 @@
+{
+  "name": "@ai-box/desktop",
+  "productName": "A.I BOX",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Catálogo de inteligências artificiais com acesso gratuito",
+  "author": "WKMcode-dev",
+  "type": "module",
+  "main": "src/main.mjs",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win --publish never"
+  },
+  "devDependencies": {
+    "electron": "45.2.2",
+    "electron-builder": "26.18.0"
+  },
+  "build": {
+    "appId": "dev.wkmcode.aibox",
+    "productName": "A.I BOX",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "src/**/*",
+      "package.json",
+      "build/icon.png"
+    ],
+    "extraResources": [
+      {
+        "from": "../frontend/dist-desktop",
+        "to": "site"
+      }
+    ],
+    "win": {
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "A.I BOX",
+      "artifactName": "AI-BOX-${version}-${arch}-setup.${ext}"
+    },
+    "portable": {
+      "artifactName": "AI-BOX-${version}-${arch}-portable.${ext}"
+    }
+  }
+}
