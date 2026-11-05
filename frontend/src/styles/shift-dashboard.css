@@ -5,7 +5,7 @@
   gap: 20px 16px;
 }
 .shift-card {
-  --accent: #a6e4bd;
+  --accent: #72f5a5;
   position: relative;
   isolation: isolate;
   container-type: inline-size;
@@ -20,24 +20,6 @@
   text-align: left;
   transition: transform 0.2s;
 }
-.shift-card.mint {
-  --accent: #9df0b8;
-}
-.shift-card.peach {
-  --accent: #f0b78f;
-}
-.shift-card.purple {
-  --accent: #c3a1fa;
-}
-.shift-card.blue {
-  --accent: #8dd8fa;
-}
-.shift-card.pink {
-  --accent: #f7a6c8;
-}
-.shift-card.yellow {
-  --accent: #f4d97e;
-}
 .shift-card:hover {
   transform: translateY(-3px);
 }
@@ -46,17 +28,19 @@
   inset: 0;
   width: 100%;
   height: 100%;
+  overflow: visible;
   pointer-events: none;
   filter: drop-shadow(0 4px 6px #0005);
 }
-.shift-outline,
-.shift-circle-outline {
-  stroke: color-mix(in srgb, var(--accent) 65%, #9caaa0);
-  stroke-width: 0.7;
-  vector-effect: non-scaling-stroke;
+.shift-pill {
+  stroke: #828c85;
 }
 .shift-circle-outline {
-  fill: #17241c;
+  fill: #1a201c;
+}
+.shift-pricing-outline {
+  stroke: #64e995;
+  fill: #173322;
 }
 .shift-card:hover .shift-vector {
   filter: drop-shadow(
@@ -107,6 +91,7 @@
   align-items: center;
   gap: 6px;
   min-width: 0;
+  padding-right: 15cqi;
 }
 .shift-heading strong {
   font:
@@ -118,13 +103,17 @@
   text-overflow: ellipsis;
 }
 .shift-pricing {
-  flex-shrink: 0;
-  font-size: clamp(8px, 2.5cqi, 10px);
+  position: absolute;
+  left: 85.307018%;
+  top: 7.142857%;
+  width: 11.842105%;
+  height: 11.904762%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 2.2cqi;
   color: #d6ffb4;
-  background: #a1ef7c18;
-  border: 1px solid #a1ef7c55;
-  padding: 2px 5px;
-  border-radius: 20px;
 }
 .shift-maker {
   font-size: clamp(9px, 2.8cqi, 11px);
@@ -137,7 +126,9 @@
 .shift-description {
   font-size: clamp(10px, 3.2cqi, 12px);
   line-height: 1.4;
-  color: #c3ccc5;
+  color: #e0e5e1;
+  border-left: 2px solid var(--accent);
+  padding-left: 7px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -155,31 +146,40 @@
   overflow: hidden;
   color: #d4f4d8;
   font-size: clamp(9px, 2.7cqi, 11px);
+  padding: 0.6cqi 1.3cqi;
+  background: linear-gradient(135deg, #444b4540, #a9b9ac14);
+  border: 1px solid #9fb5a32b;
+  border-radius: 1.5cqi;
 }
 .shift-tags {
   position: absolute;
-  left: 43%;
-  right: 1%;
-  top: 81%;
-  bottom: 1%;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  overflow: hidden;
+  inset: 0;
+  pointer-events: none;
 }
 .shift-tags span {
-  flex: 1;
+  position: absolute;
+  top: 85.714286%;
+  width: 15.789474%;
+  height: 11.904762%;
+  display: block;
+  line-height: 4.385965cqi;
   min-width: 0;
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  font-size: clamp(8px, 2.5cqi, 10px);
+  font-size: 2.5cqi;
   color: #c4d0c8;
-  padding: 3px 4px;
-  border-radius: 999px;
-  border: 1px solid #6c857366;
-  background: linear-gradient(#28322d, #171d19);
+  padding-inline: 1cqi;
+}
+.shift-tags span:nth-child(1) {
+  left: 44.736842%;
+}
+.shift-tags span:nth-child(2) {
+  left: 64.035088%;
+}
+.shift-tags span:nth-child(3) {
+  left: 83.333333%;
 }
 .sr-only {
   position: absolute;

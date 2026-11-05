@@ -7,6 +7,14 @@ import { chromium } from "playwright";
 
 // Run against the actual Pages build, including its /ai-box/ asset base.
 const root = fileURLToPath(new URL("../frontend/dist-pages/", import.meta.url));
+const reference = await readFile(
+  new URL("../frontend/tests/fixtures/shift-card-ai.svg", import.meta.url),
+  "utf8",
+);
+const referencePaths = [...reference.matchAll(/\bd="([^"]+)"/g)].map((match) =>
+  match[1].trim().replace(/\s+/g, " "),
+);
+assert.equal(referencePaths.length, 6);
 const mime = {
   ".html": "text/html",
   ".js": "text/javascript",
@@ -66,6 +74,41 @@ try {
         });
       await page.goto(url);
       await page.locator(".shift-card").first().waitFor();
+      // Compare the rendered vector with the user's independent reference.
+      assert.deepEqual(
+        await page
+          .locator(".shift-card")
+          .first()
+          .locator(".shift-vector path")
+          .evaluateAll((paths) =>
+            paths.map((path) =>
+              path.getAttribute("d").trim().replace(/\s+/g, " "),
+            ),
+          ),
+        referencePaths,
+      );
+      const pillErrors = await page
+        .locator(".shift-card")
+        .evaluateAll((cards) =>
+          cards.flatMap((card) => {
+            const paths = [...card.querySelectorAll(".shift-vector path")];
+            const texts = [...card.querySelectorAll(".shift-tags span")];
+            const pairs = texts.map((text, i) => [text, paths[[4, 2, 3][i]]]);
+            pairs.push([card.querySelector(".shift-pricing"), paths[5]]);
+            return pairs.filter(([text, path]) => {
+              const a = text.getBoundingClientRect(),
+                b = path.getBoundingClientRect();
+              return ["x", "y", "width", "height"].some(
+                (key) => Math.abs(a[key] - b[key]) > 0.05,
+              );
+            }).length;
+          }),
+        );
+      assert.equal(
+        pillErrors.reduce((sum, errors) => sum + errors, 0),
+        0,
+        "Text must match all four original pill bounds",
+      );
       const inspect = () => {
         const box = (element) => element.getBoundingClientRect();
         const cards = [...document.querySelectorAll(".shift-card")];

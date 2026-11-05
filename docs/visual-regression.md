@@ -33,21 +33,33 @@ contenção de pintura, isolamento e altura explícita para garantir o limite do
   caminhos da silhueta existentes em `700786b`, incluindo curva da logo e recorte
   inferior. Cada gradiente recebe um identificador React único. Textos ficam dentro
   das áreas úteis, descrição tem duas linhas e três etiquetas ficam no recorte.
-  Os detalhes completos permanecem no modal. Cores, brilho discreto e vidro mantidos.
+  Os detalhes completos permanecem no modal. Acabamento de vidro grafite e iluminação verde conforme a referência visual posterior.
 - O SVG Group 45 original fornecido pelo usuário substitui a aproximação. Rotação,
   cubo e grade ficam no próprio painel; contador tem tipografia com limites e
   painel empilhado em telas pequenas.
 - A grade usa colunas automáticas, preserva o tamanho após uma busca com um único
   resultado e limita cards grandes a 460 px.
 
-### Referências e limite da conferência
+### Referências conferidas
 
-Group 45 foi recuperado do arquivo original do usuário. O Shift-Card-A.I foi
-fornecido anteriormente como texto; seu arquivo integral não foi localizado.
-Por isso foram preservados os caminhos vetoriais já registrados no repositório,
-e não criada outra silhueta. A validação comprova proporção, encaixe e comportamento;
-não equivale a uma comparação de todos os paths com o SVG original completo
-(inclusive os paths originais das três etiquetas).
+O SVG Shift-Card-A.I completo foi fornecido pelo usuário após a primeira revisão.
+Os seis caminhos foram conferidos e agora são reproduzidos integralmente: corpo,
+círculo da logo, três cápsulas inferiores e cápsula superior. O viewBox 114×42,
+o preenchimento par-ímpar, a junção miter, o limite 20 e a espessura 0,5 do SVG
+são mantidos. A fixture em `frontend/tests/fixtures/shift-card-ai.svg` preserva
+essa geometria; somente metadados do editor foram omitidos.
+
+As três etiquetas e o selo superior usam exatamente os limites dos caminhos,
+com validação de posição e dimensão em pixels no teste de navegador. O teste
+compara os seis atributos d renderizados com a referência independente do usuário.
+
+O acabamento segue a imagem enviada em seguida: vidro grafite, borda metálica,
+pontos de iluminação verdes no círculo e no canto inferior esquerdo, descrição
+com filete verde e cápsulas escuras. Um filtro isola a luz verde para manter
+nítida a parte prateada da borda. Os logos mantêm suas cores originais. A arte
+foi implementada em SVG/CSS, mantendo os contornos fornecidos.
+
+Group 45 continua usando o arquivo original recuperado, confinado ao seu painel.
 
 ## Validação
 
@@ -82,5 +94,5 @@ e fecha navegador e servidor. Para usar Chromium instalado, informe
 `QA_SCREENSHOTS=/caminho/temporario`. Não há publicação automática nessa rotina.
 
 O fluxo Pages existente só publica push na main ou execução manual; esta branch
-fica disponível para revisão. A comparação final com o SVG Shift completo e
-a revisão do usuário devem anteceder o merge.
+fica disponível para revisão. A geometria completa do SVG Shift foi conferida; a revisão visual do usuário
+deve anteceder o merge.
