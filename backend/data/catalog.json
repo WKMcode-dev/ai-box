@@ -2672,5 +2672,32 @@
     "sourceUrl": "https://fish.audio/",
     "pricingSourceUrl": "https://fish.audio/plan/",
     "checkedAt": "2026-11-04"
+  },
+  {
+    "id": "openox-ai",
+    "name": "OpenOxAI",
+    "maker": "OpenOx",
+    "category": "Código",
+    "description": "Acesse modelos de texto, raciocínio, imagem e vídeo de diferentes provedores por uma API unificada.",
+    "url": "https://openoxai.com/",
+    "logo": null,
+    "logoLabel": "OpenOxAI",
+    "logoKind": "text",
+    "tags": [
+      "API unificada",
+      "GPT",
+      "Claude",
+      "Gemini",
+      "Modelos de IA"
+    ],
+    "color": "blue",
+    "featured": false,
+    "access": "online",
+    "kind": "Aplicativo",
+    "pricing": "paid",
+    "usageNote": "É possível explorar o catálogo de modelos no site. Para utilizar a API, é necessário criar uma conta, configurar uma chave e possuir saldo ou créditos de assinatura válidos. Custos, modelos e disponibilidade variam conforme o plano.",
+    "sourceUrl": "https://openoxai.com/docs/about",
+    "pricingSourceUrl": "https://openoxai.com/pricing",
+    "checkedAt": "2026-11-05"
   }
 ]
