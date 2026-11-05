@@ -35,3 +35,8 @@
 @media(max-width:760px){.topbar{display:flex}.titlebar-brand strong{font-size:15px}.hero-dashboard{grid-template-columns:1fr}.holo-stage{min-height:225px}.hero-counter{padding:18px}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){.cards{grid-template-columns:1fr}.shift-card{min-height:183px}.titlebar-nav{display:none}.window-controls button{width:34px}}
 @media(prefers-reduced-motion:reduce){.holo-cube,.holo-ring,.holo-halo{animation:none!important}}
+
+/* Reuse the native desktop title bar instead of repeating the logo in the sidebar. */
+body:has(.desktop-titlebar) .sidebar .brand{display:none}
+body:has(.desktop-titlebar) .sidebar .sidebar-label{margin-top:8px}
+@media(max-width:760px){body:has(.desktop-titlebar) .sidebar{display:none}}
