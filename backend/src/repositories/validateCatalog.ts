@@ -48,9 +48,9 @@ export function validateCatalog(value: unknown): Tool[] {
       throw new Error("Modalidade inválida.");
     if (!["Aplicativo", "Modelo", "Framework"].includes(entry.kind))
       throw new Error("Tipo inválido.");
-    if (!["free", "freemium"].includes(entry.pricing))
+    if (!["free", "freemium", "paid"].includes(entry.pricing))
       throw new Error(
-        "A seleção aceita apenas opções gratuitas ou com plano gratuito verificado.",
+        "Classificação de preço inválida: use free, freemium ou paid.",
       );
     if (!/^\d{4}-\d{2}-\d{2}$/.test(entry.checkedAt))
       throw new Error("Data de revisão inválida.");
