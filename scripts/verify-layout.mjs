@@ -219,16 +219,54 @@ try {
           Math.abs(beforeHover.x - afterHover.x) < 0.1,
         "Hover must not move the card",
       );
-      // Check several animation phases without changing the reserved layout.
-      for (const time of [0, 1500, 4500, 9000]) {
-        await page.evaluate(
-          (time) =>
-            document.getAnimations().forEach((animation) => {
-              animation.pause();
-              animation.currentTime = time;
-            }),
-          time,
+      // Sample the complete opening, horizontal turn and closing cycle.
+      for (const time of [0, 3, 7, 11, 14, 22, 31]) {
+        const mechanism = await page.evaluate((time) => {
+          const svg = document.querySelector(".holo-mechanism");
+          svg.pauseAnimations();
+          svg.setCurrentTime(time);
+          const bounds = document
+            .querySelector(".holo-stage")
+            .getBoundingClientRect();
+          const parts = [
+            ...svg.querySelectorAll(".holo-part,.holo-core-part"),
+          ].map((p) => p.getBoundingClientRect());
+          const base = svg
+            .querySelector('[data-layer="base"]')
+            .getBoundingClientRect();
+          const cover = svg.querySelector('[data-layer="cover"]');
+          return {
+            escaped: parts.some(
+              (p) =>
+                p.left < bounds.left - 1 ||
+                p.right > bounds.right + 1 ||
+                p.top < bounds.top - 1 ||
+                p.bottom > bounds.bottom + 1,
+            ),
+            horizontal: base.width > base.height,
+            lift: cover.transform.animVal.numberOfItems
+              ? cover.transform.animVal.getItem(0).matrix.f
+              : 0,
+            rootTransform: getComputedStyle(svg).transform,
+          };
+        }, time);
+        assert.equal(
+          mechanism.escaped,
+          false,
+          `Mechanism escaped at ${time}s in ${width}px`,
         );
+        assert.equal(
+          mechanism.horizontal,
+          true,
+          "Rings must stay horizontal throughout the turn",
+        );
+        assert.equal(mechanism.rootTransform, "none");
+        if (time === 0) assert.equal(mechanism.lift, 0);
+        if (time === 7)
+          assert.ok(
+            mechanism.lift < -70,
+            "Cover must lift upward in the open phase",
+          );
         assert.equal((await page.evaluate(inspect)).overlap, false);
       }
       await page
@@ -267,6 +305,15 @@ try {
         ]);
       }
       await page.emulateMedia({ reducedMotion: "reduce" });
+      await page.waitForFunction(
+        () =>
+          document.querySelector(".holo-mechanism").dataset.motion ===
+          "reduced",
+      );
+      assert.equal(
+        await page.locator(".holo-mechanism animateTransform").count(),
+        0,
+      );
       assert.equal(
         await page
           .locator(".holo-cube")

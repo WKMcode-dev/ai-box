@@ -76,6 +76,27 @@ que cabem na cápsula original, inclusive com 288 px de largura útil no celular
 O teste de layout também confere se o texto do status está integralmente dentro
 da cápsula e se título, descrição e categoria não se sobrepõem.
 
+### Mecanismo horizontal e abertura por peças
+
+O Group 45 deixa de ser uma imagem inteira girando com rotateX/rotateZ.
+Seus 106 paths originais estão preservados e distribuídos uma única vez entre
+cinco conjuntos: base, suporte, arruela, engrenagem e tampa. Cada conjunto é
+desprojetado, gira em seu plano e volta à mesma projeção horizontal (escala Y 0,32).
+Assim o giro não coloca os anéis em pé na tela.
+
+As quatro camadas superiores sobem gradualmente em sequência, com deslocamentos
+independentes; a base permanece apoiada. A tampa e as laterais do núcleo SVG
+isométrico também se elevam separadamente. O ciclo de 14 segundos abre, mantém
+as peças suspensas e fecha novamente; os giros têm períodos e sentidos próprios.
+A animação usa animateTransform nativo em cada grupo SVG, sem trocar os paths
+por imagens ou aplicar uma rotação tridimensional à arte inteira.
+
+O SVG inclui espaço para a vista desmontada. O teste de navegador amostra 0, 3,
+7, 11, 14, 22 e 31 segundos, verifica os limites de todas as camadas, a projeção
+horizontal e a elevação da tampa. O teste unitário compara os 106 paths com o
+arquivo original. Com movimento reduzido, os elementos de animação são removidos
+e o mecanismo fica montado e estático. O painel, cards e contador não mudam de layout.
+
 ## Validação
 
 - `npm run check`: aprovado.
@@ -83,7 +104,7 @@ da cápsula e se título, descrição e categoria não se sobrepõem.
   alterados e `git diff --check`: aprovados.
 - `npm test`: o launcher tsx falhou no IPC do ambiente antes dos testes.
   Executadas as mesmas suítes via `node --import tsx --test frontend/tests/*.test.ts backend/tests/*.test.ts`
-  (11 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
+  (12 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
 - `npm run build`, `npm run build:pages`, `npm run build:desktop` e
   `node scripts/verify-static.mjs pages desktop`: aprovados. Catálogo: 109 itens.
 - Chromium: 320, 390, 570, 760, 768, 1024, 1360, 1440 e 1920 px;
