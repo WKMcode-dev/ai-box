@@ -1,5 +1,5 @@
 import { fileURLToPath } from "node:url";
-import { BrowserWindow, shell } from "electron";
+import { BrowserWindow, shell, ipcMain } from "electron";
 export function createWindow() {
   const window = new BrowserWindow({
     width: 1360,
@@ -7,6 +7,8 @@ export function createWindow() {
     minWidth: 390,
     minHeight: 640,
     title: "A.I BOX",
+    frame: false,
+    titleBarStyle: "hidden",
     icon: fileURLToPath(new URL("../build/icon.png", import.meta.url)),
     backgroundColor: "#111310",
     autoHideMenuBar: true,
@@ -18,6 +20,16 @@ export function createWindow() {
       sandbox: true,
     },
   });
+  const windowActions = {
+    "window:minimize": () => window.minimize(),
+    "window:maximize": () => window.isMaximized() ? window.unmaximize() : window.maximize(),
+    "window:close": () => window.close(),
+  };
+  for (const [channel, action] of Object.entries(windowActions)) {
+    const handler = (event) => { if (event.sender === window.webContents) action(); };
+    ipcMain.on(channel, handler);
+    window.once("closed", () => ipcMain.removeListener(channel, handler));
+  }
   const openOfficial = (value) => {
     try {
       const url = new URL(value);
