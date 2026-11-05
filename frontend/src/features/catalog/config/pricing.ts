@@ -2,7 +2,6 @@ import type { Tool } from "@ai-box/contracts";
 export const pricingLabels: Record<Tool["pricing"], string> = {
   free: "Gratuito no modo indicado",
   freemium: "Plano gratuito com limites",
-  paid: "Acesso pago / créditos de API",
 };
 export const accessNotes = {
   online:
