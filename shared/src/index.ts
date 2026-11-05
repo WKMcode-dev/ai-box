@@ -24,7 +24,7 @@ export interface Tool {
   featured: boolean;
   access: AccessMode;
   kind: "Aplicativo" | "Modelo" | "Framework";
-  pricing: "free" | "freemium";
+  pricing: "free" | "freemium" | "paid";
   pricingSourceUrl: string;
   usageNote: string;
   sourceUrl: string;
