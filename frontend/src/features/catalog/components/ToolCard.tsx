@@ -105,7 +105,8 @@ export function ToolCard({ tool, onSelect }: Props) {
         <ToolLogo tool={tool} />
       </span>
       <span className="shift-pricing">
-        {tool.pricing === "free" ? "Grátis" : "Freemium"}
+        <Icon name={tool.pricing === "free" ? "star" : "crown"} size={10} />
+        <span>{tool.pricing === "free" ? "Grátis" : "Freemium"}</span>
       </span>
       <span className="shift-content">
         <span className="shift-heading">
@@ -114,9 +115,25 @@ export function ToolCard({ tool, onSelect }: Props) {
         <span className="shift-maker">{tool.maker}</span>
         <span className="shift-description">{tool.description}</span>
       </span>
-      <span className="shift-category">
-        <Icon name="grid" size={13} />
-        {tool.category}
+      <span className="shift-category" title={tool.category}>
+        <Icon
+          name={
+            tool.category === "Texto"
+              ? "bot"
+              : {
+                  Imagem: "image",
+                  Vídeo: "video",
+                  Áudio: "audio",
+                  Código: "code",
+                  Produtividade: "work",
+                  Pesquisa: "research",
+                }[tool.category] || "grid"
+          }
+          size={13}
+        />
+        <span>
+          {tool.category === "Texto" ? "Texto e Chat" : tool.category}
+        </span>
       </span>
       <span className="shift-tags">
         {tool.tags.slice(0, 3).map((t) => (

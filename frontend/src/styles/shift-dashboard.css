@@ -79,8 +79,8 @@
   position: absolute;
   left: 21.93%;
   right: 4%;
-  top: 7%;
-  height: 65%;
+  top: 8.5%;
+  height: 64%;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -95,7 +95,7 @@
 }
 .shift-heading strong {
   font:
-    700 clamp(12px, 4cqi, 16px) Manrope,
+    700 clamp(14px, 5.2cqi, 23px) / 1.1 Manrope,
     sans-serif;
   min-width: 0;
   white-space: nowrap;
@@ -108,17 +108,27 @@
   top: 7.142857%;
   width: 11.842105%;
   height: 11.904762%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25cqi;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 2.2cqi;
-  color: #d6ffb4;
+  font-size: 1.6cqi;
+  font-weight: 700;
+  color: #82f9ad;
+}
+.shift-pricing svg {
+  width: 1.8cqi;
+  height: 1.8cqi;
+  fill: currentColor;
+  stroke-width: 1;
 }
 .shift-maker {
-  font-size: clamp(9px, 2.8cqi, 11px);
+  font-size: clamp(9px, 3.1cqi, 13px);
   color: #9aa89e;
-  margin: 2px 0 5px;
+  margin: 2px 0 7px;
+  line-height: 1.15;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -127,8 +137,8 @@
   font-size: clamp(10px, 3.2cqi, 12px);
   line-height: 1.4;
   color: #e0e5e1;
-  border-left: 2px solid var(--accent);
-  padding-left: 7px;
+  border-left: 0.65cqi solid var(--accent);
+  padding-left: 2cqi;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -136,20 +146,31 @@
 }
 .shift-category {
   position: absolute;
-  left: 4%;
-  bottom: 6%;
-  max-width: 33%;
+  left: 3.5%;
+  bottom: 7.5%;
+  width: 31%;
+  height: 20%;
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 1.2cqi;
   white-space: nowrap;
   overflow: hidden;
   color: #d4f4d8;
-  font-size: clamp(9px, 2.7cqi, 11px);
-  padding: 0.6cqi 1.3cqi;
-  background: linear-gradient(135deg, #444b4540, #a9b9ac14);
+  font-size: 3cqi;
+  font-weight: 600;
+  padding: 0 1.8cqi;
+  background: linear-gradient(135deg, #858c8640, #a9b9ac14);
   border: 1px solid #9fb5a32b;
-  border-radius: 1.5cqi;
+  border-radius: 2cqi;
+  clip-path: polygon(0 0, 100% 0, 90% 100%, 0 100%);
+}
+.shift-category > span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.shift-category svg {
+  width: 4cqi;
+  height: 4cqi;
 }
 .shift-tags {
   position: absolute;

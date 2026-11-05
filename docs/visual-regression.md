@@ -61,6 +61,17 @@ foi implementada em SVG/CSS, mantendo os contornos fornecidos.
 
 Group 45 continua usando o arquivo original recuperado, confinado ao seu painel.
 
+### Revisão do enquadramento
+
+A captura posterior do usuário ainda mostrava o selo junto ao título. Na branch,
+o selo já estava ancorado ao caminho superior direito. A nova revisão inclui
+coroa no selo Freemium (estrela em Grátis), título com maior destaque, descrição
+com filete proporcional e categoria com ícone e faixa dentro da base inferior.
+A geometria dos seis caminhos continua inalterada. O selo usa tipografia e ícone
+que cabem na cápsula original, inclusive com 288 px de largura útil no celular.
+O teste de layout também confere se o texto do status está integralmente dentro
+da cápsula e se título, descrição e categoria não se sobrepõem.
+
 ## Validação
 
 - `npm run check`: aprovado.

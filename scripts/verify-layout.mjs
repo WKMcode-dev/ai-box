@@ -109,6 +109,35 @@ try {
         0,
         "Text must match all four original pill bounds",
       );
+      const statusErrors = await page.locator(".shift-card").evaluateAll(
+        (cards) =>
+          cards.filter((card) => {
+            const status = card.querySelector(".shift-pricing");
+            const title = card
+              .querySelector(".shift-heading strong")
+              .getBoundingClientRect();
+            const badge = status.getBoundingClientRect();
+            const label = status.querySelector("span").getBoundingClientRect();
+            const category = card
+              .querySelector(".shift-category")
+              .getBoundingClientRect();
+            const description = card
+              .querySelector(".shift-description")
+              .getBoundingClientRect();
+            return (
+              !status.querySelector("svg") ||
+              title.right > badge.left + 1 ||
+              label.right > badge.right + 1 ||
+              label.left < badge.left - 1 ||
+              description.bottom > category.top + 1
+            );
+          }).length,
+      );
+      assert.equal(
+        statusErrors,
+        0,
+        "Upper-right status, title and category must remain aligned without overlap",
+      );
       const inspect = () => {
         const box = (element) => element.getBoundingClientRect();
         const cards = [...document.querySelectorAll(".shift-card")];
