@@ -26,7 +26,7 @@ export default function App() {
       <div className="shell">
         <Header explore={explore} />
         <main>
-          <Hero explore={explore} />
+          <Hero count={catalog.tools.length} loading={catalog.loading} explore={explore} />
           <CatalogSection
             catalog={catalog}
             searchRef={search}
