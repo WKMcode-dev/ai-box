@@ -1,31 +1,15 @@
-import { Icon } from "../ui/Icon";
 import { HeroVisual } from "./HeroVisual";
-export function Hero({ explore }: { explore: () => void }) {
-  return (
-    <section className="hero">
-      <div className="hero-copy">
-        <span className="eyebrow">
-          <span className="online-dot" /> UM MUNDO DE POSSIBILIDADES
-        </span>
-        <h1>
-          Sua próxima grande ideia
-          <br />
-          começa <em>aqui.</em>
-        </h1>
-        <p>
-          IAs com acesso gratuito para o que você imagina.
-          <br className="desktop-break" /> Explore, descubra e encontre seu
-          próximo superpoder.
-        </p>
-        <button className="primary" onClick={explore}>
-          Encontrar minha IA <Icon name="arrow" size={18} />
-        </button>
-        <div className="hero-note">
-          <span>↳</span> Sem cadastro na BOX. Explore ferramentas com acesso
-          gratuito.
-        </div>
-      </div>
-      <HeroVisual />
-    </section>
-  );
+import { Icon } from "../ui/Icon";
+export function Hero({ count, loading, explore }: { count: number; loading: boolean; explore: () => void }) {
+  return <section className="hero hero-dashboard" aria-label="Visão geral do A.I BOX">
+    <div className="hologram-panel"><HeroVisual /></div>
+    <div className="hero-counter glass-panel">
+      <span className="counter-kicker">CATÁLOGO A.I BOX <span className="online-dot" /></span>
+      <div className="counter-brand"><Icon name="box" size={26} /><strong>A.I BOX</strong><span className="beta">BETA</span></div>
+      <div className="counter-stat"><span className="counter-number" aria-live="polite">{loading ? "…" : count.toLocaleString("pt-BR")}</span><div><strong>Ferramentas</strong><small>disponíveis no catálogo</small></div></div>
+      <div className="counter-track" aria-hidden="true"><span /></div>
+      <p>Encontre IAs para texto, imagem, vídeo, áudio, programação e muito mais.</p>
+      <button className="counter-action" onClick={explore}>Explorar catálogo <Icon name="arrow" size={17}/></button>
+    </div>
+  </section>;
 }
