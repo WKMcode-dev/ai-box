@@ -1,7 +1,8 @@
 # Correção da regressão visual
 
 Base analisada: `336ddcd9968c200fd50d6d7302a4ff029b813334`.
-Branch: `fix/restore-shift-layout`. Sem alteração da main, release ou deploy.
+A primeira correção foi integrada à main e publicada após autorização do usuário.
+Este documento registra também os ajustes seguintes de acabamento e recorte adaptativo.
 
 ## Histórico e causas
 
@@ -29,11 +30,19 @@ contenção de pintura, isolamento e altura explícita para garantir o limite do
   estilos compartilhados de marcas e logos continuam disponíveis no modal.
 - Uma regra por componente substitui o acúmulo de overrides. Não há `!important`
   na nova folha; a regra global existente de movimento reduzido continua funcionando.
-- O card usa razão 114/42 e SVG com `xMidYMid meet`. Mantém sem alteração os dois
-  caminhos da silhueta existentes em `700786b`, incluindo curva da logo e recorte
-  inferior. Cada gradiente recebe um identificador React único. Textos ficam dentro
-  das áreas úteis, descrição tem duas linhas e três etiquetas ficam no recorte.
-  Os detalhes completos permanecem no modal. Acabamento de vidro grafite e iluminação verde conforme a referência visual posterior.
+- O card mantém o SVG proporcional com largura de 114 unidades. O recorte usa
+  somente as etiquetas reais: com uma ou duas, fica mais estreito e alinhado à
+  direita; acima de três, ganha linhas e altura no SVG. Nenhuma etiqueta é
+  removida por limite de quantidade. Sem etiquetas, não há recorte vazio.
+- A etiqueta da categoria é um retângulo SVG arredondado completo, sem recorte
+  lateral ou clip-path. As bordas vetoriais foram afinadas de 0,5 para 0,32 unidade.
+- O hover altera somente o brilho, sem deslocar o card. Gradientes e brilho usam
+  a cor definida para cada ferramenta (mint, peach, purple, blue, pink e yellow).
+- Os textos usam posições verticais na escala do próprio SVG para que aumentar
+  a altura do recorte não desloque logo, título, categoria ou status superior.
+- Cada gradiente e referência de brilho recebe identificador React único.
+  Os detalhes completos continuam no modal; a arte permanece em SVG, com CSS
+  para posição, tipografia e intensidade do brilho.
 - O SVG Group 45 original fornecido pelo usuário substitui a aproximação. Rotação,
   cubo e grade ficam no próprio painel; contador tem tipografia com limites e
   painel empilhado em telas pequenas.
@@ -43,21 +52,16 @@ contenção de pintura, isolamento e altura explícita para garantir o limite do
 ### Referências conferidas
 
 O SVG Shift-Card-A.I completo foi fornecido pelo usuário após a primeira revisão.
-Os seis caminhos foram conferidos e agora são reproduzidos integralmente: corpo,
-círculo da logo, três cápsulas inferiores e cápsula superior. O viewBox 114×42,
-o preenchimento par-ímpar, a junção miter, o limite 20 e a espessura 0,5 do SVG
-são mantidos. A fixture em `frontend/tests/fixtures/shift-card-ai.svg` preserva
-essa geometria; somente metadados do editor foram omitidos.
+A fixture em `frontend/tests/fixtures/shift-card-ai.svg` preserva os seis caminhos
+originais (metadados do editor omitidos). Com três etiquetas, o corpo, círculo e
+cápsulas mantêm essa geometria. Com outras quantidades, somente o recorte e as
+cápsulas inferiores são gerados conforme a quantidade. O retângulo arredondado da
+categoria é desenhado no mesmo SVG. Não se usa clip-path para produzir os contornos.
 
-As três etiquetas e o selo superior usam exatamente os limites dos caminhos,
-com validação de posição e dimensão em pixels no teste de navegador. O teste
-compara os seis atributos d renderizados com a referência independente do usuário.
-
-O acabamento segue a imagem enviada em seguida: vidro grafite, borda metálica,
-pontos de iluminação verdes no círculo e no canto inferior esquerdo, descrição
-com filete verde e cápsulas escuras. Um filtro isola a luz verde para manter
-nítida a parte prateada da borda. Os logos mantêm suas cores originais. A arte
-foi implementada em SVG/CSS, mantendo os contornos fornecidos.
+O teste compara o caso de três etiquetas com o SVG do usuário e confere os limites
+dos textos em relação aos vetores. Os casos 0, 1, 2, 4 e 7 são exercitados em
+navegador em 320 e 1440 px; os testes unitários cobrem também 3 e 10 etiquetas.
+O acabamento mantém vidro grafite, borda metálica, filete e brilho por ferramenta.
 
 Group 45 continua usando o arquivo original recuperado, confinado ao seu painel.
 
@@ -67,7 +71,7 @@ A captura posterior do usuário ainda mostrava o selo junto ao título. Na branc
 o selo já estava ancorado ao caminho superior direito. A nova revisão inclui
 coroa no selo Freemium (estrela em Grátis), título com maior destaque, descrição
 com filete proporcional e categoria com ícone e faixa dentro da base inferior.
-A geometria dos seis caminhos continua inalterada. O selo usa tipografia e ícone
+A geometria original é mantida no caso de três etiquetas. O selo usa tipografia e ícone
 que cabem na cápsula original, inclusive com 288 px de largura útil no celular.
 O teste de layout também confere se o texto do status está integralmente dentro
 da cápsula e se título, descrição e categoria não se sobrepõem.
@@ -79,7 +83,7 @@ da cápsula e se título, descrição e categoria não se sobrepõem.
   alterados e `git diff --check`: aprovados.
 - `npm test`: o launcher tsx falhou no IPC do ambiente antes dos testes.
   Executadas as mesmas suítes via `node --import tsx --test frontend/tests/*.test.ts backend/tests/*.test.ts`
-  (9 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
+  (11 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
 - `npm run build`, `npm run build:pages`, `npm run build:desktop` e
   `node scripts/verify-static.mjs pages desktop`: aprovados. Catálogo: 109 itens.
 - Chromium: 320, 390, 570, 760, 768, 1024, 1360, 1440 e 1920 px;
@@ -104,6 +108,5 @@ e fecha navegador e servidor. Para usar Chromium instalado, informe
 `CHROMIUM_EXECUTABLE_PATH`. Capturas opcionais são habilitadas com
 `QA_SCREENSHOTS=/caminho/temporario`. Não há publicação automática nessa rotina.
 
-O fluxo Pages existente só publica push na main ou execução manual; esta branch
-fica disponível para revisão. A geometria completa do SVG Shift foi conferida; a revisão visual do usuário
-deve anteceder o merge.
+O fluxo Pages publica pushes na main ou execução manual. A publicação para avaliação
+foi autorizada pelo usuário; o deploy é acompanhado até confirmar a versão pública.

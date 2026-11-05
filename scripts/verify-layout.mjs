@@ -81,20 +81,23 @@ try {
           .first()
           .locator(".shift-vector path")
           .evaluateAll((paths) =>
-            paths.map((path) =>
-              path.getAttribute("d").trim().replace(/\s+/g, " "),
-            ),
+            paths
+              .map((path) => path.getAttribute("d").trim().replace(/\s+/g, " "))
+              .sort(),
           ),
-        referencePaths,
+        [...referencePaths].sort(),
       );
       const pillErrors = await page
         .locator(".shift-card")
         .evaluateAll((cards) =>
           cards.flatMap((card) => {
-            const paths = [...card.querySelectorAll(".shift-vector path")];
+            const paths = [...card.querySelectorAll(".shift-tag-outline")];
             const texts = [...card.querySelectorAll(".shift-tags span")];
-            const pairs = texts.map((text, i) => [text, paths[[4, 2, 3][i]]]);
-            pairs.push([card.querySelector(".shift-pricing"), paths[5]]);
+            const pairs = texts.map((text, i) => [text, paths[i]]);
+            pairs.push([
+              card.querySelector(".shift-pricing"),
+              card.querySelector(".shift-pricing-outline"),
+            ]);
             return pairs.filter(([text, path]) => {
               const a = text.getBoundingClientRect(),
                 b = path.getBoundingClientRect();
@@ -152,7 +155,11 @@ try {
           oldCards: document.querySelectorAll(".card,.card-art").length,
           badRatios: cards.filter(
             (card) =>
-              Math.abs(box(card).width / box(card).height - 114 / 42) > 0.01,
+              Math.abs(
+                box(card).width / box(card).height -
+                  114 /
+                    card.querySelector(".shift-vector").viewBox.baseVal.height,
+              ) > 0.01,
           ).length,
           duplicateIds: ids.filter((id, i) => ids.indexOf(id) !== i).length,
           escapedText: cards.flatMap((card) =>
@@ -188,6 +195,29 @@ try {
           paintContainment: true,
         },
         `${width}px desktop=${desktop}`,
+      );
+      assert.equal(
+        await page
+          .locator(".shift-category")
+          .first()
+          .evaluate((node) => getComputedStyle(node).clipPath),
+        "none",
+      );
+      const target = page.locator(".shift-card").first();
+      await target.scrollIntoViewIfNeeded();
+      const beforeHover = await target.boundingBox();
+      await target.hover();
+      await page.waitForFunction(
+        () =>
+          Number(
+            getComputedStyle(document.querySelector(".shift-glow")).opacity,
+          ) > 0.9,
+      );
+      const afterHover = await target.boundingBox();
+      assert.ok(
+        Math.abs(beforeHover.y - afterHover.y) < 0.1 &&
+          Math.abs(beforeHover.x - afterHover.x) < 0.1,
+        "Hover must not move the card",
       );
       // Check several animation phases without changing the reserved layout.
       for (const time of [0, 1500, 4500, 9000]) {
@@ -255,6 +285,54 @@ try {
       console.log(
         `Layout, busca, categoria, modal e movimento reduzido: ${width}px${desktop ? " (desktop simulado)" : ""}`,
       );
+      await page.close();
+    }
+  }
+  // Exercise labels absent from today's catalog without modifying production data.
+  const catalog = JSON.parse(
+    await readFile(join(root, "catalog.json"), "utf8"),
+  );
+  for (const width of [320, 1440]) {
+    for (const count of [0, 1, 2, 4, 7]) {
+      const page = await browser.newPage({ viewport: { width, height: 1000 } });
+      const tags = Array.from({ length: count }, (_, i) => "Status " + (i + 1));
+      await page.route("**/catalog.json", (route) =>
+        route.fulfill({ json: { tools: [{ ...catalog.tools[0], tags }] } }),
+      );
+      await page.goto(url);
+      await page.locator(".shift-card").waitFor();
+      assert.equal(await page.locator(".shift-tags span").count(), count);
+      assert.equal(await page.locator(".shift-tag-outline").count(), count);
+      assert.equal(
+        await page
+          .locator(".shift-category")
+          .evaluate((node) => getComputedStyle(node).clipPath),
+        "none",
+      );
+      const layout = await page.locator(".shift-card").evaluate((card) => {
+        const svg = card.querySelector(".shift-vector"),
+          bounds = card.getBoundingClientRect();
+        const pills = [...card.querySelectorAll(".shift-tag-outline")].map(
+          (p) => p.getBoundingClientRect(),
+        );
+        return {
+          height: svg.viewBox.baseVal.height,
+          overflow: document.documentElement.scrollWidth > innerWidth,
+          escaped: pills.some(
+            (p) =>
+              p.left < bounds.left ||
+              p.right > bounds.right + 0.1 ||
+              p.bottom > bounds.bottom + 0.1,
+          ),
+        };
+      });
+      assert.equal(layout.overflow, false);
+      assert.equal(layout.escaped, false);
+      assert.equal(
+        layout.height,
+        42 + Math.max(0, Math.ceil(count / 3) - 1) * 7,
+      );
+      console.log(`Recorte adaptativo: ${count} etiquetas em ${width}px`);
       await page.close();
     }
   }
