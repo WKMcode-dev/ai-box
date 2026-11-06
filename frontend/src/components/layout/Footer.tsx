@@ -1,5 +1,5 @@
 import { Icon } from "../ui/Icon";
-export function Footer() {
+export function Footer({ desktop = false }: { desktop?: boolean }) {
   return (
     <>
       <section className="closing">
@@ -10,9 +10,11 @@ export function Footer() {
         <span>Encontre seu próximo projeto ↗</span>
       </section>
       <footer>
-        <a className="footer-brand" href="#">
-          A.I BOX
-        </a>
+        {!desktop && (
+          <a className="footer-brand" href="#">
+            A.I BOX
+          </a>
+        )}
         <span>Um universo de IA. Aberto para você.</span>
         <small>Catálogo independente · 2026</small>
       </footer>

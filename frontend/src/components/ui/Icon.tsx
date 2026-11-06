@@ -1,4 +1,7 @@
 const paths: Record<string, string> = {
+  refresh: "M20 7v5h-5 M4 17v-5h5 M6 6a8 8 0 0 1 13 3 M18 18A8 8 0 0 1 5 15",
+  minimize: "M5 12h14",
+  maximize: "M5 5h14v14H5z",
   crown: "M3 6l4 4 5-7 5 7 4-4-2 13H5z M6 22h12",
   bot: "M8 4h8 M12 2v2 M5 7h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z M1 12v4 M23 12v4 M8 12h.01 M16 12h.01 M9 16h6",
   box: "m12 3 9 5v9l-9 5-9-5V8z M3 8l9 5 9-5 M12 13v9 M7.5 5.5l9 5",

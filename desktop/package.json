@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": true,
-  "description": "Catálogo de inteligências artificiais com acesso gratuito",
+  "description": "Cat\u00e1logo de intelig\u00eancias artificiais com acesso gratuito",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
@@ -50,7 +50,7 @@
           ]
         }
       ],
-      "signAndEditExecutable": false
+      "signExecutable": false
     },
     "nsis": {
       "oneClick": false,
@@ -58,17 +58,27 @@
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "shortcutName": "A.I BOX",
-      "artifactName": "AI-BOX-${version}-${arch}-setup.${ext}"
+      "artifactName": "AI-BOX-${version}-${arch}-setup.${ext}",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "installerSidebar": "build/installerSidebar.bmp",
+      "uninstallerSidebar": "build/installerSidebar.bmp",
+      "installerHeader": "build/installerHeader.bmp",
+      "include": "build/installer.nsh",
+      "installerLanguages": [
+        "pt_BR"
+      ],
+      "language": "1046",
+      "deleteAppDataOnUninstall": false
     },
     "portable": {
       "artifactName": "AI-BOX-${version}-${arch}-portable.${ext}"
     },
     "publish": [
       {
-        "provider": "github",
-        "owner": "WKMcode-dev",
-        "repo": "ai-box",
-        "releaseType": "release"
+        "provider": "generic",
+        "url": "https://github.com/WKMcode-dev/ai-box/releases/latest/download/",
+        "useMultipleRangeRequest": false
       }
     ]
   },

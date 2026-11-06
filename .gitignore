@@ -10,3 +10,6 @@ frontend/dist-desktop/
 desktop/release/
 *.zip
 preview-*.png
+
+# Generated installer bitmaps (recreated from the vector branding).
+desktop/build/installer*.bmp

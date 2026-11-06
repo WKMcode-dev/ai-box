@@ -2,11 +2,13 @@ import type { Tool } from "@ai-box/contracts";
 import { HeroVisual } from "./HeroVisual";
 import { Icon } from "../ui/Icon";
 export function Hero({
+  desktop = false,
   tools,
   count,
   loading,
   explore,
 }: {
+  desktop?: boolean;
   tools: Tool[];
   count: number;
   loading: boolean;
@@ -21,11 +23,13 @@ export function Hero({
         <span className="counter-kicker">
           CATÁLOGO A.I BOX <span className="online-dot" />
         </span>
-        <div className="counter-brand">
-          <Icon name="box" size={26} />
-          <strong>A.I BOX</strong>
-          <span className="beta">BETA</span>
-        </div>
+        {!desktop && (
+          <div className="counter-brand">
+            <Icon name="box" size={26} />
+            <strong>A.I BOX</strong>
+            <span className="beta">BETA</span>
+          </div>
+        )}
         <div className="counter-stat">
           <span className="counter-number" aria-live="polite">
             {loading ? "…" : count.toLocaleString("pt-BR")}

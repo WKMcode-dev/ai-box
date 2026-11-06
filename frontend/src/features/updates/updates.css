@@ -68,3 +68,10 @@
     bottom: 16px;
   }
 }
+.update-manual {
+  padding: 10px 16px;
+  border: 1px solid #647359;
+  border-radius: 9px;
+  color: #d6dfce;
+  font-size: 13px;
+}

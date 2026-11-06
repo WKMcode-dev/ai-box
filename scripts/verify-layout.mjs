@@ -65,6 +65,24 @@ try {
       if (desktop)
         await page.addInitScript(() => {
           window.windowCalls = [];
+          window.updateResult = {
+            status: "error",
+            currentVersion: "1.2.0",
+            message: "Falha de conexão. Código: NETWORK.",
+          };
+          window.desktopUpdates = {
+            getState: async () => ({ status: "idle", currentVersion: "1.2.0" }),
+            subscribe: () => () => {},
+            check: async () => window.updateResult,
+            download: async () => ({
+              status: "ready",
+              currentVersion: "1.2.0",
+            }),
+            install: async () => ({
+              status: "installing",
+              currentVersion: "1.2.0",
+            }),
+          };
           window.desktopWindow = Object.fromEntries(
             ["minimize", "maximize", "close"].map((action) => [
               action,
@@ -74,6 +92,47 @@ try {
         });
       await page.goto(url);
       await page.locator(".shift-card").first().waitFor();
+      if (desktop) {
+        assert.equal(
+          await page
+            .locator(
+              ".sidebar .brand,.counter-brand,.footer-brand,.sidebar-bottom",
+            )
+            .count(),
+          0,
+        );
+        assert.equal(await page.locator(".titlebar-brand").count(), 1);
+        const chrome = await page.locator(".desktop-titlebar").boundingBox();
+        assert.equal(chrome.x, 0);
+        assert.equal(chrome.y, 0);
+        assert.equal(chrome.width, width);
+        await page
+          .getByRole("button", { name: "Verificar atualizações", exact: true })
+          .click();
+        await page.getByText("Falha de conexão. Código: NETWORK.").waitFor();
+        assert.equal(
+          await page
+            .getByRole("link", { name: "Baixar instalador", exact: true })
+            .getAttribute("href"),
+          "https://github.com/WKMcode-dev/ai-box/releases/latest",
+        );
+        await page.evaluate(
+          () =>
+            (window.updateResult = {
+              status: "current",
+              currentVersion: "1.2.0",
+            }),
+        );
+        await page
+          .getByRole("button", { name: "Tentar novamente", exact: true })
+          .click();
+        await page
+          .getByText("Você está na versão mais recente", { exact: true })
+          .waitFor();
+        await page
+          .getByRole("button", { name: "Agora não", exact: true })
+          .click();
+      }
       // Compare the rendered vector with the user's independent reference.
       assert.deepEqual(
         await page

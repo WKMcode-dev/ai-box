@@ -7,9 +7,10 @@ import { Hero } from "./components/hero/Hero";
 import { CatalogSection } from "./features/catalog/components/CatalogSection";
 import { ToolModal } from "./features/catalog/components/ToolModal";
 import { useCatalog } from "./features/catalog/hooks/useCatalog";
-import { UpdateNotice } from "./features/updates/UpdateNotice";
+
 export default function App() {
   const catalog = useCatalog();
+  const desktop = Boolean(window.desktopWindow);
   const [selected, setSelected] = useState<Tool | null>(null);
   const search = useRef<HTMLInputElement>(null);
   function explore() {
@@ -19,6 +20,7 @@ export default function App() {
   return (
     <>
       <Sidebar
+        desktop={desktop}
         catalog={catalog.tools}
         category={catalog.category}
         setCategory={catalog.setCategory}
@@ -27,6 +29,7 @@ export default function App() {
         <Header explore={explore} />
         <main>
           <Hero
+            desktop={desktop}
             tools={catalog.tools}
             count={catalog.tools.length}
             loading={catalog.loading}
@@ -37,8 +40,7 @@ export default function App() {
             searchRef={search}
             onSelect={setSelected}
           />
-          <Footer />
-          <UpdateNotice />
+          <Footer desktop={desktop} />
         </main>
       </div>
       {selected && (

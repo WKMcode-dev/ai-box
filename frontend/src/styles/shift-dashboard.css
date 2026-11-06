@@ -490,3 +490,58 @@ body:has(.desktop-titlebar) .sidebar .sidebar-label {
     width: 34px;
   }
 }
+/* Desktop chrome spans the full window; the catalogue starts below it. */
+body:has(.desktop-titlebar) .shell {
+  padding-top: 56px;
+}
+.desktop-titlebar {
+  position: fixed;
+  inset: 0 0 auto;
+  height: 56px;
+  z-index: 100;
+  background: #151713;
+  padding-inline: 18px;
+}
+.desktop-titlebar .titlebar-nav {
+  gap: 18px;
+}
+.desktop-titlebar .window-controls {
+  margin-right: -18px;
+}
+.desktop-titlebar .window-controls button {
+  display: grid;
+  place-items: center;
+}
+body:has(.desktop-titlebar) .sidebar {
+  top: 56px;
+  padding-top: 22px;
+}
+body:has(.desktop-titlebar) .sidebar-label {
+  margin-top: 8px;
+}
+.desktop-titlebar .update-check-compact {
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  border: 0;
+  font-size: 11px;
+}
+.desktop-titlebar .update-notice {
+  -webkit-app-region: no-drag;
+  user-select: text;
+}
+@media (max-width: 760px) {
+  .desktop-titlebar .titlebar-nav {
+    display: flex;
+    gap: 8px;
+  }
+  .desktop-titlebar .update-check-compact span,
+  .desktop-titlebar .titlebar-nav a span {
+    display: none;
+  }
+  .desktop-titlebar {
+    gap: 10px;
+  }
+}

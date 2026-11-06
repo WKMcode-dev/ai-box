@@ -84,3 +84,30 @@ test("falha no download permite consultar e baixar novamente", async () => {
   await controller.check();
   assert.equal(controller.getState().status, "available");
 });
+
+test("falha de manifesto mostra diagnóstico e permite consultar novamente", async () => {
+  const { updater } = setup();
+  const diagnostics = [];
+  const controller = createUpdateController(updater, {
+    version: "1.2.0",
+    supported: true,
+    publish: () => {},
+    reportError: (error) => diagnostics.push(error),
+  });
+  updater.checkForUpdates = async () => {
+    const error = new Error("404 latest.yml");
+    error.code = "ERR_UPDATER_CHANNEL_FILE_NOT_FOUND";
+    throw error;
+  };
+  await controller.check();
+  assert.match(controller.getState().message, /publicação/);
+  assert.match(
+    controller.getState().message,
+    /ERR_UPDATER_CHANNEL_FILE_NOT_FOUND/,
+  );
+  assert.equal(diagnostics[0].action, "check");
+  updater.checkForUpdates = async () => updater.emit("update-not-available");
+  await controller.check();
+  assert.equal(controller.getState().status, "current");
+  assert.equal(controller.getState().message, undefined);
+});

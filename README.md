@@ -86,3 +86,18 @@ Edite `backend/data/catalog.json`. Cada item tem ID único, categoria, descriç�
 A busca ignora acentos e capitalização e combina categoria, modalidade, gratuidade e texto. O modal usa `dialog` nativo, suporta Escape e foco contido. Há estados de carregamento, falha com nova tentativa e busca vazia.
 
 As fontes DM Sans e Manrope usam Google Fonts com alternativas locais. O catálogo não exige contas na BOX, não inclui analytics e não instala nem executa as IAs de terceiros.
+
+### Desktop 1.2.0
+
+A barra superior reúne logo, catálogo, atualizações e os controles da janela.
+O instalador Windows tem painéis próprios em grafite e verde, idioma português
+e a mesma logo da aplicação no executável e nos atalhos.
+
+O feed de atualização é o manifesto da release estável em
+`https://github.com/WKMcode-dev/ai-box/releases/latest/download/latest.yml`.
+Falhas mostram o código e oferecem o instalador manual; o diagnóstico fica em
+`%APPDATA%/A.I BOX/logs/updates.log`. Se o atualizador da 1.1.0 falhar, instale
+a 1.2.0 uma vez pelo instalador. A edição portátil usa atualização manual.
+
+O pipeline Windows verifica o manifesto, SHA-512 e a logo embutida no executável
+antes de publicar. Consulte [as notas da versão](docs/releases/v1.2.0.md).

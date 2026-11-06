@@ -2,19 +2,27 @@ import type { Tool } from "@ai-box/contracts";
 import { categories } from "../../features/catalog/config/categories";
 import { Icon } from "../ui/Icon";
 interface Props {
+  desktop?: boolean;
   catalog: Tool[];
   category: string;
   setCategory: (value: string) => void;
 }
-export function Sidebar({ catalog, category, setCategory }: Props) {
+export function Sidebar({
+  catalog,
+  category,
+  setCategory,
+  desktop = false,
+}: Props) {
   return (
     <aside className="sidebar">
-      <a className="brand" href="#" aria-label="A.I BOX início">
-        <span className="brand-icon">
-          <Icon name="box" size={27} />
-        </span>
-        A.I BOX<span className="beta">BETA</span>
-      </a>
+      {!desktop && (
+        <a className="brand" href="#" aria-label="A.I BOX início">
+          <span className="brand-icon">
+            <Icon name="box" size={27} />
+          </span>
+          A.I BOX<span className="beta">BETA</span>
+        </a>
+      )}
       <div className="sidebar-label">SEU UNIVERSO DE IA</div>
       <nav aria-label="Categorias">
         {categories.map((c, i) => (
@@ -47,16 +55,18 @@ export function Sidebar({ catalog, category, setCategory }: Props) {
           </button>
         ))}
       </nav>
-      <div className="sidebar-bottom">
-        <div className="mini-spark">✳</div>
-        <strong>
-          Grandes ideias.
-          <br />
-          Novas possibilidades.
-        </strong>
-        <p>Sua próxima criação começa com a ferramenta certa.</p>
-        <span className="online-dot" /> Livre para explorar
-      </div>
+      {!desktop && (
+        <div className="sidebar-bottom">
+          <div className="mini-spark">✳</div>
+          <strong>
+            Grandes ideias.
+            <br />
+            Novas possibilidades.
+          </strong>
+          <p>Sua próxima criação começa com a ferramenta certa.</p>
+          <span className="online-dot" /> Livre para explorar
+        </div>
+      )}
       <div className="sidebar-footer">
         Feito para mentes curiosas <span>↗</span>
       </div>

@@ -1,6 +1,6 @@
 export function createUpdateController(
   updater,
-  { version, supported, publish },
+  { version, supported, publish, reportError = () => {} },
 ) {
   let state = {
     status: supported ? "idle" : "unsupported",
@@ -25,13 +25,18 @@ export function createUpdateController(
   updater.on("update-downloaded", () =>
     set({ status: "ready", progress: 100 }),
   );
-  updater.on("error", () =>
-    set({
-      status: "error",
-      message:
-        "Não foi possível atualizar agora. Confira sua conexão e tente novamente.",
-    }),
-  );
+  const fail = (error, action) => {
+    const code = String(error?.code || "UNKNOWN");
+    reportError({ action, code, message: String(error?.message || error) });
+    const missing = /404|CHANNEL_FILE_NOT_FOUND|LATEST_VERSION_NOT_FOUND/.test(
+      code + " " + error?.message,
+    );
+    const message = missing
+      ? "A publicação da atualização ainda não está disponível. Você pode baixar o instalador pela página de versões."
+      : "Não foi possível acessar a atualização. Confira sua conexão ou baixe o instalador pela página de versões.";
+    set({ status: "error", message: `${message} Código: ${code}.` });
+  };
+  updater.on("error", (error) => fail(error, "updater"));
   return {
     getState: () => state,
     async check() {
@@ -47,12 +52,8 @@ export function createUpdateController(
       set({ status: "checking", message: undefined });
       try {
         await updater.checkForUpdates();
-      } catch {
-        set({
-          status: "error",
-          message:
-            "Não foi possível consultar as atualizações. Tente novamente mais tarde.",
-        });
+      } catch (error) {
+        fail(error, "check");
       } finally {
         checking = false;
       }
@@ -63,11 +64,8 @@ export function createUpdateController(
       set({ status: "downloading", progress: 0 });
       try {
         await updater.downloadUpdate();
-      } catch {
-        set({
-          status: "error",
-          message: "O download não foi concluído. Tente novamente.",
-        });
+      } catch (error) {
+        fail(error, "download");
       }
       return state;
     },

@@ -23,7 +23,7 @@
     "format": "prettier --write frontend/src frontend/tests backend/src backend/tests shared/src desktop/src scripts/*.mjs docs .github *.md",
     "package": "node scripts/package.mjs",
     "build:pages": "node scripts/build-static.mjs pages",
-    "build:desktop": "node scripts/build-static.mjs desktop && node scripts/build-icon.mjs",
+    "build:desktop": "node scripts/build-static.mjs desktop && node scripts/build-icon.mjs && node scripts/build-installer-art.mjs",
     "desktop": "npm run build:desktop && npm run start -w @ai-box/desktop",
     "dist:desktop": "npm run build:desktop && npm run dist -w @ai-box/desktop",
     "test:layout": "npm run build:pages && node scripts/verify-layout.mjs"
