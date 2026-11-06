@@ -1,10 +1,13 @@
+import type { Tool } from "@ai-box/contracts";
 import { HeroVisual } from "./HeroVisual";
 import { Icon } from "../ui/Icon";
 export function Hero({
+  tools,
   count,
   loading,
   explore,
 }: {
+  tools: Tool[];
   count: number;
   loading: boolean;
   explore: () => void;
@@ -12,7 +15,7 @@ export function Hero({
   return (
     <section className="hero-dashboard" aria-label="Visão geral do A.I BOX">
       <div className="hologram-panel">
-        <HeroVisual />
+        <HeroVisual tools={tools} />
       </div>
       <div className="hero-counter glass-panel">
         <span className="counter-kicker">

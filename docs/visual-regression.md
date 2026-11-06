@@ -85,10 +85,10 @@ desprojetado, gira em seu plano e volta à mesma projeção horizontal (escala Y
 Assim o giro não coloca os anéis em pé na tela.
 
 As quatro camadas superiores sobem gradualmente em sequência, com deslocamentos
-independentes; a base permanece apoiada. A tampa e as laterais do núcleo SVG
-isométrico também se elevam separadamente. O ciclo de 14 segundos abre, mantém
+independentes; a base permanece apoiada. O núcleo SVG permanece montado: suas faces compartilham os mesmos vértices
+e giram lateralmente em uma volta de 24 segundos, com inclinação constante. O ciclo de 14 segundos abre, mantém
 as peças suspensas e fecha novamente; os giros têm períodos e sentidos próprios.
-A animação usa animateTransform nativo em cada grupo SVG, sem trocar os paths
+Os anéis usam animateTransform nativo em cada grupo SVG, sem trocar os paths
 por imagens ou aplicar uma rotação tridimensional à arte inteira.
 
 O SVG inclui espaço para a vista desmontada. O teste de navegador amostra 0, 3,
@@ -97,6 +97,13 @@ horizontal e a elevação da tampa. O teste unitário compara os 106 paths com o
 arquivo original. Com movimento reduzido, os elementos de animação são removidos
 e o mecanismo fica montado e estático. O painel, cards e contador não mudam de layout.
 
+Os anéis usam `currentColor` ligado ao token principal `--lime` (#c0f582),
+com opacidade menor nas faixas de fundo. O azul original só permanece no arquivo
+fonte como referência, sem ser aplicado na renderização. As faces do cubo usam
+os SVGs locais das IAs do catálogo carregado, com troca gradual a cada 4,8 segundos.
+O teste de navegador verifica as cores calculadas, a troca dos IDs dos ícones,
+a rotação e a parada completa do cubo quando há preferência por movimento reduzido.
+
 ## Validação
 
 - `npm run check`: aprovado.
@@ -104,7 +111,7 @@ e o mecanismo fica montado e estático. O painel, cards e contador não mudam de
   alterados e `git diff --check`: aprovados.
 - `npm test`: o launcher tsx falhou no IPC do ambiente antes dos testes.
   Executadas as mesmas suítes via `node --import tsx --test frontend/tests/*.test.ts backend/tests/*.test.ts`
-  (12 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
+  (13 testes aprovados) e `node --test desktop/tests/*.test.mjs` (4 aprovados).
 - `npm run build`, `npm run build:pages`, `npm run build:desktop` e
   `node scripts/verify-static.mjs pages desktop`: aprovados. Catálogo: 109 itens.
 - Chromium: 320, 390, 570, 760, 768, 1024, 1360, 1440 e 1920 px;

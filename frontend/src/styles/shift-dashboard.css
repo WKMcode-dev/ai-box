@@ -267,10 +267,11 @@
   pointer-events: none;
 }
 .holo-mechanism {
+  color: var(--lime);
   width: min(94%, 360px);
   height: auto;
   overflow: visible;
-  filter: drop-shadow(0 0 3px #67edc12e);
+  filter: drop-shadow(0 0 3px color-mix(in srgb, var(--lime) 20%, transparent));
 }
 .holo-ground {
   position: absolute;

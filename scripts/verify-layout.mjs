@@ -219,6 +219,53 @@ try {
           Math.abs(beforeHover.x - afterHover.x) < 0.1,
         "Hover must not move the card",
       );
+      const cubeStart = await page
+        .locator(".holo-cube")
+        .getAttribute("data-turn");
+      await page.waitForFunction(
+        (start) => document.querySelector(".holo-cube").dataset.turn !== start,
+        cubeStart,
+      );
+      const cubeIcons = await page
+        .locator(".holo-cube-icon")
+        .evaluateAll((nodes) =>
+          nodes.map((node) => ({
+            id: node.dataset.toolId,
+            href: node.getAttribute("href"),
+          })),
+        );
+      assert.ok(cubeIcons.length >= 2);
+      assert.ok(
+        cubeIcons.every((icon) => icon.href.startsWith("/ai-box/logos/")),
+      );
+      assert.equal(
+        await page.locator(".holo-cube animateTransform").count(),
+        0,
+      );
+      const ringColors = await page
+        .locator(".holo-part path")
+        .evaluateAll((nodes) => [
+          ...new Set(nodes.map((node) => getComputedStyle(node).fill)),
+        ]);
+      assert.deepEqual(ringColors, ["rgb(192, 245, 130)"]);
+      if (!desktop && width === 1440) {
+        const cycle = await page
+          .locator(".holo-cube")
+          .getAttribute("data-icon-cycle");
+        await page.waitForFunction(
+          (value) =>
+            document.querySelector(".holo-cube").dataset.iconCycle !== value,
+          cycle,
+          { timeout: 6000 },
+        );
+        const nextIcons = await page
+          .locator(".holo-cube-icon")
+          .evaluateAll((nodes) => nodes.map((node) => node.dataset.toolId));
+        assert.notDeepEqual(
+          nextIcons,
+          cubeIcons.map((icon) => icon.id),
+        );
+      }
       // Sample the complete opening, horizontal turn and closing cycle.
       for (const time of [0, 3, 7, 11, 14, 22, 31]) {
         const mechanism = await page.evaluate((time) => {
@@ -228,9 +275,9 @@ try {
           const bounds = document
             .querySelector(".holo-stage")
             .getBoundingClientRect();
-          const parts = [
-            ...svg.querySelectorAll(".holo-part,.holo-core-part"),
-          ].map((p) => p.getBoundingClientRect());
+          const parts = [...svg.querySelectorAll(".holo-part,.holo-cube")].map(
+            (p) => p.getBoundingClientRect(),
+          );
           const base = svg
             .querySelector('[data-layer="base"]')
             .getBoundingClientRect();
@@ -319,6 +366,14 @@ try {
           .locator(".holo-cube")
           .evaluate((node) => getComputedStyle(node).animationName),
         "none",
+      );
+      const reducedTurn = await page
+        .locator(".holo-cube")
+        .getAttribute("data-turn");
+      await page.waitForTimeout(120);
+      assert.equal(
+        await page.locator(".holo-cube").getAttribute("data-turn"),
+        reducedTurn,
       );
       if (process.env.QA_SCREENSHOTS) {
         await mkdir(process.env.QA_SCREENSHOTS, { recursive: true });

@@ -1,4 +1,6 @@
 import { useSyncExternalStore } from "react";
+import type { Tool } from "@ai-box/contracts";
+import { HologramCube } from "./HologramCube";
 import layers from "./data/group45Layers.json";
 
 const motionQuery = "(prefers-reduced-motion: reduce)";
@@ -33,7 +35,7 @@ function Lift({
   );
 }
 
-export function HologramMechanism() {
+export function HologramMechanism({ tools }: { tools: Tool[] }) {
   const still = useSyncExternalStore(
     subscribeMotion,
     reducedMotion,
@@ -73,7 +75,8 @@ export function HologramMechanism() {
                   <path
                     key={index}
                     d={path.d}
-                    fill={path.fill}
+                    fill="currentColor"
+                    opacity={path.fill.toLowerCase() === "#163c5b" ? 0.3 : 1}
                     fillRule={path.fillRule as "evenodd" | "nonzero"}
                   />
                 ))}
@@ -82,43 +85,7 @@ export function HologramMechanism() {
           </g>
         </g>
       ))}
-      {/* Isometric core: its lid and side plates lift independently, without
-        flipping the whole cube through the screen's vertical plane. */}
-      <g
-        className="holo-cube"
-        transform="translate(119 25)"
-        stroke="#b7ed98"
-        strokeWidth=".7"
-        strokeLinejoin="round"
-      >
-        <g className="holo-core-part" data-layer="cube-left">
-          {!still && <Lift x={-4} y={-12} delay={0.45} />}
-          <path d="M-23 -7 0 6V33L-23 20Z" fill="#29432ee6" />
-          <path
-            d="M-15 5-8 9V18L-15 14Z M-11 8v7 M-14 10l6 3"
-            fill="none"
-            strokeWidth=".8"
-          />
-        </g>
-        <g className="holo-core-part" data-layer="cube-right">
-          {!still && <Lift x={4} y={-21} delay={0.65} />}
-          <path d="M0 6 23-7V20L0 33Z" fill="#192f23e6" />
-          <text
-            transform="translate(6 17) skewY(-29)"
-            fill="#c5f7a9"
-            stroke="none"
-            fontSize="7"
-            fontWeight="700"
-          >
-            A.I
-          </text>
-        </g>
-        <g className="holo-core-part" data-layer="cube-lid">
-          {!still && <Lift y={-44} delay={0.85} />}
-          <path d="M0-20 23-7 0 6-23-7Z" fill="#6caa5866" />
-          <path d="M0-14 13-7 0 0-13-7Z" fill="none" />
-        </g>
-      </g>
+      <HologramCube still={still} tools={tools} />
     </svg>
   );
 }
