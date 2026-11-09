@@ -59,6 +59,7 @@ jobs:
         run: |
           $files = Get-ChildItem desktop/release/* -File | Where-Object { $_.Name -match "\.(exe|blockmap)$" -or $_.Name -eq "latest.yml" } | ForEach-Object FullName
           $notes = "docs/releases/$env:RELEASE_TAG.md"
+          if (-not (Test-Path $notes)) { throw "Notas da versão ausentes: $notes. Verifique a ordem dos commits antes de publicar." }
           gh release view $env:RELEASE_TAG *> $null
           if ($LASTEXITCODE -eq 0) {
             gh release upload $env:RELEASE_TAG @files --clobber
