@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "private": true,
-  "description": "Cat\u00e1logo de intelig\u00eancias artificiais com acesso gratuito",
+  "description": "Catálogo de inteligências artificiais com acesso gratuito",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
