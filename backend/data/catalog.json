@@ -2672,5 +2672,31 @@
     "sourceUrl": "https://fish.audio/",
     "pricingSourceUrl": "https://fish.audio/plan/",
     "checkedAt": "2026-11-04"
+  },
+  {
+    "id": "ssstik",
+    "name": "SSSTik",
+    "maker": "SSSTik",
+    "category": "Vídeo",
+    "description": "Baixe vídeos públicos do TikTok sem marca d'água, em MP4, ou extraia o áudio em MP3 diretamente pelo navegador.",
+    "url": "https://ssstik.io/pt",
+    "logo": null,
+    "logoLabel": "SSSTik",
+    "logoKind": "text",
+    "tags": [
+      "TikTok",
+      "Download de vídeos",
+      "MP4",
+      "MP3"
+    ],
+    "color": "blue",
+    "featured": false,
+    "access": "online",
+    "kind": "Aplicativo",
+    "pricing": "free",
+    "usageNote": "Ferramenta gratuita de download de vídeos públicos do TikTok, sem necessidade de cadastro. Não é uma IA generativa. Suporte a vídeos da Shopee não foi confirmado nas informações oficiais consultadas. Respeite os direitos autorais e as regras das plataformas.",
+    "sourceUrl": "https://ssstik.io/pt",
+    "pricingSourceUrl": "https://ssstik.io/pt",
+    "checkedAt": "2026-11-09"
   }
 ]
