@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.3.0",
   "private": true,
-  "description": "Catálogo de inteligências artificiais com acesso gratuito",
+  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
