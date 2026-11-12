@@ -2704,7 +2704,7 @@
     "name": "Deep Hat",
     "maker": "Kindo",
     "category": "Código",
-    "description": "Modelo de IA especializado em cibersegurança ofensiva e defensiva, análise de ameaças, exploração de vulnerabilidades e fluxos DevSecOps.",
+    "description": "Modelo de IA especializado em cibersegurança ofensiva, raciocínio de Red Team, análise de ameaças em contextos extensos e execução segura de tarefas DevSecOps.",
     "url": "https://app.deephat.ai/",
     "logo": null,
     "logoLabel": "Deep Hat",
@@ -2720,7 +2720,7 @@
     "access": "online",
     "kind": "Modelo",
     "pricing": "freemium",
-    "usageNote": "O site oficial oferece uma opção de uso gratuito, mas não detalha publicamente cotas ou limites. Recursos corporativos e a plataforma Kindo podem exigir contratação. Utilize apenas em sistemas e ambientes para os quais você tenha autorização.",
+    "usageNote": "O site oficial oferece uma opção de uso gratuito, mas não publica claramente cotas ou limites. Deep Hat também pode ser implantado em infraestrutura própria compatível; a plataforma corporativa Kindo e recursos gerenciados podem exigir contratação. Utilize apenas em sistemas e ambientes para os quais você tenha autorização.",
     "sourceUrl": "https://www.deephat.ai/",
     "pricingSourceUrl": "https://www.deephat.ai/",
     "checkedAt": "2026-11-12"
