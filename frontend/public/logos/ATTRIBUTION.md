@@ -122,6 +122,7 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 | Vidu | /logos/vidu.svg |
 | Gamma | Nome em texto; SVG próprio pendente |
 | Magnific · antigo Freepik AI | Nome em texto; SVG próprio pendente |
+| Deep Hat | /logos/deephath.svg |
 
 ## Mapeamentos de origem das coleções
 
@@ -211,3 +212,4 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 - consensus.svg — https://consensus.app/favicon.svg — encontrado no site oficial https://consensus.app/; SHA-256 `196fdd2f621818686bac9555bc8fad6f5ea2f745758283b3024e45c20632a8a8`.
 
 - Fish Audio: símbolo extraído do componente SVG oficial https://fish.audio/assets/nav-fish-audio-icon-Dnr-Wt9w.js em 04/11/2026; formas e proporções preservadas, cores invertidas para o tema escuro. Arquivo: `fish-audio.svg`.
+- deephath.svg — símbolo extraído do SVG oficial `https://app.deephat.ai/_next/static/media/in-line_dark.cd8f91ae.svg`; lettering removido, formas preservadas.
