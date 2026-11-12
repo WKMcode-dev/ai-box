@@ -69,11 +69,11 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 | Wan2.1 | Nome em texto; SVG próprio pendente |
 | Fooocus | Nome em texto; SVG próprio pendente |
 | Aider · local | Nome em texto; SVG próprio pendente |
-| Continue · local | Nome em texto; SVG próprio pendente |
+| Continue · local | /logos/continue.svg |
 | Tabby | Nome em texto; SVG próprio pendente |
-| AnythingLLM · local | Nome em texto; SVG próprio pendente |
+| AnythingLLM · local | /logos/anythingllm.svg |
 | Perplexica | Nome em texto; SVG próprio pendente |
-| InvokeAI Community | Nome em texto; SVG próprio pendente |
+| InvokeAI Community | /logos/invokeai.svg |
 | llama.cpp | Nome em texto; SVG próprio pendente |
 | GPT4All | Nome em texto; SVG próprio pendente |
 | Ollama | /logos/ollama.svg |
@@ -111,7 +111,7 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 | Coze Studio | /logos/coze.svg |
 | LangGraph | /logos/langgraph.svg |
 | CrewAI · biblioteca | /logos/crewai.svg |
-| AutoGen | Nome em texto; SVG próprio pendente |
+| AutoGen | /logos/autogen.svg |
 | Transformers.js | Nome em texto; SVG próprio pendente |
 | BGE-M3 | Nome em texto; SVG próprio pendente |
 | Jina Embeddings v2 | Nome em texto; SVG próprio pendente |
@@ -213,3 +213,8 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 
 - Fish Audio: símbolo extraído do componente SVG oficial https://fish.audio/assets/nav-fish-audio-icon-Dnr-Wt9w.js em 04/11/2026; formas e proporções preservadas, cores invertidas para o tema escuro. Arquivo: `fish-audio.svg`.
 - deephath.svg — símbolo extraído do SVG oficial `https://app.deephat.ai/_next/static/media/in-line_dark.cd8f91ae.svg`; lettering removido, formas preservadas.
+
+- continue.svg — SVG oficial do projeto Continue: https://github.com/continuedev/continue/blob/main/docs/logo/light.svg.
+- anythingllm.svg — símbolo SVG do projeto AnythingLLM: https://github.com/Mintplex-Labs/anything-llm/blob/master/frontend/src/media/illustrations/login-logo.svg.
+- invokeai.svg — ícone SVG oficial do InvokeAI: https://github.com/invoke-ai/InvokeAI/blob/main/invokeai/frontend/webv2/public/invoke-icon.svg.
+- autogen.svg — logo SVG oficial do AutoGen: https://github.com/microsoft/autogen/blob/main/python/docs/src/_static/images/logo/logo.svg.
