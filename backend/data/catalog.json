@@ -2706,9 +2706,9 @@
     "category": "Código",
     "description": "Modelo de IA especializado em cibersegurança ofensiva, raciocínio de Red Team, análise de ameaças em contextos extensos e execução segura de tarefas DevSecOps.",
     "url": "https://app.deephat.ai/",
-    "logo": null,
+    "logo": "/logos/deephath.svg",
     "logoLabel": "Deep Hat",
-    "logoKind": "text",
+    "logoKind": "brand",
     "tags": [
       "Cibersegurança",
       "DevSecOps",
