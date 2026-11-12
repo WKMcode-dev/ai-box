@@ -59,7 +59,12 @@ jobs:
         run: |
           $files = Get-ChildItem desktop/release/* -File | Where-Object { $_.Name -match "\.(exe|blockmap)$" -or $_.Name -eq "latest.yml" } | ForEach-Object FullName
           $notes = "docs/releases/$env:RELEASE_TAG.md"
-          if (-not (Test-Path $notes)) { throw "Notas da versão ausentes: $notes. Verifique a ordem dos commits antes de publicar." }
+          if (-not (Test-Path $notes)) {
+            git fetch origin main --depth=1
+            $notesContent = git show "origin/main:$notes" 2>$null
+            if ($LASTEXITCODE -ne 0 -or -not $notesContent) { throw "Notas da versão ausentes no commit e na main: $notes" }
+            $notesContent | Set-Content -Path $notes -Encoding utf8
+          }
           gh release view $env:RELEASE_TAG *> $null
           if ($LASTEXITCODE -eq 0) {
             gh release upload $env:RELEASE_TAG @files --clobber
