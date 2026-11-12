@@ -2698,5 +2698,31 @@
     "sourceUrl": "https://ssstik.io/pt",
     "pricingSourceUrl": "https://ssstik.io/pt",
     "checkedAt": "2026-11-09"
+  },
+  {
+    "id": "deephath",
+    "name": "Deep Hat",
+    "maker": "Kindo",
+    "category": "Código",
+    "description": "Modelo de IA especializado em cibersegurança ofensiva e defensiva, análise de ameaças, exploração de vulnerabilidades e fluxos DevSecOps.",
+    "url": "https://app.deephat.ai/",
+    "logo": null,
+    "logoLabel": "Deep Hat",
+    "logoKind": "text",
+    "tags": [
+      "Cibersegurança",
+      "DevSecOps",
+      "Red Team",
+      "Análise de ameaças"
+    ],
+    "color": "mint",
+    "featured": true,
+    "access": "online",
+    "kind": "Modelo",
+    "pricing": "freemium",
+    "usageNote": "O site oficial oferece uma opção de uso gratuito, mas não detalha publicamente cotas ou limites. Recursos corporativos e a plataforma Kindo podem exigir contratação. Utilize apenas em sistemas e ambientes para os quais você tenha autorização.",
+    "sourceUrl": "https://www.deephat.ai/",
+    "pricingSourceUrl": "https://www.deephat.ai/",
+    "checkedAt": "2026-11-12"
   }
 ]
