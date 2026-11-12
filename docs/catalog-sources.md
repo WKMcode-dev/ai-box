@@ -131,6 +131,8 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 | [Gamma](https://gamma.app/)                                                                  | online      | Plano gratuito com limites | [Fonte](https://gamma.app/pricing)                                                                                      | Plano Free com créditos iniciais de IA e restrições de recursos e exportação. O saldo de geração é finito; sua renovação não é garantida e uso adicional pode exigir pagamento.     |
 | [Magnific · antigo Freepik AI](https://www.freepik.com/ai)                                   | online      | Plano gratuito com limites | [Fonte](https://www.freepik.com/ai/docs/is-freepik-for-free)                                                            | Plano Free com acesso diário limitado a ferramentas elegíveis e créditos de IA. Modelos, recursos premium e cotas maiores dependem de planos pagos.                                 |
 
+| [Deep Hat](https://www.deephat.ai/) — Kindo | online | Acesso gratuito anunciado; condições detalhadas não publicadas | [Fonte oficial](https://www.deephat.ai/) | Modelo de cibersegurança voltado a DevSecOps, SecOps, análise de ameaças e red teaming. A página oficial oferece entrada “Use it for free”; não presumir cotas ou limites que não estejam publicados. O acesso corporativo à plataforma Kindo tem contratação comercial. |
+
 Candidatos, exclusões e pendências: [catalog-coverage.md](catalog-coverage.md). Origem das logos: [atribuições](../frontend/public/logos/ATTRIBUTION.md).
 
 ## Inclusão: Fish Audio
