@@ -1378,9 +1378,9 @@
     "category": "Código",
     "description": "Configure assistência de programação e agentes com modelos de sua escolha em ferramentas de desenvolvimento.",
     "url": "https://github.com/continuedev/continue",
-    "logo": null,
+    "logo": "/logos/continue.svg",
     "logoLabel": "Continue · local",
-    "logoKind": "text",
+    "logoKind": "brand",
     "tags": [
       "Programação",
       "Editor"
@@ -1426,9 +1426,9 @@
     "category": "Produtividade",
     "description": "Organize documentos e converse com seus materiais usando modelos e armazenamento configurados por você.",
     "url": "https://github.com/Mintplex-Labs/anything-llm",
-    "logo": null,
+    "logo": "/logos/anythingllm.svg",
     "logoLabel": "AnythingLLM · local",
-    "logoKind": "text",
+    "logoKind": "brand",
     "tags": [
       "Documentos",
       "Chat"
@@ -1474,9 +1474,9 @@
     "category": "Imagem",
     "description": "Crie e edite imagens com os modelos e fluxos da edição comunitária de geração visual.",
     "url": "https://github.com/invoke-ai/InvokeAI",
-    "logo": null,
+    "logo": "/logos/invokeai.svg",
     "logoLabel": "InvokeAI Community",
-    "logoKind": "text",
+    "logoKind": "brand",
     "tags": [
       "Imagens",
       "Edição"
@@ -2386,9 +2386,9 @@
     "category": "Produtividade",
     "description": "Framework para construir aplicações de múltiplos agentes que conversam e coordenam tarefas.",
     "url": "https://github.com/microsoft/autogen",
-    "logo": null,
+    "logo": "/logos/autogen.svg",
     "logoLabel": "AutoGen",
-    "logoKind": "text",
+    "logoKind": "brand",
     "tags": [
       "Agentes",
       "Programação"
