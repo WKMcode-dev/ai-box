@@ -218,3 +218,24 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 - anythingllm.svg — símbolo SVG do projeto AnythingLLM: https://github.com/Mintplex-Labs/anything-llm/blob/master/frontend/src/media/illustrations/login-logo.svg.
 - invokeai.svg — ícone SVG oficial do InvokeAI: https://github.com/invoke-ai/InvokeAI/blob/main/invokeai/frontend/webv2/public/invoke-icon.svg.
 - autogen.svg — logo SVG oficial do AutoGen: https://github.com/microsoft/autogen/blob/main/python/docs/src/_static/images/logo/logo.svg.
+
+
+## Logos adicionados em 1.3.3
+
+- manus.svg — símbolo Manus da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/manus.svg; `currentColor` convertido para tom claro para contraste no tema escuro.
+- kling.svg — símbolo Kling da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/kling-color.svg; gradientes e cores preservados.
+- openrouter.svg — símbolo OpenRouter da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/openrouter-color.svg; cor original preservada.
+- huggingface.svg — símbolo Hugging Face da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/huggingface-color.svg; mantido como recurso local para identidade visual do ecossistema.
+- BLACKBOX AI usa fallback textual: o SVG oficial do press kit está disponível em https://www.blackbox.ai/press, mas não foi possível importar o arquivo vetorial diretamente nesta integração. Não foi criado um símbolo substituto.
+
+## Ajustes de contraste para tema escuro
+
+- anythingllm.svg — removido o painel de fundo escuro, preservando o símbolo e seus gradientes.
+- autogen.svg — removido o retângulo de fundo escuro, mantendo a marca branca.
+- pixai.svg — removido o fundo preto, preservando o símbolo branco.
+- bolt.svg — removido o quadrado preto e ampliado o enquadramento do símbolo branco.
+- continue.svg — símbolo monocromático convertido de preto para claro.
+- invokeai.svg — traço escuro convertido para claro, preservando o fundo amarelo da marca.
+- tactiq.svg — lettering escuro convertido para claro.
+- deephath.svg — preenchimento escuro convertido para claro.
+- fish-audio.svg — elementos cinza escuro clareados para melhorar a leitura.
