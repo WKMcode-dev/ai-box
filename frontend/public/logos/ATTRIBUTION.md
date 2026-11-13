@@ -225,7 +225,6 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 - manus.svg — símbolo Manus da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/manus.svg; `currentColor` convertido para tom claro para contraste no tema escuro.
 - kling.svg — símbolo Kling da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/kling-color.svg; gradientes e cores preservados.
 - openrouter.svg — símbolo OpenRouter da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/openrouter-color.svg; cor original preservada.
-- huggingface.svg — símbolo Hugging Face da coleção Lobe Icons: https://github.com/lobehub/lobe-icons/blob/master/packages/static-svg/icons/huggingface-color.svg; mantido como recurso local para identidade visual do ecossistema.
 - BLACKBOX AI usa fallback textual: o SVG oficial do press kit está disponível em https://www.blackbox.ai/press, mas não foi possível importar o arquivo vetorial diretamente nesta integração. Não foi criado um símbolo substituto.
 
 ## Ajustes de contraste para tema escuro
