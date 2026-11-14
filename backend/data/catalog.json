@@ -2850,5 +2850,31 @@
     "sourceUrl": "https://openrouter.ai/pt-BR/",
     "pricingSourceUrl": "https://openrouter.ai/pt-BR/pricing",
     "checkedAt": "2026-11-13"
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "maker": "Hugging Face",
+    "category": "Pesquisa",
+    "description": "Plataforma colaborativa de IA para descobrir, compartilhar e experimentar modelos, datasets e aplicações (Spaces), além de oferecer bibliotecas open source e serviços de inferência.",
+    "url": "https://huggingface.co/",
+    "logo": "/logos/hugging-face.svg",
+    "logoLabel": "Hugging Face",
+    "logoKind": "brand",
+    "tags": [
+      "Modelos Open Source",
+      "Datasets",
+      "Spaces",
+      "Inference API"
+    ],
+    "color": "yellow",
+    "featured": true,
+    "access": "online",
+    "kind": "Plataforma",
+    "pricing": "freemium",
+    "usageNote": "O Hub permite explorar e compartilhar recursos públicos. Inferência, computação acelerada e endpoints podem ter cotas gratuitas limitadas e cobrança conforme uso; confira os créditos e preços atuais.",
+    "sourceUrl": "https://huggingface.co/",
+    "pricingSourceUrl": "https://huggingface.co/docs/inference-providers/pricing",
+    "checkedAt": "2026-11-14"
   }
 ]
