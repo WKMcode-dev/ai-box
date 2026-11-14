@@ -32,3 +32,13 @@ test("não aceita ofertas pagas nem dados de marca incoerentes", async () => {
     /HTTPS/,
   );
 });
+
+test("OriginKit está presente como framework e informa os limites do plano gratuito", async () => {
+  const tools = await readCatalog();
+  const originKit = tools.find((tool) => tool.id === "originkit");
+  assert.ok(originKit);
+  assert.equal(originKit.kind, "Framework");
+  assert.equal(originKit.category, "Código");
+  assert.equal(originKit.pricing, "freemium");
+  assert.match(originKit.usageNote, /limites diários/);
+});
