@@ -325,6 +325,32 @@
     "checkedAt": "2026-11-04"
   },
   {
+    "id": "drael",
+    "name": "Drael",
+    "maker": "Drael",
+    "category": "Texto",
+    "description": "Assistente de IA com chat sem filtro de conteúdo, geração e edição de imagens, execução de código em sandbox e pesquisa na web.",
+    "url": "https://drael.sh/pt",
+    "logo": null,
+    "logoLabel": "Drael",
+    "logoKind": "text",
+    "tags": [
+      "Chat sem filtro",
+      "Código",
+      "Imagens",
+      "Pesquisa"
+    ],
+    "color": "mint",
+    "featured": true,
+    "access": "online",
+    "kind": "Aplicativo",
+    "pricing": "freemium",
+    "usageNote": "O site permite começar sem e-mail, com sessões gratuitas limitadas. Planos pagos ampliam o uso e liberam recursos como API; confira os limites e condições antes de assinar.",
+    "sourceUrl": "https://drael.sh/pt",
+    "pricingSourceUrl": "https://drael.sh/pt/legal/terms",
+    "checkedAt": "2026-11-14"
+  },
+  {
     "id": "ideogram",
     "name": "Ideogram",
     "maker": "Ideogram",
