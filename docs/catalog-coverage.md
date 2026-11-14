@@ -1,6 +1,6 @@
 # Cobertura e próximas revisões
 
-Revisão: 04/11/2026. O catálogo não pretende ser uma lista universal: novas ferramentas aparecem, produtos mudam de nome e modalidades gratuitas são alteradas. Esta lista registra candidatos investigados que não devem ser esquecidos, sem classificá-los como gratuitos sem evidência suficiente.
+Revisão: 14/11/2026. O catálogo não pretende ser uma lista universal: novas ferramentas aparecem, produtos mudam de nome e modalidades gratuitas são alteradas. Esta lista registra candidatos investigados que não devem ser esquecidos, sem classificá-los como gratuitos sem evidência suficiente.
 
 Critério aprovado: incluir uso gratuito local e serviços com acesso/plano gratuito, mesmo com limites e planos pagos opcionais. Excluir produtos exclusivamente pagos. Créditos iniciais finitos são informados explicitamente; um simples cadastro gratuito não é evidência de geração gratuita.
 
@@ -19,6 +19,8 @@ Critério aprovado: incluir uso gratuito local e serviços com acesso/plano grat
 | Roo Code / Roomote                                                                         | O domínio consultado redirecionou para Roomote. Confirmar modalidade de execução e marca antes de incluir.                                                                                                   | [Destino atual](https://roomote.dev/)                                                                                |
 | Phind                                                                                      | A URL consultada retornou 404. Precisa de fonte oficial atual válida.                                                                                                                                        | [URL investigada](https://www.phind.com/)                                                                            |
 | Leonardo, Canva, SeaArt, Tensor.Art, NightCafe, Craiyon e outros com identificação textual | Já incluídos com acesso gratuito, mas sem SVG próprio verificado nesta revisão. A ausência de logo não deve excluir a ferramenta nem justificar usar a logo de outra IA.                                     | Ver fontes por item no catálogo.                                                                                     |
+
+| OriginKit | Incluído em Código como framework de componentes e animações; plano gratuito limitado verificado. | [Site oficial](https://www.originkit.dev/) · [Planos e limites](https://www.originkit.dev/docs/account-billing) |
 
 ## Processo para novas inclusões
 
