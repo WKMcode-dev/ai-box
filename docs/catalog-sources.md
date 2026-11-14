@@ -1,6 +1,6 @@
 # Fontes do catálogo — revisão de 04/11/2026
 
-Catálogo com **109 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
+Catálogo com **118 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
 
 Foram consultados sites, documentação, repositórios dos autores e model cards. Cada item guarda `sourceUrl`, `pricingSourceUrl`, `checkedAt`, `access`, `pricing` e `usageNote`. Esta é uma revisão das informações públicas, sem instalação ou teste de todas as IAs. Os sites podem exigir conta, ter limites regionais ou alterar suas condições.
 
@@ -10,13 +10,13 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 
 | Categoria     | Entradas |
 | ------------- | -------: |
-| Texto         |       26 |
+| Texto         |       28 |
 | Imagem        |       19 |
-| Vídeo         |       11 |
+| Vídeo         |       13 |
 | Áudio         |       13 |
-| Código        |       16 |
-| Produtividade |       14 |
-| Pesquisa      |       10 |
+| Código        |       19 |
+| Produtividade |       15 |
+| Pesquisa      |       11 |
 
 ## Fontes por item
 
@@ -138,3 +138,8 @@ Candidatos, exclusões e pendências: [catalog-coverage.md](catalog-coverage.md)
 ## Inclusão: Fish Audio
 
 [Fish Audio](https://fish.audio/) — Áudio, serviço online com plano gratuito limitado e planos pagos opcionais. [Condições oficiais](https://fish.audio/plan/) consultadas em 04/11/2026. A tabela e o FAQ divergem sobre uso comercial; não prometemos licença comercial no plano gratuito.
+
+
+## Inclusão: OriginKit
+
+[OriginKit](https://www.originkit.dev/) — Código, biblioteca online de componentes de interface e animações, com integração ao Framer e suporte a MCP para fluxos com agentes de programação. O plano Free oferece uma seleção limitada do catálogo e limites diários de cópia; planos pagos ampliam o acesso e incluem templates. [Condições oficiais](https://www.originkit.dev/docs/account-billing), consultadas em 14/11/2026. O catálogo usa identificação textual até haver um SVG próprio verificável.
