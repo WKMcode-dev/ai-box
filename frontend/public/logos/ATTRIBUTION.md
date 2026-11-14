@@ -238,3 +238,5 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 - tactiq.svg — lettering escuro convertido para claro.
 - deephath.svg — preenchimento escuro convertido para claro.
 - fish-audio.svg — elementos cinza escuro clareados para melhorar a leitura.
+
+- hugging-face.svg — símbolo oficial Hugging Face (rosto do mascote), baseado no SVG disponibilizado em https://huggingface.co/front/assets/huggingface_logo-noborder.svg; cores originais preservadas.
