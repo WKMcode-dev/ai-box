@@ -2876,5 +2876,31 @@
     "sourceUrl": "https://huggingface.co/",
     "pricingSourceUrl": "https://huggingface.co/docs/inference-providers/pricing",
     "checkedAt": "2026-11-14"
+  },
+  {
+    "id": "originkit",
+    "name": "OriginKit",
+    "maker": "OriginKit",
+    "category": "Código",
+    "description": "Biblioteca de componentes animados para interfaces web. Permite explorar e copiar componentes, usar no Framer e conectar agentes de programação por MCP para localizar e integrar componentes ao projeto.",
+    "url": "https://www.originkit.dev/",
+    "logo": null,
+    "logoLabel": "OriginKit",
+    "logoKind": "text",
+    "tags": [
+      "Componentes UI",
+      "Animações",
+      "Framer",
+      "MCP"
+    ],
+    "color": "purple",
+    "featured": true,
+    "access": "online",
+    "kind": "Framework",
+    "pricing": "freemium",
+    "usageNote": "O plano Free oferece acesso a uma parte do catálogo com limites diários de cópia, sem cartão ou prazo de teste. Pro e Ultimate liberam mais componentes, limites maiores e templates; templates são recursos pagos.",
+    "sourceUrl": "https://www.originkit.dev/",
+    "pricingSourceUrl": "https://www.originkit.dev/docs/account-billing",
+    "checkedAt": "2026-11-14"
   }
 ]
