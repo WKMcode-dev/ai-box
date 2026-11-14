@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.3.6",
   "private": true,
-  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 118 ferramentas.",
+  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 118 ferramentas e OriginKit.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
