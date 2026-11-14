@@ -123,6 +123,7 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 | Gamma | Nome em texto; SVG próprio pendente |
 | Magnific · antigo Freepik AI | Nome em texto; SVG próprio pendente |
 | Deep Hat | /logos/deephath.svg |
+| OriginKit | Nome em texto; SVG próprio pendente |
 
 ## Mapeamentos de origem das coleções
 
