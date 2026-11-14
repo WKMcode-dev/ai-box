@@ -31,6 +31,10 @@ test("dados inválidos e IDs repetidos são rejeitados", async () => {
     /logo/,
   );
   assert.throws(() => validateCatalog([{ ...tool, tags: null }]), /Tags/);
+  assert.throws(
+    () => validateCatalog([{ ...tool, kind: "Plataforma" }]),
+    /Tipo inválido para .*Plataforma/,
+  );
 });
 test("API retorna catálogo, health e erros HTTP adequados", async () => {
   const server = createApiServer();
