@@ -2870,7 +2870,7 @@
     "color": "yellow",
     "featured": true,
     "access": "online",
-    "kind": "Plataforma",
+    "kind": "Aplicativo",
     "pricing": "freemium",
     "usageNote": "O Hub permite explorar e compartilhar recursos públicos. Inferência, computação acelerada e endpoints podem ter cotas gratuitas limitadas e cobrança conforme uso; confira os créditos e preços atuais.",
     "sourceUrl": "https://huggingface.co/",
