@@ -47,7 +47,7 @@ export function validateCatalog(value: unknown): Tool[] {
     )
       throw new Error("Modalidade inválida.");
     if (!["Aplicativo", "Modelo", "Framework"].includes(entry.kind))
-      throw new Error("Tipo inválido.");
+      throw new Error(`Tipo inválido para ${entry.id}: ${entry.kind}.`);
     if (!["free", "freemium"].includes(entry.pricing))
       throw new Error(
         "A seleção aceita apenas opções gratuitas ou com plano gratuito verificado.",
