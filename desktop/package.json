@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "private": true,
-  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 117 ferramentas e o Hugging Face.",
+  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 118 ferramentas.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
