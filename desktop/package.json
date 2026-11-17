@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "private": true,
-  "description": "A.I BOX 1.4.0: 118 IAs e 179 ferramentas de Cibersegurança em áreas independentes, com filtros dedicados e identidade SVG.",
+  "description": "A.I BOX 1.4.1: navegação mobile fixa, acesso direto à Cibersegurança e assistente de catálogo preparado para Gemini.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
