@@ -7418,7 +7418,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Verifica suporte TLS/SSL, cifras e problemas conhecidos em serviços.",
     "url": "https://www.kali.org/tools/testssl.sh/",
-    "logo": "/logos/testssl.sh.svg",
+    "logo": "/logos/testssl-sh.svg",
     "logoLabel": "testssl-sh",
     "logoKind": "generated",
     "tags": [
