@@ -2927,7 +2927,8 @@
     "usageNote": "Projeto open source com instalador nativo para Windows e suporte a WSL. A interceptação HTTPS exige configurar o certificado da ferramenta no ambiente de teste.",
     "sourceUrl": "https://docs.mitmproxy.org/stable/overview/installation/",
     "pricingSourceUrl": "https://github.com/mitmproxy/mitmproxy",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Captura e análise de tráfego"
   },
   {
     "id": "wireshark",
@@ -2953,7 +2954,8 @@
     "usageNote": "Gratuito e open source, com instalador oficial Windows. O Npcap é necessário para captura ao vivo; a instalação padrão do Wireshark pode incluí-lo.",
     "sourceUrl": "https://www.wireshark.org/download.html",
     "pricingSourceUrl": "https://www.wireshark.org/about.html",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Captura e análise de tráfego"
   },
   {
     "id": "ghidra",
@@ -2979,7 +2981,8 @@
     "usageNote": "Gratuito e open source, com suporte oficial ao Windows 10 (build 1809 ou superior). A versão atual requer JDK 25 de 64 bits; confira os requisitos da versão antes de instalar.",
     "sourceUrl": "https://github.com/NationalSecurityAgency/ghidra",
     "pricingSourceUrl": "https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Engenharia reversa"
   },
   {
     "id": "x64dbg",
@@ -3005,7 +3008,8 @@
     "usageNote": "Open source e nativo do Windows. Inclui depuradores separados para executáveis de 32 bits (x32dbg) e 64 bits (x64dbg).",
     "sourceUrl": "https://github.com/x64dbg/x64dbg",
     "pricingSourceUrl": "https://github.com/x64dbg/x64dbg/blob/development/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Engenharia reversa"
   },
   {
     "id": "fakenet-ng",
@@ -3031,7 +3035,8 @@
     "usageNote": "Open source e compatível com Windows. No Windows, o modo suportado é SingleHost; use somente em laboratório isolado ou máquina virtual, pois a ferramenta altera o tratamento do tráfego local.",
     "sourceUrl": "https://github.com/mandiant/flare-fakenet-ng",
     "pricingSourceUrl": "https://github.com/mandiant/flare-fakenet-ng/blob/master/LICENSE.txt",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Análise de malware"
   },
   {
     "id": "tcpdump",
@@ -3057,7 +3062,8 @@
     "usageNote": "Ferramenta nativa de Linux; no Windows, use pelo WSL 2 com uma distribuição Linux. No WSL, a captura fica limitada às interfaces e ao tráfego visíveis para o ambiente Linux, não substituindo a captura nativa do Windows via Wireshark/Npcap.",
     "sourceUrl": "https://www.tcpdump.org/",
     "pricingSourceUrl": "https://github.com/the-tcpdump-group/tcpdump",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Captura e análise de tráfego"
   },
   {
     "id": "burp-suite",
@@ -3083,7 +3089,8 @@
     "usageNote": "A Community Edition oferece ferramentas manuais gratuitas. Recursos automatizados e avançados pertencem à edição Professional, paga. Há instalador nativo para Windows.",
     "sourceUrl": "https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install",
     "pricingSourceUrl": "https://portswigger.net/burp/pricing",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Ferramentas web"
   },
   {
     "id": "nmap",
@@ -3109,7 +3116,8 @@
     "usageNote": "Gratuito e open source, com instalador oficial Windows que inclui Ncat e Zenmap. Faça varreduras somente em redes e sistemas para os quais você tenha autorização.",
     "sourceUrl": "https://nmap.org/download.html",
     "pricingSourceUrl": "https://nmap.org/book/man-legal.html",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Reconhecimento"
   },
   {
     "id": "owasp-zap",
@@ -3135,7 +3143,8 @@
     "usageNote": "Gratuito e open source, com instalador Windows. Requer Java 17 ou superior nas versões atuais. Use em aplicações próprias ou com autorização.",
     "sourceUrl": "https://www.zaproxy.org/download/",
     "pricingSourceUrl": "https://github.com/zaproxy/zaproxy",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Análise de vulnerabilidades"
   },
   {
     "id": "sqlmap",
@@ -3161,7 +3170,8 @@
     "usageNote": "Executa em Windows com Python 3 e também no WSL. É uma ferramenta de teste ativo: utilize somente em ambientes próprios, laboratórios ou alvos autorizados.",
     "sourceUrl": "https://github.com/sqlmapproject/sqlmap",
     "pricingSourceUrl": "https://github.com/sqlmapproject/sqlmap/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Ferramentas web"
   },
   {
     "id": "ffuf",
@@ -3187,7 +3197,8 @@
     "usageNote": "Open source, escrito em Go, com binários para Windows nas releases oficiais. Use apenas em aplicações próprias ou autorizadas.",
     "sourceUrl": "https://github.com/ffuf/ffuf/releases",
     "pricingSourceUrl": "https://github.com/ffuf/ffuf/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Ferramentas web"
   },
   {
     "id": "gobuster",
@@ -3213,7 +3224,8 @@
     "usageNote": "Disponível no catálogo oficial do Kali e executável no WSL 2. A instalação em uma distribuição Linux é o caminho recomendado para evitar dependências e diferenças de ambiente.",
     "sourceUrl": "https://www.kali.org/tools/gobuster/",
     "pricingSourceUrl": "https://github.com/OJ/gobuster/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Ferramentas web"
   },
   {
     "id": "hashcat",
@@ -3239,7 +3251,8 @@
     "usageNote": "Gratuito e open source, com binários nativos para Windows. O desempenho em GPU depende dos drivers e runtimes compatíveis; use somente hashes que você tenha autorização para auditar.",
     "sourceUrl": "https://hashcat.net/hashcat/",
     "pricingSourceUrl": "https://github.com/hashcat/hashcat/blob/master/license.txt",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Auditoria de senhas"
   },
   {
     "id": "john-the-ripper",
@@ -3265,7 +3278,8 @@
     "usageNote": "A edição community Jumbo disponibiliza binários Windows 64-bit e também pode ser executada no WSL. John the Ripper Pro é um produto separado; esta entrada se refere à edição community.",
     "sourceUrl": "https://www.openwall.com/john/",
     "pricingSourceUrl": "https://github.com/openwall/john/blob/bleeding-jumbo/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Auditoria de senhas"
   },
   {
     "id": "autopsy",
@@ -3291,7 +3305,8 @@
     "usageNote": "Disponibiliza instalador MSI de 64 bits para Windows. A análise de mídias físicas pode exigir privilégios elevados; preserve a integridade das evidências e trabalhe preferencialmente com imagens forenses.",
     "sourceUrl": "https://www.autopsy.com/download/",
     "pricingSourceUrl": "https://github.com/sleuthkit/autopsy",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Forense digital"
   },
   {
     "id": "jadx",
@@ -3317,7 +3332,8 @@
     "usageNote": "Open source e multiplataforma. Os pacotes de release podem ser executados no Windows; requer Java compatível com a versão instalada.",
     "sourceUrl": "https://github.com/skylot/jadx",
     "pricingSourceUrl": "https://github.com/skylot/jadx/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Engenharia reversa"
   },
   {
     "id": "apktool",
@@ -3343,7 +3359,8 @@
     "usageNote": "Gratuito e multiplataforma, executado no Windows por meio de Java. É voltado à análise e reconstrução técnica de pacotes Android.",
     "sourceUrl": "https://apktool.org/",
     "pricingSourceUrl": "https://github.com/iBotPeaches/Apktool/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Engenharia reversa"
   },
   {
     "id": "yara",
@@ -3369,7 +3386,8 @@
     "usageNote": "Multiplataforma, com binários oficiais Windows de 32 e 64 bits. Regras YARA devem ser revisadas antes de uso em processos automatizados.",
     "sourceUrl": "https://yara.readthedocs.io/en/latest/gettingstarted.html",
     "pricingSourceUrl": "https://github.com/VirusTotal/yara/blob/master/COPYING",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Análise de malware"
   },
   {
     "id": "exiftool",
@@ -3395,7 +3413,8 @@
     "usageNote": "Disponibiliza executável para Windows. Útil para inspeção de metadados e investigação de arquivos; a edição de metadados altera os arquivos e deve ser feita em cópias.",
     "sourceUrl": "https://exiftool.org/",
     "pricingSourceUrl": "https://exiftool.org/",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Forense digital"
   },
   {
     "id": "testdisk",
@@ -3421,7 +3440,8 @@
     "usageNote": "Ferramentas gratuitas e portáteis com binários Windows. O acesso de baixo nível a discos pode exigir execução como administrador; evite gravar no dispositivo de origem.",
     "sourceUrl": "https://www.cgsecurity.org/wiki/TestDisk_Download",
     "pricingSourceUrl": "https://www.cgsecurity.org/wiki/TestDisk_Download",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Forense digital"
   },
   {
     "id": "impacket",
@@ -3447,7 +3467,8 @@
     "usageNote": "Projeto Python open source. O WSL 2 é recomendado para instalar dependências e executar os utilitários de forma consistente; alguns exemplos exigem configuração adicional.",
     "sourceUrl": "https://github.com/fortra/impacket",
     "pricingSourceUrl": "https://github.com/fortra/impacket/blob/master/LICENSE",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Protocolos e serviços de rede"
   },
   {
     "id": "enum4linux-ng",
@@ -3473,7 +3494,8 @@
     "usageNote": "Disponível nos repositórios do Kali e executável pelo WSL 2. Requer Python, Impacket e utilitários Samba; use apenas em redes autorizadas.",
     "sourceUrl": "https://www.kali.org/tools/enum4linux-ng/",
     "pricingSourceUrl": "https://github.com/cddmp/enum4linux-ng",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Reconhecimento"
   },
   {
     "id": "nikto",
@@ -3499,7 +3521,8 @@
     "usageNote": "Ferramenta Perl disponível no Kali e executável pelo WSL 2. Os testes geram requisições ao servidor; limite o uso a ambientes próprios ou autorizados.",
     "sourceUrl": "https://www.kali.org/tools/nikto/",
     "pricingSourceUrl": "https://github.com/sullo/nikto",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Análise de vulnerabilidades"
   },
   {
     "id": "whatweb",
@@ -3525,7 +3548,8 @@
     "usageNote": "Ferramenta Ruby disponível no Kali e executável pelo WSL 2. Use a identificação tecnológica somente em domínios próprios ou autorizados.",
     "sourceUrl": "https://www.kali.org/tools/whatweb/",
     "pricingSourceUrl": "https://github.com/urbanadventurer/WhatWeb",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Reconhecimento"
   },
   {
     "id": "wafw00f",
@@ -3551,6 +3575,7 @@
     "usageNote": "Ferramenta Python disponível no Kali e executável pelo WSL 2. A identificação envia requisições ao site; teste somente alvos autorizados.",
     "sourceUrl": "https://www.kali.org/tools/wafw00f/",
     "pricingSourceUrl": "https://github.com/EnableSecurity/wafw00f",
-    "checkedAt": "2026-11-17"
+    "checkedAt": "2026-11-17",
+    "subcategory": "Reconhecimento"
   }
 ]
