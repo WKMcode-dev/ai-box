@@ -42,7 +42,7 @@ export interface Tool {
   url: string;
   logo: string | null;
   logoLabel: string;
-  logoKind: "brand" | "text";
+  logoKind: "brand" | "generated" | "text";
   tags: string[];
   color: string;
   featured: boolean;
