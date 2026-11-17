@@ -1,6 +1,6 @@
 # Fontes do catálogo — revisão de 17/11/2026
 
-Catálogo com **143 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
+Catálogo com **298 entradas**. A categoria Cibersegurança foi expandida com ferramentas do índice Kali e projetos complementares do ecossistema Linux/Ubuntu. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
 
 Foram consultados sites, documentação, repositórios dos autores e model cards. Cada item guarda `sourceUrl`, `pricingSourceUrl`, `checkedAt`, `access`, `pricing` e `usageNote`. Esta é uma revisão das informações públicas, sem instalação ou teste de todas as IAs. Os sites podem exigir conta, ter limites regionais ou alterar suas condições.
 
@@ -17,7 +17,7 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 | Código | 19 |
 | Produtividade | 15 |
 | Pesquisa | 11 |
-| Cibersegurança | 25 |
+| Cibersegurança | 180 |
 
 ## Fontes por item
 
