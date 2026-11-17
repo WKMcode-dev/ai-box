@@ -11,7 +11,7 @@ test("catálogo tem IDs únicos, dados válidos e SVGs locais existentes", async
   assert.equal(new Set(tools.map((tool) => tool.id)).size, tools.length);
   for (const tool of tools) {
     if (tool.logoKind === "generated") {
-      assert.match(tool.logo!, /^\\/logos\\/[a-z0-9-]+\\.svg$/);
+      assert.match(tool.logo!, /^\/logos\/[a-z0-9-]+\.svg$/);
       continue;
     }
     const path = new URL("../../frontend/public" + tool.logo, import.meta.url);
