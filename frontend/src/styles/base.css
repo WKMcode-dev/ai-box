@@ -120,3 +120,12 @@ html {
 .tags span {
   font-size: 9px;
 }
+
+/* Acabamento global: profundidade discreta sem competir com o conteúdo. */
+html { background: #10130f; }
+body { min-height: 100vh; background: radial-gradient(ellipse at 76% 2%, #1c281d55 0%, transparent 34%), linear-gradient(180deg, #121510 0%, #10130f 68%, #111510 100%); }
+::selection { color: #172016; background: #c0f582; }
+::-webkit-scrollbar { width: 9px; height: 9px; }
+::-webkit-scrollbar-track { background: #111510; }
+::-webkit-scrollbar-thumb { background: #343e31; border: 2px solid #111510; border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background: #53674a; }
