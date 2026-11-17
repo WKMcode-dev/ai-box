@@ -6,6 +6,7 @@ export const TOOL_CATEGORIES = [
   "Código",
   "Produtividade",
   "Pesquisa",
+  "Cibersegurança",
 ] as const;
 export type AccessMode =
   "local" | "self-hosted" | "browser" | "online" | "desktop";
