@@ -92,6 +92,14 @@ try {
         });
       await page.goto(url);
       await page.locator(".shift-card").first().waitFor();
+      if (!desktop && width <= 760) {
+        assert.equal(await page.locator(".topbar").evaluate((node) => getComputedStyle(node).position), "sticky");
+        await page.getByRole("button", { name: "Abrir menu" }).click();
+        await page.getByRole("button", { name: "Cibersegurança" }).click();
+        await page.getByRole("heading", { name: /Laboratório de Cibersegurança/ }).waitFor();
+        await page.locator(".chip").filter({ hasText: /^Todas$/ }).click();
+        await page.getByRole("heading", { name: /Catálogo de ferramentas/ }).waitFor();
+      }
       if (desktop) {
         assert.equal(
           await page
@@ -381,13 +389,11 @@ try {
       await page.getByRole("dialog").waitFor();
       await page.getByRole("button", { name: "Fechar detalhes" }).click();
       await page
-        .getByRole("textbox", { name: "Buscar inteligências artificiais" })
+        .getByRole("textbox", { name: "Pergunte sobre o catálogo A.I BOX" })
         .fill("chatgpt");
-      await page.waitForFunction(
-        () => document.querySelectorAll(".shift-card").length === 1,
-      );
-      assert.ok((await page.locator(".shift-card").boundingBox()).width <= 460);
-      await page.getByRole("button", { name: "Limpar busca" }).click();
+      await page.getByRole("button", { name: "Enviar pergunta" }).click();
+      await page.getByRole("link", { name: /ChatGPT/ }).waitFor();
+      assert.ok((await page.locator(".shift-card").first().boundingBox()).width <= 460);
       await page
         .locator(".chip")
         .filter({ hasText: /^Áudio$/ })
