@@ -43,7 +43,7 @@ export function ToolModal({
       </div>
       <div className="modal-body">
         <span className="eyebrow">
-          {tool.category} / {tool.maker}
+          {tool.category}{tool.subcategory ? ` / ${tool.subcategory}` : ""} / {tool.maker}
         </span>
         <h2 id="modal-title">{tool.name}</h2>
         <p>{tool.description}</p>
