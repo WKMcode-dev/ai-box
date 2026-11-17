@@ -125,3 +125,30 @@ footer small {
     margin: 0;
   }
 }
+
+/* Janela desktop: barra de título compacta, sem alterar os controles nativos. */
+.topbar.desktop-titlebar {
+  height: 52px;
+  min-height: 52px;
+  padding: 0 18px 0 24px;
+  background: linear-gradient(180deg, #171b16 0%, #131612 100%);
+  border-bottom-color: #303a30;
+  -webkit-app-region: drag;
+}
+.desktop-titlebar .titlebar-brand,
+.desktop-titlebar .titlebar-nav,
+.desktop-titlebar .window-controls,
+.desktop-titlebar button,
+.desktop-titlebar a {
+  -webkit-app-region: no-drag;
+}
+.desktop-titlebar .titlebar-brand { gap: 9px; }
+.desktop-titlebar .titlebar-logo,
+.desktop-titlebar .titlebar-logo img { width: 25px; height: 25px; }
+.desktop-titlebar .titlebar-brand strong { font-size: 11px; letter-spacing: .7px; }
+.desktop-titlebar .titlebar-nav { margin-left: auto; margin-right: 18px; }
+.desktop-titlebar .window-controls { height: 100%; display: flex; align-items: stretch; gap: 2px; }
+.desktop-titlebar .window-controls button { width: 42px; min-height: 100%; border-radius: 0; color: #aeb9a9; background: transparent; transition: background .18s, color .18s; }
+.desktop-titlebar .window-controls button:hover { background: #293329; color: #e8f1e5; }
+.desktop-titlebar .window-controls .window-close:hover { background: #a83c3c; color: #fff; }
+@media (max-width: 1150px) { .topbar.desktop-titlebar { padding: 0 14px 0 18px; } }
