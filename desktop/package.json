@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.3.9",
   "private": true,
-  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 298 ferramentas, com catálogo expandido de Cibersegurança Kali, Ubuntu e projetos complementares.",
+  "description": "Catálogo de 298 ferramentas digitais e inteligências artificiais, incluindo 180 ferramentas de Cibersegurança organizadas em 18 áreas do Kali Linux e projetos complementares Ubuntu/Linux.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
