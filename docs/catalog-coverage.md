@@ -36,3 +36,8 @@ A revisão confirma informações públicas das fontes; não constitui um teste 
 ## Cibersegurança e compatibilidade Windows/WSL
 
 A revisão de 17/11/2026 adicionou uma categoria própria com 25 ferramentas. A curadoria usa o índice oficial de ferramentas do Kali e seus metapacotes como universo de pesquisa, mas não importa pacotes indiscriminadamente. Foram priorizados projetos com instalador/binário Windows ou execução documentada no WSL 2. Ferramentas que dependem de modo monitor Wi-Fi, drivers específicos, SDR/RFID ou acesso direto a hardware foram deixadas de fora desta rodada. Consulte [a matriz de compatibilidade](cybersecurity-tools.md).
+
+
+## Cibersegurança Linux
+
+O catálogo foi ampliado com uma seleção extensa do índice Kali e ferramentas complementares do ecossistema Linux/Ubuntu. A cobertura não equivale a importar todos os pacotes Debian/Kali: dependências, bibliotecas, metapacotes, ferramentas genéricas de sistema e componentes sem função de segurança independente ficam fora do catálogo. A lista oficial deve ser revisada periodicamente: https://www.kali.org/tools/all-tools/.
