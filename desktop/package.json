@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.3.7",
   "private": true,
-  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 144 ferramentas, OriginKit e a categoria Cibersegurança.",
+  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 143 ferramentas, OriginKit e ferramentas de Cibersegurança para Windows e WSL.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
