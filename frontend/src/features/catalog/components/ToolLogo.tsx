@@ -27,7 +27,7 @@ export function ToolLogo({tool}:Props) {
  const [failed,setFailed]=useState(false);
  return <div className="tool-logo">
   {tool.logoKind==="generated" ? <GeneratedLogo tool={tool}/> :
-   !tool.logo||failed ? <div className="project-name"><span>{tool.name}</span><small>{tool.maker}</small></div> :
+   !tool.logo||failed ? <GeneratedLogo tool={tool}/> :
    <img src={assetUrl(tool.logo)} alt={"Logo oficial de "+tool.logoLabel} onError={()=>setFailed(true)} loading="lazy"/>}
  </div>;
 }
