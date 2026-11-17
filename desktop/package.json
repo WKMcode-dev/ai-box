@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "private": true,
-  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 143 ferramentas organizadas por áreas de cibersegurança, OriginKit e ferramentas de Cibersegurança para Windows e WSL.",
+  "description": "Catálogo de ferramentas digitais e inteligências artificiais com acesso gratuito, incluindo 298 ferramentas, com catálogo expandido de Cibersegurança Kali, Ubuntu e projetos complementares.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
