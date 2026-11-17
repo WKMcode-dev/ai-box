@@ -35,4 +35,4 @@ A revisão confirma informações públicas das fontes; não constitui um teste 
 
 ## Cibersegurança e compatibilidade Windows/WSL
 
-A revisão de 17/11/2026 adicionou uma categoria própria com 26 ferramentas. A curadoria usa o índice oficial de ferramentas do Kali e seus metapacotes como universo de pesquisa, mas não importa pacotes indiscriminadamente. Foram priorizados projetos com instalador/binário Windows ou execução documentada no WSL 2. Ferramentas que dependem de modo monitor Wi-Fi, drivers específicos, SDR/RFID ou acesso direto a hardware foram deixadas de fora desta rodada. Consulte [a matriz de compatibilidade](cybersecurity-tools.md).
+A revisão de 17/11/2026 adicionou uma categoria própria com 25 ferramentas. A curadoria usa o índice oficial de ferramentas do Kali e seus metapacotes como universo de pesquisa, mas não importa pacotes indiscriminadamente. Foram priorizados projetos com instalador/binário Windows ou execução documentada no WSL 2. Ferramentas que dependem de modo monitor Wi-Fi, drivers específicos, SDR/RFID ou acesso direto a hardware foram deixadas de fora desta rodada. Consulte [a matriz de compatibilidade](cybersecurity-tools.md).
