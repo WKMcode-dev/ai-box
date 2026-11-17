@@ -60,3 +60,12 @@ test("filtra planos gratuitos com limites sem misturar com execução local grat
   assert.ok(local.some((tool) => tool.id === "ollama"));
   assert.ok(!local.some((tool) => tool.id === "chatgpt"));
 });
+
+
+test("categoria Cibersegurança filtra somente as ferramentas de segurança", () => {
+  const results = filterTools(tools, "Cibersegurança", "", "az");
+  assert.equal(results.length, 25);
+  assert.ok(results.every((tool) => tool.category === "Cibersegurança"));
+  assert.ok(results.some((tool) => tool.id === "mitmproxy"));
+  assert.ok(!results.some((tool) => tool.id === "originkit"));
+});
