@@ -38,6 +38,8 @@ jobs:
       - run: npm test
       - run: npm run dist:desktop
         env:
+          VITE_ASSISTANT_API_URL: ${{ vars.VITE_ASSISTANT_API_URL }}
+        env:
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
       - run: node scripts/verify-static.mjs desktop
       - run: node scripts/verify-windows-release.mjs
