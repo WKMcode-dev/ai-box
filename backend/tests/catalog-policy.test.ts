@@ -55,6 +55,6 @@ test("catálogo de Cibersegurança mantém origem, subcategoria e IDs únicos", 
   assert.ok(security.some((tool) => tool.id === "bloodhound"));
   assert.ok(security.some((tool) => tool.id === "volatility3"));
   assert.ok(security.some((tool) => tool.id === "suricata" && tool.sourceDistro === "Complementar"));
-  assert.equal(security.find((tool) => tool.id === "wireshark")?.subcategory, "Captura e análise de tráfego");
+  assert.equal(security.find((tool) => tool.id === "wireshark")?.subcategory, "Captura, análise e manipulação de tráfego");
   assert.ok(security.some((tool) => tool.id === "burp-suite" && tool.pricing === "freemium"));
 });
