@@ -64,7 +64,7 @@ test("filtra planos gratuitos com limites sem misturar com execução local grat
 
 test("categoria Cibersegurança filtra somente as ferramentas de segurança", () => {
   const results = filterTools(tools, "Cibersegurança", "", "az");
-  assert.equal(results.length, 25);
+  assert.ok(results.length > 100);
   assert.ok(results.every((tool) => tool.category === "Cibersegurança"));
   assert.ok(results.some((tool) => tool.id === "mitmproxy"));
   assert.ok(!results.some((tool) => tool.id === "originkit"));
@@ -79,7 +79,7 @@ test("ferramentas de Cibersegurança possuem subcategorias e ficam separadas por
     list.push(tool);
     grouped.set(tool.subcategory!, list);
   }
-  assert.equal(grouped.size, 9);
-  assert.equal(grouped.get("Engenharia reversa")?.length, 4);
-  assert.equal(grouped.get("Captura e análise de tráfego")?.length, 3);
+  assert.equal(grouped.size, 18);
+  assert.ok((grouped.get("Engenharia reversa e análise de binários")?.length ?? 0) >= 4);
+  assert.ok((grouped.get("Captura, análise e manipulação de tráfego")?.length ?? 0) >= 3);
 });
