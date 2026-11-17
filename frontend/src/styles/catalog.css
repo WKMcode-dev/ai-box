@@ -296,3 +296,5 @@
   padding: 5px 8px;
   font-size: 9px;
 }
+
+.security-filter{display:flex;align-items:center;flex-wrap:wrap;gap:10px;margin:-7px 0 22px;padding:12px 14px;border:1px solid #33443a;border-radius:9px;background:linear-gradient(110deg,#17231c,#151a17)}.security-filter label{color:#9eb6a3;font-size:10px;letter-spacing:.35px}.security-filter select{min-width:min(100%,260px);border:1px solid #425a49;border-radius:6px;padding:8px 30px 8px 10px;color:#d9eee0;background:#111a15;font-size:11px}.security-filter>span{margin-left:auto;color:#87c69c;font-size:10px}
