@@ -1,6 +1,6 @@
 # Cobertura e próximas revisões
 
-Revisão: 14/11/2026. O catálogo não pretende ser uma lista universal: novas ferramentas aparecem, produtos mudam de nome e modalidades gratuitas são alteradas. Esta lista registra candidatos investigados que não devem ser esquecidos, sem classificá-los como gratuitos sem evidência suficiente.
+Revisão: 17/11/2026. O catálogo não pretende ser uma lista universal: novas ferramentas aparecem, produtos mudam de nome e modalidades gratuitas são alteradas. Esta lista registra candidatos investigados que não devem ser esquecidos, sem classificá-los como gratuitos sem evidência suficiente.
 
 Critério aprovado: incluir uso gratuito local e serviços com acesso/plano gratuito, mesmo com limites e planos pagos opcionais. Excluir produtos exclusivamente pagos. Créditos iniciais finitos são informados explicitamente; um simples cadastro gratuito não é evidência de geração gratuita.
 
@@ -31,3 +31,8 @@ Critério aprovado: incluir uso gratuito local e serviços com acesso/plano grat
 5. Conferir duplicatas, categoria, busca e acesso ao modal antes de empacotar.
 
 A revisão confirma informações públicas das fontes; não constitui um teste funcional de todos os serviços listados nem garantia de disponibilidade em todos os países.
+
+
+## Cibersegurança e compatibilidade Windows/WSL
+
+A revisão de 17/11/2026 adicionou uma categoria própria com 26 ferramentas. A curadoria usa o índice oficial de ferramentas do Kali e seus metapacotes como universo de pesquisa, mas não importa pacotes indiscriminadamente. Foram priorizados projetos com instalador/binário Windows ou execução documentada no WSL 2. Ferramentas que dependem de modo monitor Wi-Fi, drivers específicos, SDR/RFID ou acesso direto a hardware foram deixadas de fora desta rodada. Consulte [a matriz de compatibilidade](cybersecurity-tools.md).
