@@ -2928,7 +2928,8 @@
     "sourceUrl": "https://docs.mitmproxy.org/stable/overview/installation/",
     "pricingSourceUrl": "https://github.com/mitmproxy/mitmproxy",
     "checkedAt": "2026-11-17",
-    "subcategory": "Captura e análise de tráfego"
+    "subcategory": "Captura, análise e manipulação de tráfego",
+    "sourceDistro": "Kali"
   },
   {
     "id": "wireshark",
@@ -2955,7 +2956,8 @@
     "sourceUrl": "https://www.wireshark.org/download.html",
     "pricingSourceUrl": "https://www.wireshark.org/about.html",
     "checkedAt": "2026-11-17",
-    "subcategory": "Captura e análise de tráfego"
+    "subcategory": "Captura, análise e manipulação de tráfego",
+    "sourceDistro": "Kali"
   },
   {
     "id": "ghidra",
@@ -2982,7 +2984,8 @@
     "sourceUrl": "https://github.com/NationalSecurityAgency/ghidra",
     "pricingSourceUrl": "https://github.com/NationalSecurityAgency/ghidra/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Engenharia reversa"
+    "subcategory": "Engenharia reversa e análise de binários",
+    "sourceDistro": "Kali"
   },
   {
     "id": "x64dbg",
@@ -3009,7 +3012,8 @@
     "sourceUrl": "https://github.com/x64dbg/x64dbg",
     "pricingSourceUrl": "https://github.com/x64dbg/x64dbg/blob/development/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Engenharia reversa"
+    "subcategory": "Engenharia reversa e análise de binários",
+    "sourceDistro": "Complementar"
   },
   {
     "id": "fakenet-ng",
@@ -3036,7 +3040,8 @@
     "sourceUrl": "https://github.com/mandiant/flare-fakenet-ng",
     "pricingSourceUrl": "https://github.com/mandiant/flare-fakenet-ng/blob/master/LICENSE.txt",
     "checkedAt": "2026-11-17",
-    "subcategory": "Análise de malware"
+    "subcategory": "Análise de malware e resposta a incidentes",
+    "sourceDistro": "Complementar"
   },
   {
     "id": "tcpdump",
@@ -3063,7 +3068,8 @@
     "sourceUrl": "https://www.tcpdump.org/",
     "pricingSourceUrl": "https://github.com/the-tcpdump-group/tcpdump",
     "checkedAt": "2026-11-17",
-    "subcategory": "Captura e análise de tráfego"
+    "subcategory": "Captura, análise e manipulação de tráfego",
+    "sourceDistro": "Kali"
   },
   {
     "id": "burp-suite",
@@ -3090,7 +3096,8 @@
     "sourceUrl": "https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install",
     "pricingSourceUrl": "https://portswigger.net/burp/pricing",
     "checkedAt": "2026-11-17",
-    "subcategory": "Ferramentas web"
+    "subcategory": "Segurança de aplicações web",
+    "sourceDistro": "Kali"
   },
   {
     "id": "nmap",
@@ -3117,7 +3124,8 @@
     "sourceUrl": "https://nmap.org/download.html",
     "pricingSourceUrl": "https://nmap.org/book/man-legal.html",
     "checkedAt": "2026-11-17",
-    "subcategory": "Reconhecimento"
+    "subcategory": "Reconhecimento e OSINT",
+    "sourceDistro": "Kali"
   },
   {
     "id": "owasp-zap",
@@ -3144,7 +3152,8 @@
     "sourceUrl": "https://www.zaproxy.org/download/",
     "pricingSourceUrl": "https://github.com/zaproxy/zaproxy",
     "checkedAt": "2026-11-17",
-    "subcategory": "Análise de vulnerabilidades"
+    "subcategory": "Análise de vulnerabilidades",
+    "sourceDistro": "Kali"
   },
   {
     "id": "sqlmap",
@@ -3171,7 +3180,8 @@
     "sourceUrl": "https://github.com/sqlmapproject/sqlmap",
     "pricingSourceUrl": "https://github.com/sqlmapproject/sqlmap/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Ferramentas web"
+    "subcategory": "Segurança de aplicações web",
+    "sourceDistro": "Kali"
   },
   {
     "id": "ffuf",
@@ -3198,7 +3208,8 @@
     "sourceUrl": "https://github.com/ffuf/ffuf/releases",
     "pricingSourceUrl": "https://github.com/ffuf/ffuf/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Ferramentas web"
+    "subcategory": "Segurança de aplicações web",
+    "sourceDistro": "Kali"
   },
   {
     "id": "gobuster",
@@ -3225,7 +3236,8 @@
     "sourceUrl": "https://www.kali.org/tools/gobuster/",
     "pricingSourceUrl": "https://github.com/OJ/gobuster/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Ferramentas web"
+    "subcategory": "Segurança de aplicações web",
+    "sourceDistro": "Kali"
   },
   {
     "id": "hashcat",
@@ -3252,7 +3264,8 @@
     "sourceUrl": "https://hashcat.net/hashcat/",
     "pricingSourceUrl": "https://github.com/hashcat/hashcat/blob/master/license.txt",
     "checkedAt": "2026-11-17",
-    "subcategory": "Auditoria de senhas"
+    "subcategory": "Auditoria de senhas e autenticação",
+    "sourceDistro": "Kali"
   },
   {
     "id": "john-the-ripper",
@@ -3279,7 +3292,8 @@
     "sourceUrl": "https://www.openwall.com/john/",
     "pricingSourceUrl": "https://github.com/openwall/john/blob/bleeding-jumbo/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Auditoria de senhas"
+    "subcategory": "Auditoria de senhas e autenticação",
+    "sourceDistro": "Kali"
   },
   {
     "id": "autopsy",
@@ -3306,7 +3320,8 @@
     "sourceUrl": "https://www.autopsy.com/download/",
     "pricingSourceUrl": "https://github.com/sleuthkit/autopsy",
     "checkedAt": "2026-11-17",
-    "subcategory": "Forense digital"
+    "subcategory": "Forense digital e recuperação",
+    "sourceDistro": "Kali"
   },
   {
     "id": "jadx",
@@ -3333,7 +3348,8 @@
     "sourceUrl": "https://github.com/skylot/jadx",
     "pricingSourceUrl": "https://github.com/skylot/jadx/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Engenharia reversa"
+    "subcategory": "Engenharia reversa e análise de binários",
+    "sourceDistro": "Kali"
   },
   {
     "id": "apktool",
@@ -3360,7 +3376,8 @@
     "sourceUrl": "https://apktool.org/",
     "pricingSourceUrl": "https://github.com/iBotPeaches/Apktool/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Engenharia reversa"
+    "subcategory": "Engenharia reversa e análise de binários",
+    "sourceDistro": "Kali"
   },
   {
     "id": "yara",
@@ -3387,7 +3404,8 @@
     "sourceUrl": "https://yara.readthedocs.io/en/latest/gettingstarted.html",
     "pricingSourceUrl": "https://github.com/VirusTotal/yara/blob/master/COPYING",
     "checkedAt": "2026-11-17",
-    "subcategory": "Análise de malware"
+    "subcategory": "Análise de malware e resposta a incidentes",
+    "sourceDistro": "Kali"
   },
   {
     "id": "exiftool",
@@ -3414,7 +3432,8 @@
     "sourceUrl": "https://exiftool.org/",
     "pricingSourceUrl": "https://exiftool.org/",
     "checkedAt": "2026-11-17",
-    "subcategory": "Forense digital"
+    "subcategory": "Forense digital e recuperação",
+    "sourceDistro": "Kali"
   },
   {
     "id": "testdisk",
@@ -3441,7 +3460,8 @@
     "sourceUrl": "https://www.cgsecurity.org/wiki/TestDisk_Download",
     "pricingSourceUrl": "https://www.cgsecurity.org/wiki/TestDisk_Download",
     "checkedAt": "2026-11-17",
-    "subcategory": "Forense digital"
+    "subcategory": "Forense digital e recuperação",
+    "sourceDistro": "Kali"
   },
   {
     "id": "impacket",
@@ -3468,7 +3488,8 @@
     "sourceUrl": "https://github.com/fortra/impacket",
     "pricingSourceUrl": "https://github.com/fortra/impacket/blob/master/LICENSE",
     "checkedAt": "2026-11-17",
-    "subcategory": "Protocolos e serviços de rede"
+    "subcategory": "Enumeração de redes e serviços",
+    "sourceDistro": "Kali"
   },
   {
     "id": "enum4linux-ng",
@@ -3495,7 +3516,8 @@
     "sourceUrl": "https://www.kali.org/tools/enum4linux-ng/",
     "pricingSourceUrl": "https://github.com/cddmp/enum4linux-ng",
     "checkedAt": "2026-11-17",
-    "subcategory": "Reconhecimento"
+    "subcategory": "Reconhecimento e OSINT",
+    "sourceDistro": "Kali"
   },
   {
     "id": "nikto",
@@ -3522,7 +3544,8 @@
     "sourceUrl": "https://www.kali.org/tools/nikto/",
     "pricingSourceUrl": "https://github.com/sullo/nikto",
     "checkedAt": "2026-11-17",
-    "subcategory": "Análise de vulnerabilidades"
+    "subcategory": "Análise de vulnerabilidades",
+    "sourceDistro": "Kali"
   },
   {
     "id": "whatweb",
@@ -3549,7 +3572,8 @@
     "sourceUrl": "https://www.kali.org/tools/whatweb/",
     "pricingSourceUrl": "https://github.com/urbanadventurer/WhatWeb",
     "checkedAt": "2026-11-17",
-    "subcategory": "Reconhecimento"
+    "subcategory": "Reconhecimento e OSINT",
+    "sourceDistro": "Kali"
   },
   {
     "id": "wafw00f",
@@ -3576,7 +3600,8 @@
     "sourceUrl": "https://www.kali.org/tools/wafw00f/",
     "pricingSourceUrl": "https://github.com/EnableSecurity/wafw00f",
     "checkedAt": "2026-11-17",
-    "subcategory": "Reconhecimento"
+    "subcategory": "Reconhecimento e OSINT",
+    "sourceDistro": "Kali"
   },
   {
     "id": "0trace",
