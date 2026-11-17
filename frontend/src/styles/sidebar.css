@@ -149,3 +149,5 @@
     height: 35px;
   }
 }
+
+.sidebar-divider{height:1px;background:linear-gradient(90deg,#46523b,transparent);margin:18px 10px 2px}.sidebar .security-label{margin:12px 12px 10px;color:#91bca1}.security-nav-item.active{background:#75e7a314;color:#8df0b4}.security-nav-item.active .count{color:#8df0b4}.sidebar{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#3b493b transparent}
