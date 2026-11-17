@@ -64,3 +64,20 @@ Scanners, proxies e ferramentas de auditoria podem gerar tráfego ativo, alterar
 - [YARA — suporte Windows](https://yara.readthedocs.io/en/latest/gettingstarted.html)
 - [Autopsy — download Windows](https://www.autopsy.com/download/)
 - [TestDisk — binários Windows](https://www.cgsecurity.org/wiki/TestDisk_Download)
+
+
+## Organização por áreas dentro do A.I BOX
+
+Na aplicação, a categoria Cibersegurança é dividida em nove grupos para facilitar a descoberta:
+
+| Área | Ferramentas |
+| --- | --- |
+| **Reconhecimento** | Nmap, enum4linux-ng, WhatWeb, WAFW00F |
+| **Análise de vulnerabilidades** | Nikto, OWASP ZAP |
+| **Ferramentas web** | Burp Suite, sqlmap, ffuf, Gobuster |
+| **Captura e análise de tráfego** | mitmproxy, Wireshark, tcpdump |
+| **Engenharia reversa** | Ghidra, x64dbg, JADX, Apktool |
+| **Forense digital** | Autopsy, ExifTool, TestDisk & PhotoRec |
+| **Auditoria de senhas** | Hashcat, John the Ripper |
+| **Análise de malware** | FakeNet-NG, YARA |
+| **Protocolos e serviços de rede** | Impacket |
