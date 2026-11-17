@@ -151,3 +151,10 @@
 }
 
 .sidebar-divider{height:1px;background:linear-gradient(90deg,#46523b,transparent);margin:18px 10px 2px}.sidebar .security-label{margin:12px 12px 10px;color:#91bca1}.security-nav-item.active{background:#75e7a314;color:#8df0b4}.security-nav-item.active .count{color:#8df0b4}.sidebar{overflow-y:auto;scrollbar-width:thin;scrollbar-color:#3b493b transparent}
+
+/* Separação visual entre os dois universos do catálogo. */
+.sidebar { background: linear-gradient(180deg, #171b16 0%, #141712 58%, #121510 100%); box-shadow: 12px 0 36px #00000012; }
+.sidebar-divider { margin-top: 20px; margin-bottom: 7px; background: linear-gradient(90deg, #526447 0%, #354235 58%, transparent 100%); }
+.sidebar .security-label { letter-spacing: 1.45px; }
+.security-nav-item { border: 1px solid transparent; }
+.security-nav-item.active { border-color: #75e7a326; box-shadow: inset 2px 0 #75e7a3; }
