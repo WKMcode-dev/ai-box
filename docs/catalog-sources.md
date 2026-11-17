@@ -1,6 +1,6 @@
-# Fontes do catálogo — revisão de 04/11/2026
+# Fontes do catálogo — revisão de 17/11/2026
 
-Catálogo com **118 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
+Catálogo com **144 entradas**. Critério aprovado: ferramentas locais gratuitas e serviços com acesso ou plano gratuito, mesmo com limites e planos pagos opcionais. Não há entradas classificadas como exclusivamente pagas. Créditos iniciais finitos são informados, e não são apresentados como uma franquia que se renova.
 
 Foram consultados sites, documentação, repositórios dos autores e model cards. Cada item guarda `sourceUrl`, `pricingSourceUrl`, `checkedAt`, `access`, `pricing` e `usageNote`. Esta é uma revisão das informações públicas, sem instalação ou teste de todas as IAs. Os sites podem exigir conta, ter limites regionais ou alterar suas condições.
 
@@ -8,15 +8,16 @@ Ferramentas sem SVG próprio verificado usam identificação textual. O Whisper 
 
 ## Distribuição
 
-| Categoria     | Entradas |
-| ------------- | -------: |
-| Texto         |       28 |
-| Imagem        |       19 |
-| Vídeo         |       13 |
-| Áudio         |       13 |
-| Código        |       19 |
-| Produtividade |       15 |
-| Pesquisa      |       11 |
+| Categoria | Entradas |
+| --- | ---: |
+| Texto | 28 |
+| Imagem | 19 |
+| Vídeo | 13 |
+| Áudio | 13 |
+| Código | 19 |
+| Produtividade | 15 |
+| Pesquisa | 11 |
+| Cibersegurança | 25 |
 
 ## Fontes por item
 
@@ -143,3 +144,36 @@ Candidatos, exclusões e pendências: [catalog-coverage.md](catalog-coverage.md)
 ## Inclusão: OriginKit
 
 [OriginKit](https://www.originkit.dev/) — Código, biblioteca online de componentes de interface e animações, com integração ao Framer e suporte a MCP para fluxos com agentes de programação. O plano Free oferece uma seleção limitada do catálogo e limites diários de cópia; planos pagos ampliam o acesso e incluem templates. [Condições oficiais](https://www.originkit.dev/docs/account-billing), consultadas em 14/11/2026. O catálogo usa identificação textual até haver um SVG próprio verificável.
+
+
+## Ferramentas de cibersegurança — revisão de 17/11/2026
+
+A categoria foi criada após consulta ao catálogo oficial de ferramentas e metapacotes do Kali Linux. A seleção não representa todos os pacotes Kali: inclui somente opções com caminho de uso verificável no Windows nativo ou no WSL. A compatibilidade e os requisitos específicos estão detalhados em [docs/cybersecurity-tools.md](cybersecurity-tools.md).
+
+| Ferramenta | Ambiente | Fonte de referência |
+| --- | --- | --- |
+| [mitmproxy](https://mitmproxy.org/) | Windows | [Documentação](https://docs.mitmproxy.org/stable/overview/installation/) |
+| [Wireshark](https://www.wireshark.org/) | Windows | [Documentação](https://www.wireshark.org/download.html) |
+| [Ghidra](https://ghidra-sre.org/) | Windows | [Documentação](https://github.com/NationalSecurityAgency/ghidra) |
+| [x64dbg](https://x64dbg.com/) | Windows | [Documentação](https://github.com/x64dbg/x64dbg) |
+| [FakeNet-NG](https://github.com/mandiant/flare-fakenet-ng) | Windows | [Documentação](https://github.com/mandiant/flare-fakenet-ng) |
+| [tcpdump](https://www.tcpdump.org/) | WSL 2 | [Documentação](https://www.tcpdump.org/) |
+| [Burp Suite](https://portswigger.net/burp) | Windows | [Documentação](https://portswigger.net/burp/documentation/desktop/getting-started/download-and-install) |
+| [Nmap](https://nmap.org/) | Windows | [Documentação](https://nmap.org/download.html) |
+| [OWASP ZAP](https://www.zaproxy.org/) | Windows | [Documentação](https://www.zaproxy.org/download/) |
+| [sqlmap](https://sqlmap.org/) | Windows | [Documentação](https://github.com/sqlmapproject/sqlmap) |
+| [ffuf](https://github.com/ffuf/ffuf) | Windows | [Documentação](https://github.com/ffuf/ffuf/releases) |
+| [Gobuster](https://github.com/OJ/gobuster) | WSL 2 | [Documentação](https://www.kali.org/tools/gobuster/) |
+| [Hashcat](https://hashcat.net/hashcat/) | Windows | [Documentação](https://hashcat.net/hashcat/) |
+| [John the Ripper](https://www.openwall.com/john/) | Windows | [Documentação](https://www.openwall.com/john/) |
+| [Autopsy](https://www.autopsy.com/) | Windows | [Documentação](https://www.autopsy.com/download/) |
+| [JADX](https://github.com/skylot/jadx) | Windows | [Documentação](https://github.com/skylot/jadx) |
+| [Apktool](https://apktool.org/) | Windows | [Documentação](https://apktool.org/) |
+| [YARA](https://virustotal.github.io/yara/) | Windows | [Documentação](https://yara.readthedocs.io/en/latest/gettingstarted.html) |
+| [ExifTool](https://exiftool.org/) | Windows | [Documentação](https://exiftool.org/) |
+| [TestDisk & PhotoRec](https://www.cgsecurity.org/) | Windows | [Documentação](https://www.cgsecurity.org/wiki/TestDisk_Download) |
+| [Impacket](https://github.com/fortra/impacket) | WSL 2 | [Documentação](https://github.com/fortra/impacket) |
+| [enum4linux-ng](https://github.com/cddmp/enum4linux-ng) | WSL 2 | [Documentação](https://www.kali.org/tools/enum4linux-ng/) |
+| [Nikto](https://github.com/sullo/nikto) | WSL 2 | [Documentação](https://www.kali.org/tools/nikto/) |
+| [WhatWeb](https://github.com/urbanadventurer/WhatWeb) | WSL 2 | [Documentação](https://www.kali.org/tools/whatweb/) |
+| [WAFW00F](https://github.com/EnableSecurity/wafw00f) | WSL 2 | [Documentação](https://www.kali.org/tools/wafw00f/) |
