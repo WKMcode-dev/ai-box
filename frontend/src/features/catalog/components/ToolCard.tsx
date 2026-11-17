@@ -138,6 +138,7 @@ export function ToolCard({ tool, onSelect }: Props) {
                   Código: "code",
                   Produtividade: "work",
                   Pesquisa: "research",
+                  Cibersegurança: "shield",
                 }[tool.category] || "grid"
           }
           size={13}
