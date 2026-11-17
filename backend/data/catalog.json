@@ -4333,33 +4333,6 @@
     "sourceDistro": "Kali"
   },
   {
-    "id": "burpsuite",
-    "name": "burpsuite",
-    "maker": "Kali Linux / Projeto upstream",
-    "category": "Cibersegurança",
-    "subcategory": "Segurança de aplicações web",
-    "description": "Plataforma integrada de proxy e análise de segurança de aplicações web.",
-    "url": "https://www.kali.org/tools/burpsuite/",
-    "logo": null,
-    "logoLabel": "burpsuite",
-    "logoKind": "text",
-    "tags": [
-      "Segurança de aplicações web",
-      "Kali/Ubuntu/Linux",
-      "Kali Linux"
-    ],
-    "color": "green",
-    "featured": false,
-    "access": "local",
-    "kind": "Aplicativo",
-    "pricing": "free",
-    "usageNote": "Pacote listado no índice oficial de ferramentas do Kali Linux. Normalmente instalado e executado em Kali ou distribuição Linux compatível; pode exigir privilégios, dependências, adaptadores ou hardware específico. O projeto upstream define os requisitos e a licença.",
-    "sourceUrl": "https://www.kali.org/tools/all-tools/",
-    "pricingSourceUrl": "https://www.kali.org/tools/burpsuite/",
-    "checkedAt": "2026-11-17",
-    "sourceDistro": "Kali"
-  },
-  {
     "id": "caido",
     "name": "caido",
     "maker": "Kali Linux / Projeto upstream",
