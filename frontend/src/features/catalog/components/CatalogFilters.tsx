@@ -1,3 +1,3 @@
-import {Icon} from "../../../components/ui/Icon";import {categories} from "../config/categories";
+import {categories} from "../config/categories";
 interface Props{category:string;setCategory:(v:string)=>void;sort:string;setSort:(v:string)=>void}
 export function CatalogFilters({category,setCategory,sort,setSort}:Props){return <><div className="catalog-filter-toolbar"><div className="chips" aria-label="Filtrar por categoria">{categories.map(c=><button className={category===c?"chip selected":"chip"} key={c} onClick={()=>setCategory(c)} aria-pressed={category===c}>{c==="Todas as IAs"?"Todas":c}</button>)}</div><label className="sort"><span>Ordenar por</span><select value={sort} onChange={e=>setSort(e.target.value)} aria-label="Ordenar ferramentas"><option value="featured">Destaques</option><option value="az">Nome: A–Z</option></select></label></div></>}
