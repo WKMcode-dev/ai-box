@@ -281,7 +281,7 @@
     "category": "Texto",
     "description": "Converse com modelos de diferentes fornecedores pela interface do DuckDuckGo.",
     "url": "https://duck.ai/",
-    "logo": "/logos/duckai.svg",
+    "logo": "/logos/generated-text.svg",
     "logoLabel": "Duck.ai",
     "logoKind": "generated",
     "tags": [
@@ -331,7 +331,7 @@
     "category": "Texto",
     "description": "Assistente de IA com chat sem filtro de conteúdo, geração e edição de imagens, execução de código em sandbox e pesquisa na web.",
     "url": "https://drael.sh/pt",
-    "logo": "/logos/drael.svg",
+    "logo": "/logos/generated-text.svg",
     "logoLabel": "Drael",
     "logoKind": "generated",
     "tags": [
@@ -432,7 +432,7 @@
     "category": "Imagem",
     "description": "Plataforma para gerar imagens e explorar estilos, referências e ideias visuais.",
     "url": "https://leonardo.ai/",
-    "logo": "/logos/leonardo.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Leonardo.Ai",
     "logoKind": "generated",
     "tags": [
@@ -507,7 +507,7 @@
     "category": "Imagem",
     "description": "Crie imagens a partir de texto e leve o resultado ao seu projeto de design no Canva.",
     "url": "https://www.canva.com/ai-art-generator/",
-    "logo": "/logos/canva-ai.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Canva · geração de imagens",
     "logoKind": "generated",
     "tags": [
@@ -532,7 +532,7 @@
     "category": "Imagem",
     "description": "Plataforma para gerar imagens, experimentar estilos e explorar criações da comunidade.",
     "url": "https://www.seaart.ai/",
-    "logo": "/logos/seaart.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "SeaArt AI",
     "logoKind": "generated",
     "tags": [
@@ -557,7 +557,7 @@
     "category": "Imagem",
     "description": "Explore modelos e fluxos para geração de imagens com IA em uma comunidade online.",
     "url": "https://tensor.art/",
-    "logo": "/logos/tensorart.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Tensor.Art",
     "logoKind": "generated",
     "tags": [
@@ -582,7 +582,7 @@
     "category": "Imagem",
     "description": "Gere arte a partir de descrições e participe de desafios e coleções da comunidade.",
     "url": "https://creator.nightcafe.studio/",
-    "logo": "/logos/nightcafe.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "NightCafe",
     "logoKind": "generated",
     "tags": [
@@ -607,7 +607,7 @@
     "category": "Imagem",
     "description": "Gere imagens a partir de descrições em uma interface simples na web.",
     "url": "https://www.craiyon.com/",
-    "logo": "/logos/craiyon.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Craiyon",
     "logoKind": "generated",
     "tags": [
@@ -832,7 +832,7 @@
     "category": "Áudio",
     "description": "Assistente de composição musical para criar faixas e explorar diferentes estilos.",
     "url": "https://www.aiva.ai/",
-    "logo": "/logos/aiva.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "AIVA",
     "logoKind": "generated",
     "tags": [
@@ -882,7 +882,7 @@
     "category": "Áudio",
     "description": "Converta texto em áudio escolhendo idioma e voz em uma interface web.",
     "url": "https://ttsmaker.com/",
-    "logo": "/logos/ttsmaker.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "TTSMaker",
     "logoKind": "generated",
     "tags": [
@@ -1057,7 +1057,7 @@
     "category": "Código",
     "description": "Assistente de desenvolvimento para programação e tarefas em ambientes e ferramentas compatíveis.",
     "url": "https://aws.amazon.com/q/developer/",
-    "logo": "/logos/amazon-q.svg",
+    "logo": "/logos/generated-code.svg",
     "logoLabel": "Amazon Q Developer",
     "logoKind": "generated",
     "tags": [
@@ -1107,7 +1107,7 @@
     "category": "Produtividade",
     "description": "Registre reuniões e obtenha resumos para recuperar os pontos importantes das conversas.",
     "url": "https://www.fathom.ai/",
-    "logo": "/logos/fathom.svg",
+    "logo": "/logos/generated-productivity.svg",
     "logoLabel": "Fathom",
     "logoKind": "generated",
     "tags": [
@@ -1132,7 +1132,7 @@
     "category": "Produtividade",
     "description": "Transcreva e pesquise reuniões, organizando falas e pontos de acompanhamento com IA.",
     "url": "https://fireflies.ai/",
-    "logo": "/logos/fireflies.svg",
+    "logo": "/logos/generated-productivity.svg",
     "logoLabel": "Fireflies.ai",
     "logoKind": "generated",
     "tags": [
@@ -1257,7 +1257,7 @@
     "category": "Pesquisa",
     "description": "Encontre artigos e explore resumos e respostas para apoiar a pesquisa bibliográfica.",
     "url": "https://elicit.com/",
-    "logo": "/logos/elicit.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "Elicit",
     "logoKind": "generated",
     "tags": [
@@ -1307,7 +1307,7 @@
     "category": "Pesquisa",
     "description": "Descubra relações entre artigos, autores e referências para ampliar sua pesquisa bibliográfica.",
     "url": "https://www.researchrabbit.ai/",
-    "logo": "/logos/researchrabbit.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "ResearchRabbit",
     "logoKind": "generated",
     "tags": [
@@ -1332,7 +1332,7 @@
     "category": "Vídeo",
     "description": "Gere vídeos a partir de texto e imagens com os modelos de vídeo do projeto Wan executados em infraestrutura própria.",
     "url": "https://github.com/Wan-Video/Wan2.1",
-    "logo": "/logos/wan.svg",
+    "logo": "/logos/generated-video.svg",
     "logoLabel": "Wan2.1",
     "logoKind": "generated",
     "tags": [
@@ -1356,7 +1356,7 @@
     "category": "Imagem",
     "description": "Interface local focada em gerar imagens a partir de descrições com modelos compatíveis de difusão.",
     "url": "https://github.com/lllyasviel/Fooocus",
-    "logo": "/logos/fooocus.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Fooocus",
     "logoKind": "generated",
     "tags": [
@@ -1380,7 +1380,7 @@
     "category": "Código",
     "description": "Programe em parceria com um assistente de terminal capaz de trabalhar sobre arquivos e repositórios.",
     "url": "https://github.com/Aider-AI/aider",
-    "logo": "/logos/aider.svg",
+    "logo": "/logos/generated-code.svg",
     "logoLabel": "Aider · local",
     "logoKind": "generated",
     "tags": [
@@ -1428,7 +1428,7 @@
     "category": "Código",
     "description": "Hospede um assistente de completions e programação no seu próprio ambiente.",
     "url": "https://github.com/TabbyML/tabby",
-    "logo": "/logos/tabby.svg",
+    "logo": "/logos/generated-code.svg",
     "logoLabel": "Tabby",
     "logoKind": "generated",
     "tags": [
@@ -1476,7 +1476,7 @@
     "category": "Pesquisa",
     "description": "Monte um mecanismo de pesquisa assistida por IA com modelos e fontes configurados no seu próprio ambiente.",
     "url": "https://github.com/ItzCrazyKns/Perplexica",
-    "logo": "/logos/perplexica.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "Perplexica",
     "logoKind": "generated",
     "tags": [
@@ -1524,7 +1524,7 @@
     "category": "Texto",
     "description": "Execute modelos de linguagem em diferentes dispositivos com ferramentas de inferência e uma interface local.",
     "url": "https://github.com/ggml-org/llama.cpp",
-    "logo": "/logos/llamacpp.svg",
+    "logo": "/logos/generated-text.svg",
     "logoLabel": "llama.cpp",
     "logoKind": "generated",
     "tags": [
@@ -1548,7 +1548,7 @@
     "category": "Texto",
     "description": "Baixe modelos e converse localmente em um aplicativo com suporte a documentos próprios.",
     "url": "https://github.com/nomic-ai/gpt4all",
-    "logo": "/logos/gpt4all.svg",
+    "logo": "/logos/generated-text.svg",
     "logoLabel": "GPT4All",
     "logoKind": "generated",
     "tags": [
@@ -1812,7 +1812,7 @@
     "category": "Texto",
     "description": "Modelo ajustado para conversas, instruções e interpretação de personagens, baseado em Llama 3.1.",
     "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B",
-    "logo": "/logos/hermes.svg",
+    "logo": "/logos/generated-text.svg",
     "logoLabel": "Hermes 3 · 8B",
     "logoKind": "generated",
     "tags": [
@@ -1980,7 +1980,7 @@
     "category": "Vídeo",
     "description": "Explore geração de vídeo a partir de texto e imagens com os modelos e as ferramentas locais do projeto LTX.",
     "url": "https://github.com/Lightricks/LTX-Video",
-    "logo": "/logos/ltx.svg",
+    "logo": "/logos/generated-video.svg",
     "logoLabel": "LTX-Video",
     "logoKind": "generated",
     "tags": [
@@ -2004,7 +2004,7 @@
     "category": "Áudio",
     "description": "Transcreva fala em texto e processe gravações com reconhecimento de voz executado no seu computador.",
     "url": "https://github.com/openai/whisper",
-    "logo": "/logos/whisper.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "Whisper",
     "logoKind": "generated",
     "tags": [
@@ -2052,7 +2052,7 @@
     "category": "Áudio",
     "description": "Modelo de geração de áudio a partir de texto para experimentar voz, entonações e sons em execução local.",
     "url": "https://github.com/suno-ai/bark",
-    "logo": "/logos/bark.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "Bark",
     "logoKind": "generated",
     "tags": [
@@ -2076,7 +2076,7 @@
     "category": "Áudio",
     "description": "Gere trechos musicais a partir de descrições com os modelos MusicGen da biblioteca AudioCraft.",
     "url": "https://github.com/facebookresearch/audiocraft",
-    "logo": "/logos/musicgen.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "MusicGen",
     "logoKind": "generated",
     "tags": [
@@ -2100,7 +2100,7 @@
     "category": "Áudio",
     "description": "Experimente gerar efeitos e ambientes sonoros a partir de texto com o modelo AudioGen do AudioCraft.",
     "url": "https://github.com/facebookresearch/audiocraft",
-    "logo": "/logos/audiogen.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "AudioGen",
     "logoKind": "generated",
     "tags": [
@@ -2124,7 +2124,7 @@
     "category": "Áudio",
     "description": "Transcreva áudio em uma interface web que baixa o modelo e faz o processamento no próprio navegador.",
     "url": "https://huggingface.co/spaces/Xenova/whisper-web",
-    "logo": "/logos/whisperweb.svg",
+    "logo": "/logos/generated-audio.svg",
     "logoLabel": "Whisper Web",
     "logoKind": "generated",
     "tags": [
@@ -2436,7 +2436,7 @@
     "category": "Produtividade",
     "description": "Execute tarefas de IA como classificação, transcrição e análise de imagens diretamente no navegador.",
     "url": "https://github.com/huggingface/transformers.js",
-    "logo": "/logos/transformersjs.svg",
+    "logo": "/logos/generated-productivity.svg",
     "logoLabel": "Transformers.js",
     "logoKind": "generated",
     "tags": [
@@ -2460,7 +2460,7 @@
     "category": "Pesquisa",
     "description": "Modelo de embeddings para buscar informações por significado e montar sistemas de pesquisa em documentos.",
     "url": "https://huggingface.co/BAAI/bge-m3",
-    "logo": "/logos/bgem3.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "BGE-M3",
     "logoKind": "generated",
     "tags": [
@@ -2484,7 +2484,7 @@
     "category": "Pesquisa",
     "description": "Transforme textos em representações vetoriais para encontrar documentos relacionados por significado.",
     "url": "https://huggingface.co/jinaai/jina-embeddings-v2-base-en",
-    "logo": "/logos/jinaembeddings.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "Jina Embeddings v2",
     "logoKind": "generated",
     "tags": [
@@ -2508,7 +2508,7 @@
     "category": "Pesquisa",
     "description": "Modelo multilíngue de embeddings para comparar textos e desenvolver buscas por significado.",
     "url": "https://huggingface.co/intfloat/multilingual-e5-base",
-    "logo": "/logos/e5.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "Multilingual E5",
     "logoKind": "generated",
     "tags": [
@@ -2532,7 +2532,7 @@
     "category": "Pesquisa",
     "description": "Modelo multilíngue para organizar textos por similaridade e construir sistemas de recuperação de informação.",
     "url": "https://huggingface.co/Alibaba-NLP/gte-multilingual-base",
-    "logo": "/logos/gte.svg",
+    "logo": "/logos/generated-research.svg",
     "logoLabel": "GTE Multilingual",
     "logoKind": "generated",
     "tags": [
@@ -2581,7 +2581,7 @@
     "category": "Vídeo",
     "description": "Crie vídeos com apresentadores e avatares e explore ferramentas de produção e tradução.",
     "url": "https://www.heygen.com/",
-    "logo": "/logos/heygen.svg",
+    "logo": "/logos/generated-video.svg",
     "logoLabel": "HeyGen",
     "logoKind": "generated",
     "tags": [
@@ -2631,7 +2631,7 @@
     "category": "Produtividade",
     "description": "Organize ideias em apresentações, documentos e páginas com assistência de IA.",
     "url": "https://gamma.app/",
-    "logo": "/logos/gamma.svg",
+    "logo": "/logos/generated-productivity.svg",
     "logoLabel": "Gamma",
     "logoKind": "generated",
     "tags": [
@@ -2656,7 +2656,7 @@
     "category": "Imagem",
     "description": "Explore ferramentas de geração, edição e refinamento visual da plataforma antes conhecida como Freepik AI.",
     "url": "https://www.freepik.com/ai",
-    "logo": "/logos/magnific.svg",
+    "logo": "/logos/generated-image.svg",
     "logoLabel": "Magnific · antigo Freepik AI",
     "logoKind": "generated",
     "tags": [
@@ -2706,7 +2706,7 @@
     "category": "Vídeo",
     "description": "Baixe vídeos públicos do TikTok sem marca d'água, em MP4, ou extraia o áudio em MP3 diretamente pelo navegador.",
     "url": "https://ssstik.io/pt",
-    "logo": "/logos/ssstik.svg",
+    "logo": "/logos/generated-video.svg",
     "logoLabel": "SSSTik",
     "logoKind": "generated",
     "tags": [
@@ -2758,7 +2758,7 @@
     "category": "Código",
     "description": "Agente de programação para trabalhar no editor e no terminal, planejar tarefas, editar arquivos, depurar, testar e coordenar múltiplos agentes.",
     "url": "https://app.blackbox.ai/code/family",
-    "logo": "/logos/blackbox-ai.svg",
+    "logo": "/logos/generated-code.svg",
     "logoLabel": "BLACKBOX AI",
     "logoKind": "generated",
     "tags": [
@@ -2884,7 +2884,7 @@
     "category": "Código",
     "description": "Biblioteca de componentes animados para interfaces web. Permite explorar e copiar componentes, usar no Framer e conectar agentes de programação por MCP para localizar e integrar componentes ao projeto.",
     "url": "https://www.originkit.dev/",
-    "logo": "/logos/originkit.svg",
+    "logo": "/logos/generated-code.svg",
     "logoLabel": "OriginKit",
     "logoKind": "generated",
     "tags": [
@@ -2910,7 +2910,7 @@
     "category": "Cibersegurança",
     "description": "Proxy interativo para inspecionar, registrar e modificar tráfego HTTP e HTTPS durante testes e depuração de aplicações.",
     "url": "https://mitmproxy.org/",
-    "logo": "/logos/mitmproxy.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "mitmproxy",
     "logoKind": "generated",
     "tags": [
@@ -2938,7 +2938,7 @@
     "category": "Cibersegurança",
     "description": "Analisador de protocolos para capturar e inspecionar pacotes de rede, identificar protocolos e diagnosticar comunicações.",
     "url": "https://www.wireshark.org/",
-    "logo": "/logos/wireshark.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Wireshark",
     "logoKind": "generated",
     "tags": [
@@ -2966,7 +2966,7 @@
     "category": "Cibersegurança",
     "description": "Plataforma de engenharia reversa para desmontagem, descompilação e análise de binários em diferentes arquiteturas.",
     "url": "https://ghidra-sre.org/",
-    "logo": "/logos/ghidra.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Ghidra",
     "logoKind": "generated",
     "tags": [
@@ -2994,7 +2994,7 @@
     "category": "Cibersegurança",
     "description": "Depurador user-mode para Windows, voltado à análise dinâmica, depuração de executáveis e engenharia reversa.",
     "url": "https://x64dbg.com/",
-    "logo": "/logos/x64dbg.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "x64dbg",
     "logoKind": "generated",
     "tags": [
@@ -3022,7 +3022,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta de análise dinâmica que intercepta e simula serviços de rede para observar como aplicações e amostras suspeitas tentam se comunicar.",
     "url": "https://github.com/mandiant/flare-fakenet-ng",
-    "logo": "/logos/fakenet-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "FakeNet-NG",
     "logoKind": "generated",
     "tags": [
@@ -3050,7 +3050,7 @@
     "category": "Cibersegurança",
     "description": "Capturador de pacotes em linha de comando para registrar e filtrar tráfego de rede usando libpcap.",
     "url": "https://www.tcpdump.org/",
-    "logo": "/logos/tcpdump.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "tcpdump",
     "logoKind": "generated",
     "tags": [
@@ -3078,7 +3078,7 @@
     "category": "Cibersegurança",
     "description": "Plataforma de testes de segurança de aplicações web com proxy interceptador, repetidor de requisições e ferramentas de análise.",
     "url": "https://portswigger.net/burp",
-    "logo": "/logos/burp-suite.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Burp Suite",
     "logoKind": "generated",
     "tags": [
@@ -3106,7 +3106,7 @@
     "category": "Cibersegurança",
     "description": "Scanner de rede para descoberta de hosts, portas, serviços e características de sistemas em auditorias autorizadas.",
     "url": "https://nmap.org/",
-    "logo": "/logos/nmap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Nmap",
     "logoKind": "generated",
     "tags": [
@@ -3134,7 +3134,7 @@
     "category": "Cibersegurança",
     "description": "Scanner e proxy de segurança para avaliar aplicações web, identificar configurações frágeis e apoiar testes manuais.",
     "url": "https://www.zaproxy.org/",
-    "logo": "/logos/owasp-zap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "OWASP ZAP",
     "logoKind": "generated",
     "tags": [
@@ -3162,7 +3162,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta open source para identificar e validar possíveis falhas de injeção SQL em aplicações e parâmetros de banco de dados.",
     "url": "https://sqlmap.org/",
-    "logo": "/logos/sqlmap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sqlmap",
     "logoKind": "generated",
     "tags": [
@@ -3190,7 +3190,7 @@
     "category": "Cibersegurança",
     "description": "Fuzzer web rápido para testar caminhos, parâmetros, cabeçalhos e respostas HTTP durante avaliações autorizadas.",
     "url": "https://github.com/ffuf/ffuf",
-    "logo": "/logos/ffuf.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ffuf",
     "logoKind": "generated",
     "tags": [
@@ -3218,7 +3218,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta de descoberta de diretórios, arquivos, subdomínios e hosts virtuais para avaliações de segurança.",
     "url": "https://github.com/OJ/gobuster",
-    "logo": "/logos/gobuster.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Gobuster",
     "logoKind": "generated",
     "tags": [
@@ -3246,7 +3246,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta de recuperação e auditoria de senhas por análise de hashes, com aceleração por CPU e GPU.",
     "url": "https://hashcat.net/hashcat/",
-    "logo": "/logos/hashcat.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Hashcat",
     "logoKind": "generated",
     "tags": [
@@ -3274,7 +3274,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta de auditoria e recuperação de senhas que testa a resistência de hashes e formatos de credenciais.",
     "url": "https://www.openwall.com/john/",
-    "logo": "/logos/john-the-ripper.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "John the Ripper",
     "logoKind": "generated",
     "tags": [
@@ -3302,7 +3302,7 @@
     "category": "Cibersegurança",
     "description": "Plataforma gráfica de forense digital para examinar imagens de disco, arquivos, artefatos e evidências em investigações.",
     "url": "https://www.autopsy.com/",
-    "logo": "/logos/autopsy.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Autopsy",
     "logoKind": "generated",
     "tags": [
@@ -3330,7 +3330,7 @@
     "category": "Cibersegurança",
     "description": "Descompilador de DEX e APK que converte bytecode Android em código Java legível e oferece interface gráfica.",
     "url": "https://github.com/skylot/jadx",
-    "logo": "/logos/jadx.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "JADX",
     "logoKind": "generated",
     "tags": [
@@ -3358,7 +3358,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta para decodificar, examinar e reconstruir recursos e estruturas de aplicativos Android no formato APK.",
     "url": "https://apktool.org/",
-    "logo": "/logos/apktool.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Apktool",
     "logoKind": "generated",
     "tags": [
@@ -3386,7 +3386,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta e linguagem de regras para identificar padrões em arquivos e apoiar triagem e classificação de amostras.",
     "url": "https://virustotal.github.io/yara/",
-    "logo": "/logos/yara.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "YARA",
     "logoKind": "generated",
     "tags": [
@@ -3414,7 +3414,7 @@
     "category": "Cibersegurança",
     "description": "Leitor e editor de metadados de imagens, documentos, áudio, vídeo e outros formatos de arquivos.",
     "url": "https://exiftool.org/",
-    "logo": "/logos/exiftool.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ExifTool",
     "logoKind": "generated",
     "tags": [
@@ -3442,7 +3442,7 @@
     "category": "Cibersegurança",
     "description": "Conjunto de recuperação de partições e arquivos, com suporte a análise de discos e recuperação de dados.",
     "url": "https://www.cgsecurity.org/",
-    "logo": "/logos/testdisk.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "TestDisk & PhotoRec",
     "logoKind": "generated",
     "tags": [
@@ -3470,7 +3470,7 @@
     "category": "Cibersegurança",
     "description": "Coleção de bibliotecas e utilitários Python para analisar e interagir com protocolos de rede, incluindo SMB e MSRPC.",
     "url": "https://github.com/fortra/impacket",
-    "logo": "/logos/impacket.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Impacket",
     "logoKind": "generated",
     "tags": [
@@ -3498,7 +3498,7 @@
     "category": "Cibersegurança",
     "description": "Ferramenta de enumeração de informações SMB e Samba, com exportação estruturada de resultados para auditorias de rede.",
     "url": "https://github.com/cddmp/enum4linux-ng",
-    "logo": "/logos/enum4linux-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "enum4linux-ng",
     "logoKind": "generated",
     "tags": [
@@ -3526,7 +3526,7 @@
     "category": "Cibersegurança",
     "description": "Scanner de servidores web que verifica configurações, componentes desatualizados e arquivos potencialmente expostos.",
     "url": "https://github.com/sullo/nikto",
-    "logo": "/logos/nikto.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "Nikto",
     "logoKind": "generated",
     "tags": [
@@ -3554,7 +3554,7 @@
     "category": "Cibersegurança",
     "description": "Identifica tecnologias, CMS, bibliotecas, servidores e componentes expostos por sites e aplicações web.",
     "url": "https://github.com/urbanadventurer/WhatWeb",
-    "logo": "/logos/whatweb.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "WhatWeb",
     "logoKind": "generated",
     "tags": [
@@ -3582,7 +3582,7 @@
     "category": "Cibersegurança",
     "description": "Identifica e reconhece firewalls de aplicações web (WAF) por meio da análise de respostas HTTP.",
     "url": "https://github.com/EnableSecurity/wafw00f",
-    "logo": "/logos/wafw00f.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "WAFW00F",
     "logoKind": "generated",
     "tags": [
@@ -3611,7 +3611,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Rastreia caminhos de rede usando técnicas de traceroute com consultas indiretas.",
     "url": "https://www.kali.org/tools/0trace/",
-    "logo": "/logos/0trace.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "0trace",
     "logoKind": "generated",
     "tags": [
@@ -3638,7 +3638,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Identifica serviços e aplicações em portas abertas por análise de respostas.",
     "url": "https://www.kali.org/tools/amap/",
-    "logo": "/logos/amap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "amap",
     "logoKind": "generated",
     "tags": [
@@ -3665,7 +3665,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Suíte para auditoria de redes Wi-Fi, captura e análise de handshakes e testes de segurança 802.11.",
     "url": "https://www.kali.org/tools/aircrack-ng/",
-    "logo": "/logos/aircrack-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "aircrack-ng",
     "logoKind": "generated",
     "tags": [
@@ -3692,7 +3692,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Framework de auditoria wireless com menus para diagnóstico e testes de segurança Wi-Fi.",
     "url": "https://www.kali.org/tools/airgeddon/",
-    "logo": "/logos/airgeddon.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "airgeddon",
     "logoKind": "generated",
     "tags": [
@@ -3719,7 +3719,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Gera permutações de subdomínios para ampliar a enumeração de ativos DNS.",
     "url": "https://www.kali.org/tools/altdns/",
-    "logo": "/logos/altdns.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "altdns",
     "logoKind": "generated",
     "tags": [
@@ -3746,7 +3746,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Mapeia superfície de ataque externa e relacionamentos de ativos por OSINT e DNS.",
     "url": "https://www.kali.org/tools/amass/",
-    "logo": "/logos/amass.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "amass",
     "logoKind": "generated",
     "tags": [
@@ -3773,7 +3773,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Descobre dispositivos IPv4 na rede local usando requisições ARP.",
     "url": "https://www.kali.org/tools/arp-scan/",
-    "logo": "/logos/arp-scan.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "arp-scan",
     "logoKind": "generated",
     "tags": [
@@ -3800,7 +3800,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Audita autenticação LEAP e MS-CHAPv2 em ambientes de laboratório.",
     "url": "https://www.kali.org/tools/asleap/",
-    "logo": "/logos/asleap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "asleap",
     "logoKind": "generated",
     "tags": [
@@ -3827,7 +3827,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Localiza domínios e subdomínios associados a uma organização.",
     "url": "https://www.kali.org/tools/assetfinder/",
-    "logo": "/logos/assetfinder.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "assetfinder",
     "logoKind": "generated",
     "tags": [
@@ -3854,7 +3854,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Automatiza reconhecimento de hosts e enumeração de serviços em avaliações autorizadas.",
     "url": "https://www.kali.org/tools/autorecon/",
-    "logo": "/logos/autorecon.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "autorecon",
     "logoKind": "generated",
     "tags": [
@@ -3881,7 +3881,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Coleta relações e permissões do Microsoft Entra ID para análise de exposição.",
     "url": "https://www.kali.org/tools/azurehound/",
-    "logo": "/logos/azurehound.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "azurehound",
     "logoKind": "generated",
     "tags": [
@@ -3908,7 +3908,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Framework para avaliar a segurança de navegadores em laboratórios controlados.",
     "url": "https://www.kali.org/tools/beef-xss/",
-    "logo": "/logos/beef-xss.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "beef-xss",
     "logoKind": "generated",
     "tags": [
@@ -3935,7 +3935,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Framework modular para auditoria de redes, protocolos e dispositivos conectados.",
     "url": "https://www.kali.org/tools/bettercap/",
-    "logo": "/logos/bettercap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bettercap",
     "logoKind": "generated",
     "tags": [
@@ -3962,7 +3962,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Analisa firmware e identifica sistemas de arquivos, assinaturas e dados embutidos.",
     "url": "https://www.kali.org/tools/binwalk/",
-    "logo": "/logos/binwalk.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "binwalk",
     "logoKind": "generated",
     "tags": [
@@ -3989,7 +3989,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Nova geração do analisador de firmware para inspeção de imagens e sistemas de arquivos.",
     "url": "https://www.kali.org/tools/binwalk3/",
-    "logo": "/logos/binwalk3.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "binwalk3",
     "logoKind": "generated",
     "tags": [
@@ -4016,7 +4016,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Visualiza relações de identidade e caminhos de privilégio em Active Directory.",
     "url": "https://www.kali.org/tools/bloodhound/",
-    "logo": "/logos/bloodhound.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bloodhound",
     "logoKind": "generated",
     "tags": [
@@ -4043,7 +4043,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Coletor Python para importar dados de Active Directory no BloodHound CE.",
     "url": "https://www.kali.org/tools/bloodhound-ce-python/",
-    "logo": "/logos/bloodhound-ce-python.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bloodhound-ce-python",
     "logoKind": "generated",
     "tags": [
@@ -4070,7 +4070,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Ferramenta de interação e auditoria de objetos Active Directory via LDAP.",
     "url": "https://www.kali.org/tools/bloodyad/",
-    "logo": "/logos/bloodyad.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bloodyad",
     "logoKind": "generated",
     "tags": [
@@ -4097,7 +4097,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Descobre e monitora dispositivos Bluetooth próximos para auditoria autorizada.",
     "url": "https://www.kali.org/tools/blue-hydra/",
-    "logo": "/logos/blue-hydra.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "blue-hydra",
     "logoKind": "generated",
     "tags": [
@@ -4124,7 +4124,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Scanner Bluetooth para inventário e descoberta de dispositivos.",
     "url": "https://www.kali.org/tools/bluelog/",
-    "logo": "/logos/bluelog.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bluelog",
     "logoKind": "generated",
     "tags": [
@@ -4151,7 +4151,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Localiza dispositivos Bluetooth por análise de intensidade de sinal.",
     "url": "https://www.kali.org/tools/blueranger/",
-    "logo": "/logos/blueranger.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "blueranger",
     "logoKind": "generated",
     "tags": [
@@ -4178,7 +4178,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Ferramenta histórica de avaliação de exposição Bluetooth; usar apenas em laboratório isolado.",
     "url": "https://www.kali.org/tools/bluesnarfer/",
-    "logo": "/logos/bluesnarfer.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bluesnarfer",
     "logoKind": "generated",
     "tags": [
@@ -4205,7 +4205,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Gera listas de palavras personalizadas para auditorias de política de senhas.",
     "url": "https://www.kali.org/tools/bopscrk/",
-    "logo": "/logos/bopscrk.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bopscrk",
     "logoKind": "generated",
     "tags": [
@@ -4232,7 +4232,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Scanner SNMP de alto desempenho para inventário de dispositivos autorizados.",
     "url": "https://www.kali.org/tools/braa/",
-    "logo": "/logos/braa.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "braa",
     "logoKind": "generated",
     "tags": [
@@ -4259,7 +4259,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Orquestra auditorias de credenciais em serviços identificados por scanners.",
     "url": "https://www.kali.org/tools/brutespray/",
-    "logo": "/logos/brutespray.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "brutespray",
     "logoKind": "generated",
     "tags": [
@@ -4286,7 +4286,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Ferramenta de descoberta e inspeção de dispositivos Bluetooth.",
     "url": "https://www.kali.org/tools/btscanner/",
-    "logo": "/logos/btscanner.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "btscanner",
     "logoKind": "generated",
     "tags": [
@@ -4313,7 +4313,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Extrai artefatos e indicadores de imagens forenses sem depender do sistema de arquivos.",
     "url": "https://www.kali.org/tools/bulk-extractor/",
-    "logo": "/logos/bulk-extractor.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "bulk-extractor",
     "logoKind": "generated",
     "tags": [
@@ -4340,7 +4340,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Plataforma moderna de interceptação HTTP e testes de segurança web.",
     "url": "https://www.kali.org/tools/caido/",
-    "logo": "/logos/caido.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "caido",
     "logoKind": "generated",
     "tags": [
@@ -4367,7 +4367,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Plataforma de emulação adversária para validar controles defensivos e detecção.",
     "url": "https://www.kali.org/tools/caldera/",
-    "logo": "/logos/caldera.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "caldera",
     "logoKind": "generated",
     "tags": [
@@ -4394,7 +4394,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Gera dicionários a partir de conteúdo público de sites para auditorias autorizadas.",
     "url": "https://www.kali.org/tools/cewl/",
-    "logo": "/logos/cewl.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cewl",
     "logoKind": "generated",
     "tags": [
@@ -4421,7 +4421,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Investiga logs EVTX do Windows e procura eventos relevantes a incidentes.",
     "url": "https://www.kali.org/tools/chainsaw/",
-    "logo": "/logos/chainsaw.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "chainsaw",
     "logoKind": "generated",
     "tags": [
@@ -4448,7 +4448,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Edita ou recupera informações de contas em registros SAM/Windows offline.",
     "url": "https://www.kali.org/tools/chntpw/",
-    "logo": "/logos/chntpw.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "chntpw",
     "logoKind": "generated",
     "tags": [
@@ -4475,7 +4475,7 @@
     "subcategory": "Criptografia e esteganografia",
     "description": "Automatiza identificação e decodificação de cifras e codificações comuns.",
     "url": "https://www.kali.org/tools/ciphey/",
-    "logo": "/logos/ciphey.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ciphey",
     "logoKind": "generated",
     "tags": [
@@ -4502,7 +4502,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Verifica configurações e exposições conhecidas em equipamentos Cisco.",
     "url": "https://www.kali.org/tools/cisco-auditing-tool/",
-    "logo": "/logos/cisco-auditing-tool.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cisco-auditing-tool",
     "logoKind": "generated",
     "tags": [
@@ -4529,7 +4529,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Coleção histórica de verificações para vulnerabilidades em dispositivos Cisco; uso em laboratório.",
     "url": "https://www.kali.org/tools/cisco-global-exploiter/",
-    "logo": "/logos/cisco-global-exploiter.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cisco-global-exploiter",
     "logoKind": "generated",
     "tags": [
@@ -4556,7 +4556,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Ferramenta de reconhecimento de dispositivos Cisco e serviços associados.",
     "url": "https://www.kali.org/tools/cisco-torch/",
-    "logo": "/logos/cisco-torch.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cisco-torch",
     "logoKind": "generated",
     "tags": [
@@ -4583,7 +4583,7 @@
     "subcategory": "Cloud, containers e Kubernetes",
     "description": "Enumera possíveis recursos e buckets expostos em provedores de nuvem.",
     "url": "https://www.kali.org/tools/cloud-enum/",
-    "logo": "/logos/cloud-enum.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cloud-enum",
     "logoKind": "generated",
     "tags": [
@@ -4610,7 +4610,7 @@
     "subcategory": "Cloud, containers e Kubernetes",
     "description": "Descobre ativos de nuvem por enumeração de nomes e serviços.",
     "url": "https://www.kali.org/tools/cloudbrute/",
-    "logo": "/logos/cloudbrute.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cloudbrute",
     "logoKind": "generated",
     "tags": [
@@ -4637,7 +4637,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Automatiza testes de injeção de comandos em aplicações web autorizadas.",
     "url": "https://www.kali.org/tools/commix/",
-    "logo": "/logos/commix.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "commix",
     "logoKind": "generated",
     "tags": [
@@ -4664,7 +4664,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Ferramenta de auditoria de segurança WPA/WPA2 em redes de teste.",
     "url": "https://www.kali.org/tools/cowpatty/",
-    "logo": "/logos/cowpatty.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "cowpatty",
     "logoKind": "generated",
     "tags": [
@@ -4691,7 +4691,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Framework legado de avaliação de redes Windows; projeto sucedido pelo NetExec.",
     "url": "https://www.kali.org/tools/crackmapexec/",
-    "logo": "/logos/crackmapexec.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "crackmapexec",
     "logoKind": "generated",
     "tags": [
@@ -4718,7 +4718,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Gera wordlists com padrões e conjuntos de caracteres definidos.",
     "url": "https://www.kali.org/tools/crunch/",
-    "logo": "/logos/crunch.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "crunch",
     "logoKind": "generated",
     "tags": [
@@ -4745,7 +4745,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner e analisador de parâmetros para identificar riscos de XSS.",
     "url": "https://www.kali.org/tools/dalfox/",
-    "logo": "/logos/dalfox.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dalfox",
     "logoKind": "generated",
     "tags": [
@@ -4772,7 +4772,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Testa métodos e configurações WebDAV em servidores autorizados.",
     "url": "https://www.kali.org/tools/davtest/",
-    "logo": "/logos/davtest.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "davtest",
     "logoKind": "generated",
     "tags": [
@@ -4799,7 +4799,7 @@
     "subcategory": "Relatórios e gestão de pentest",
     "description": "Centraliza findings, vulnerabilidades, triagem e métricas de segurança.",
     "url": "https://www.kali.org/tools/defectdojo/",
-    "logo": "/logos/defectdojo.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "defectdojo",
     "logoKind": "generated",
     "tags": [
@@ -4826,7 +4826,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner de conteúdo web que procura diretórios e arquivos existentes.",
     "url": "https://www.kali.org/tools/dirb/",
-    "logo": "/logos/dirb.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dirb",
     "logoKind": "generated",
     "tags": [
@@ -4853,7 +4853,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Ferramenta gráfica de descoberta de diretórios e arquivos web.",
     "url": "https://www.kali.org/tools/dirbuster/",
-    "logo": "/logos/dirbuster.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dirbuster",
     "logoKind": "generated",
     "tags": [
@@ -4880,7 +4880,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Enumera diretórios e arquivos web por wordlists e extensões.",
     "url": "https://www.kali.org/tools/dirsearch/",
-    "logo": "/logos/dirsearch.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dirsearch",
     "logoKind": "generated",
     "tags": [
@@ -4907,7 +4907,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Coleta informações públicas de domínios, hosts e serviços de rede.",
     "url": "https://www.kali.org/tools/dmitry/",
-    "logo": "/logos/dmitry.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dmitry",
     "logoKind": "generated",
     "tags": [
@@ -4934,7 +4934,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Enumera registros DNS e informações de infraestrutura de domínios.",
     "url": "https://www.kali.org/tools/dnsenum/",
-    "logo": "/logos/dnsenum.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnsenum",
     "logoKind": "generated",
     "tags": [
@@ -4961,7 +4961,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Gera permutações de nomes DNS para ampliar descoberta de subdomínios.",
     "url": "https://www.kali.org/tools/dnsgen/",
-    "logo": "/logos/dnsgen.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnsgen",
     "logoKind": "generated",
     "tags": [
@@ -4988,7 +4988,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Enumera subdomínios por dicionário para avaliações de superfície externa.",
     "url": "https://www.kali.org/tools/dnsmap/",
-    "logo": "/logos/dnsmap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnsmap",
     "logoKind": "generated",
     "tags": [
@@ -5015,7 +5015,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Executa enumeração e auditoria de configurações DNS.",
     "url": "https://www.kali.org/tools/dnsrecon/",
-    "logo": "/logos/dnsrecon.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnsrecon",
     "logoKind": "generated",
     "tags": [
@@ -5042,7 +5042,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Rastreia a cadeia de resolução DNS até servidores autoritativos.",
     "url": "https://www.kali.org/tools/dnstracer/",
-    "logo": "/logos/dnstracer.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnstracer",
     "logoKind": "generated",
     "tags": [
@@ -5069,7 +5069,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Identifica domínios parecidos usados em typosquatting e phishing.",
     "url": "https://www.kali.org/tools/dnstwist/",
-    "logo": "/logos/dnstwist.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnstwist",
     "logoKind": "generated",
     "tags": [
@@ -5096,7 +5096,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Audita zonas DNS em busca de inconsistências e configurações incorretas.",
     "url": "https://www.kali.org/tools/dnswalk/",
-    "logo": "/logos/dnswalk.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dnswalk",
     "logoKind": "generated",
     "tags": [
@@ -5123,7 +5123,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Coleção de utilitários para análise de protocolos e tráfego em redes de laboratório.",
     "url": "https://www.kali.org/tools/dsniff/",
-    "logo": "/logos/dsniff.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dsniff",
     "logoKind": "generated",
     "tags": [
@@ -5150,7 +5150,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Extrai artefatos forenses de perfis de navegadores Mozilla.",
     "url": "https://www.kali.org/tools/dumpzilla/",
-    "logo": "/logos/dumpzilla.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "dumpzilla",
     "logoKind": "generated",
     "tags": [
@@ -5177,7 +5177,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Framework para auditoria de redes sem fio corporativas com autenticação 802.1X.",
     "url": "https://www.kali.org/tools/eaphammer/",
-    "logo": "/logos/eaphammer.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "eaphammer",
     "logoKind": "generated",
     "tags": [
@@ -5204,7 +5204,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Depurador gráfico para análise de programas e engenharia reversa.",
     "url": "https://www.kali.org/tools/edb-debugger/",
-    "logo": "/logos/edb-debugger.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "edb-debugger",
     "logoKind": "generated",
     "tags": [
@@ -5231,7 +5231,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Enumera informações SMB e Windows em redes autorizadas.",
     "url": "https://www.kali.org/tools/enum4linux/",
-    "logo": "/logos/enum4linux.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "enum4linux",
     "logoKind": "generated",
     "tags": [
@@ -5258,7 +5258,7 @@
     "subcategory": "VoIP e telecomunicações",
     "description": "Enumera extensões e serviços IAX em ambientes VoIP de teste.",
     "url": "https://www.kali.org/tools/enumiax/",
-    "logo": "/logos/enumiax.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "enumiax",
     "logoKind": "generated",
     "tags": [
@@ -5285,7 +5285,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Suite para análise de tráfego e testes de segurança em redes locais.",
     "url": "https://www.kali.org/tools/ettercap/",
-    "logo": "/logos/ettercap.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ettercap",
     "logoKind": "generated",
     "tags": [
@@ -5312,7 +5312,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Cliente de administração remota WinRM para laboratórios Windows autorizados.",
     "url": "https://www.kali.org/tools/evil-winrm/",
-    "logo": "/logos/evil-winrm.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "evil-winrm",
     "logoKind": "generated",
     "tags": [
@@ -5339,7 +5339,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Framework de simulação de phishing para treinamento e testes controlados; alto risco de abuso.",
     "url": "https://www.kali.org/tools/evilginx2/",
-    "logo": "/logos/evilginx2.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "evilginx2",
     "logoKind": "generated",
     "tags": [
@@ -5366,7 +5366,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Busca metadados de geolocalização em imagens publicamente acessíveis.",
     "url": "https://www.kali.org/tools/exiflooter/",
-    "logo": "/logos/exiflooter.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "exiflooter",
     "logoKind": "generated",
     "tags": [
@@ -5393,7 +5393,7 @@
     "subcategory": "Relatórios e gestão de pentest",
     "description": "Plataforma colaborativa para organizar resultados de avaliações de segurança.",
     "url": "https://www.kali.org/tools/faraday/",
-    "logo": "/logos/faraday.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "faraday",
     "logoKind": "generated",
     "tags": [
@@ -5420,7 +5420,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Ferramenta de reconhecimento DNS para identificar hosts e subdomínios.",
     "url": "https://github.com/mschwager/fierce",
-    "logo": "/logos/fierce.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "fierce",
     "logoKind": "generated",
     "tags": [
@@ -5447,7 +5447,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner recursivo de conteúdo web com suporte a filtros e extensões.",
     "url": "https://github.com/epi052/feroxbuster",
-    "logo": "/logos/feroxbuster.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "feroxbuster",
     "logoKind": "generated",
     "tags": [
@@ -5474,7 +5474,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Ferramenta de sondagem ICMP para verificar múltiplos hosts de uma rede.",
     "url": "https://fping.org/",
-    "logo": "/logos/fping.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "fping",
     "logoKind": "generated",
     "tags": [
@@ -5501,7 +5501,7 @@
     "subcategory": "Fuzzing e teste de protocolos",
     "description": "Coleção de payloads, padrões e listas para fuzzing e testes de aplicações.",
     "url": "https://github.com/fuzzdb-project/fuzzdb",
-    "logo": "/logos/fuzzdb.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "fuzzdb",
     "logoKind": "generated",
     "tags": [
@@ -5528,7 +5528,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Extensão do GDB com recursos para análise de exploração e depuração.",
     "url": "https://www.kali.org/tools/gdb-peda/",
-    "logo": "/logos/gdb-peda.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "gdb-peda",
     "logoKind": "generated",
     "tags": [
@@ -5555,7 +5555,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Extensão moderna do GDB para engenharia reversa e análise de binários.",
     "url": "https://www.kali.org/tools/gef/",
-    "logo": "/logos/gef.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "gef",
     "logoKind": "generated",
     "tags": [
@@ -5582,7 +5582,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Detecta segredos e credenciais acidentalmente expostos em repositórios Git.",
     "url": "https://www.kali.org/tools/gitleaks/",
-    "logo": "/logos/gitleaks.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "gitleaks",
     "logoKind": "generated",
     "tags": [
@@ -5609,7 +5609,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Analisa metadados e atividade pública de repositórios Git para OSINT.",
     "url": "https://www.kali.org/tools/gitxray/",
-    "logo": "/logos/gitxray.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "gitxray",
     "logoKind": "generated",
     "tags": [
@@ -5636,7 +5636,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Plataforma open source para campanhas autorizadas de conscientização contra phishing.",
     "url": "https://github.com/gophish/gophish",
-    "logo": "/logos/gophish.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "gophish",
     "logoKind": "generated",
     "tags": [
@@ -5663,7 +5663,7 @@
     "subcategory": "Cloud, containers e Kubernetes",
     "description": "Scanner de vulnerabilidades em imagens de containers, sistemas de arquivos e SBOMs.",
     "url": "https://github.com/anchore/grype",
-    "logo": "/logos/grype.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "grype",
     "logoKind": "generated",
     "tags": [
@@ -5690,7 +5690,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Sugere possíveis algoritmos de hash a partir de amostras.",
     "url": "https://www.kali.org/tools/hash-identifier/",
-    "logo": "/logos/hash-identifier.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "hash-identifier",
     "logoKind": "generated",
     "tags": [
@@ -5717,7 +5717,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Conjunto de utilitários auxiliares para preparação e transformação de hashes e wordlists.",
     "url": "https://www.kali.org/tools/hashcat-utils/",
-    "logo": "/logos/hashcat-utils.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "hashcat-utils",
     "logoKind": "generated",
     "tags": [
@@ -5744,7 +5744,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Variante de hostapd para avaliação de autenticação wireless em laboratórios.",
     "url": "https://www.kali.org/tools/hostapd-wpe/",
-    "logo": "/logos/hostapd-wpe.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "hostapd-wpe",
     "logoKind": "generated",
     "tags": [
@@ -5771,7 +5771,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Sonda hosts HTTP e coleta metadados úteis para inventário de aplicações web.",
     "url": "https://github.com/projectdiscovery/httpx",
-    "logo": "/logos/httpx.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "httpx",
     "logoKind": "generated",
     "tags": [
@@ -5798,7 +5798,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Descobre e identifica serviços IKE/IPsec em redes autorizadas.",
     "url": "https://www.kali.org/tools/ike-scan/",
-    "logo": "/logos/ike-scan.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ike-scan",
     "logoKind": "generated",
     "tags": [
@@ -5825,7 +5825,7 @@
     "subcategory": "Análise de malware e resposta a incidentes",
     "description": "Simula serviços de Internet para observar o comportamento de amostras em laboratório.",
     "url": "https://www.kali.org/tools/inetsim/",
-    "logo": "/logos/inetsim.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "inetsim",
     "logoKind": "generated",
     "tags": [
@@ -5852,7 +5852,7 @@
     "subcategory": "Hardware, SDR e IoT",
     "description": "Analisa sinais de rádio gravados para inspeção e pesquisa de espectro.",
     "url": "https://www.kali.org/tools/inspectrum/",
-    "logo": "/logos/inspectrum.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "inspectrum",
     "logoKind": "generated",
     "tags": [
@@ -5879,7 +5879,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Plataforma para coletar, armazenar e explorar resultados de reconhecimento de rede.",
     "url": "https://www.kali.org/tools/ivre/",
-    "logo": "/logos/ivre.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ivre",
     "logoKind": "generated",
     "tags": [
@@ -5906,7 +5906,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Interface gráfica para facilitar o uso do John the Ripper.",
     "url": "https://www.kali.org/tools/johnny/",
-    "logo": "/logos/johnny.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "johnny",
     "logoKind": "generated",
     "tags": [
@@ -5933,7 +5933,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner de segurança para instalações Joomla e componentes conhecidos.",
     "url": "https://github.com/OWASP/joomscan",
-    "logo": "/logos/joomscan.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "joomscan",
     "logoKind": "generated",
     "tags": [
@@ -5960,7 +5960,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Sistema de detecção e monitoramento wireless para Wi-Fi, Bluetooth e outras fontes.",
     "url": "https://www.kismetwireless.net/",
-    "logo": "/logos/kismet.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "kismet",
     "logoKind": "generated",
     "tags": [
@@ -5987,7 +5987,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Framework gráfico de reconhecimento e enumeração de serviços de rede.",
     "url": "https://www.kali.org/tools/legion/",
-    "logo": "/logos/legion.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "legion",
     "logoKind": "generated",
     "tags": [
@@ -6014,7 +6014,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Coleta e apresenta informações de domínio Active Directory via LDAP.",
     "url": "https://www.kali.org/tools/ldapdomaindump/",
-    "logo": "/logos/ldapdomaindump.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ldapdomaindump",
     "logoKind": "generated",
     "tags": [
@@ -6041,7 +6041,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Ferramenta de tunelamento para laboratórios e redes de teste autorizadas.",
     "url": "https://www.kali.org/tools/ligolo-ng/",
-    "logo": "/logos/ligolo-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ligolo-ng",
     "logoKind": "generated",
     "tags": [
@@ -6068,7 +6068,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Identifica possíveis caminhos de atualização e exposição a vulnerabilidades em Linux.",
     "url": "https://www.kali.org/tools/linux-exploit-suggester/",
-    "logo": "/logos/linux-exploit-suggester.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "linux-exploit-suggester",
     "logoKind": "generated",
     "tags": [
@@ -6095,7 +6095,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Utilitário para alterar endereços MAC em interfaces de rede compatíveis.",
     "url": "https://www.kali.org/tools/macchanger/",
-    "logo": "/logos/macchanger.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "macchanger",
     "logoKind": "generated",
     "tags": [
@@ -6122,7 +6122,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Plataforma de análise de vínculos e investigação OSINT com transformações.",
     "url": "https://www.kali.org/tools/maltego/",
-    "logo": "/logos/maltego.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "maltego",
     "logoKind": "generated",
     "tags": [
@@ -6149,7 +6149,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Scanner de portas de alta velocidade para inventário controlado de grandes redes.",
     "url": "https://www.kali.org/tools/masscan/",
-    "logo": "/logos/masscan.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "masscan",
     "logoKind": "generated",
     "tags": [
@@ -6176,7 +6176,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Resolvedor DNS de alto desempenho para enumeração em larga escala.",
     "url": "https://www.kali.org/tools/massdns/",
-    "logo": "/logos/massdns.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "massdns",
     "logoKind": "generated",
     "tags": [
@@ -6203,7 +6203,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Ferramenta de testes de robustez de redes 802.11 em ambientes isolados.",
     "url": "https://www.kali.org/tools/mdk4/",
-    "logo": "/logos/mdk4.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "mdk4",
     "logoKind": "generated",
     "tags": [
@@ -6230,7 +6230,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Framework modular para auditoria de autenticação em serviços de rede.",
     "url": "https://www.kali.org/tools/medusa/",
-    "logo": "/logos/medusa.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "medusa",
     "logoKind": "generated",
     "tags": [
@@ -6257,7 +6257,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Coleta metadados de documentos públicos para apoiar investigações OSINT.",
     "url": "https://www.kali.org/tools/metagoofil/",
-    "logo": "/logos/metagoofil.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "metagoofil",
     "logoKind": "generated",
     "tags": [
@@ -6284,7 +6284,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Framework de avaliação de segurança para redes Windows, SMB, LDAP e outros serviços.",
     "url": "https://github.com/Pennyw0rth/NetExec",
-    "logo": "/logos/netexec.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "netexec",
     "logoKind": "generated",
     "tags": [
@@ -6311,7 +6311,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Scanner baseado em templates para identificar exposições e vulnerabilidades conhecidas.",
     "url": "https://github.com/projectdiscovery/nuclei",
-    "logo": "/logos/nuclei.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "nuclei",
     "logoKind": "generated",
     "tags": [
@@ -6338,7 +6338,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Framework de avaliação de segurança de bancos Oracle em ambientes autorizados.",
     "url": "https://www.kali.org/tools/odat/",
-    "logo": "/logos/odat.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "odat",
     "logoKind": "generated",
     "tags": [
@@ -6365,7 +6365,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Scanner SNMP para inventário e auditoria de dispositivos de rede.",
     "url": "https://www.kali.org/tools/onesixtyone/",
-    "logo": "/logos/onesixtyone.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "onesixtyone",
     "logoKind": "generated",
     "tags": [
@@ -6392,7 +6392,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Scanner de vulnerabilidades mantido pelo ecossistema Greenbone para avaliações autenticadas e não autenticadas.",
     "url": "https://www.greenbone.net/en/community-edition/",
-    "logo": "/logos/openvas.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "openvas",
     "logoKind": "generated",
     "tags": [
@@ -6419,7 +6419,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Scanner de segurança para bancos Oracle e serviços associados.",
     "url": "https://www.kali.org/tools/oscanner/",
-    "logo": "/logos/oscanner.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "oscanner",
     "logoKind": "generated",
     "tags": [
@@ -6446,7 +6446,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Coleção de ferramentas para investigação de identidades e pegadas digitais públicas.",
     "url": "https://www.kali.org/tools/osrframework/",
-    "logo": "/logos/osrframework.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "osrframework",
     "logoKind": "generated",
     "tags": [
@@ -6473,7 +6473,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Identifica sistemas operacionais e características de conexões por análise passiva de tráfego.",
     "url": "https://github.com/p0f/p0f",
-    "logo": "/logos/p0f.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "p0f",
     "logoKind": "generated",
     "tags": [
@@ -6500,7 +6500,7 @@
     "subcategory": "Auditoria de senhas e autenticação",
     "description": "Framework modular para auditorias de autenticação e protocolos em laboratório.",
     "url": "https://www.kali.org/tools/patator/",
-    "logo": "/logos/patator.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "patator",
     "logoKind": "generated",
     "tags": [
@@ -6527,7 +6527,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Coleção de scripts de enumeração de permissões e configurações para auditorias locais.",
     "url": "https://www.kali.org/tools/peass-ng/",
-    "logo": "/logos/peass-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "peass-ng",
     "logoKind": "generated",
     "tags": [
@@ -6554,7 +6554,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Biblioteca Python para analisar cabeçalhos e estruturas de executáveis PE.",
     "url": "https://github.com/erocarrera/pefile",
-    "logo": "/logos/pefile.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "pefile",
     "logoKind": "generated",
     "tags": [
@@ -6581,7 +6581,7 @@
     "subcategory": "Análise de malware e resposta a incidentes",
     "description": "Analisa arquivos PE suspeitos e extrai indicadores estáticos.",
     "url": "https://www.kali.org/tools/peframe/",
-    "logo": "/logos/peframe.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "peframe",
     "logoKind": "generated",
     "tags": [
@@ -6608,7 +6608,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Inspeciona objetos e estruturas internas de documentos PDF.",
     "url": "https://www.kali.org/tools/pdf-parser/",
-    "logo": "/logos/pdf-parser.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "pdf-parser",
     "logoKind": "generated",
     "tags": [
@@ -6635,7 +6635,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Identifica palavras-chave e estruturas suspeitas em arquivos PDF.",
     "url": "https://www.kali.org/tools/pdfid/",
-    "logo": "/logos/pdfid.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "pdfid",
     "logoKind": "generated",
     "tags": [
@@ -6662,7 +6662,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Crawler OSINT para coletar URLs, arquivos e informações públicas de sites.",
     "url": "https://www.kali.org/tools/photon/",
-    "logo": "/logos/photon.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "photon",
     "logoKind": "generated",
     "tags": [
@@ -6689,7 +6689,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Proxy HTTP/HTTPS para observar, registrar e manipular tráfego em testes.",
     "url": "https://www.kali.org/tools/proxify/",
-    "logo": "/logos/proxify.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "proxify",
     "logoKind": "generated",
     "tags": [
@@ -6716,7 +6716,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Encaminha conexões de aplicações por cadeias de proxies compatíveis.",
     "url": "https://www.kali.org/tools/proxychains-ng/",
-    "logo": "/logos/proxychains-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "proxychains-ng",
     "logoKind": "generated",
     "tags": [
@@ -6743,7 +6743,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Plataforma de pesquisa e auditoria de tecnologias RFID/NFC com hardware compatível.",
     "url": "https://www.kali.org/tools/proxmark3/",
-    "logo": "/logos/proxmark3.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "proxmark3",
     "logoKind": "generated",
     "tags": [
@@ -6770,7 +6770,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Framework de engenharia reversa para desmontagem, depuração e análise de binários.",
     "url": "https://github.com/radareorg/radare2",
-    "logo": "/logos/radare2.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "radare2",
     "logoKind": "generated",
     "tags": [
@@ -6797,7 +6797,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Framework modular para coleta e organização de informações OSINT.",
     "url": "https://github.com/lanmaster53/recon-ng",
-    "logo": "/logos/recon-ng.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "recon-ng",
     "logoKind": "generated",
     "tags": [
@@ -6824,7 +6824,7 @@
     "subcategory": "Active Directory e ambientes Windows",
     "description": "Ferramenta de auditoria de protocolos de resolução de nomes em redes Windows de laboratório.",
     "url": "https://github.com/lgandx/Responder",
-    "logo": "/logos/responder.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "responder",
     "logoKind": "generated",
     "tags": [
@@ -6851,7 +6851,7 @@
     "subcategory": "Engenharia reversa e análise de binários",
     "description": "Framework de engenharia reversa derivado do radare2 com foco em análise de binários.",
     "url": "https://github.com/rizinorg/rizin",
-    "logo": "/logos/rizin.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "rizin",
     "logoKind": "generated",
     "tags": [
@@ -6878,7 +6878,7 @@
     "subcategory": "Hardware, SDR e IoT",
     "description": "Framework para avaliação de segurança de roteadores e dispositivos embarcados.",
     "url": "https://github.com/threat9/routersploit",
-    "logo": "/logos/routersploit.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "routersploit",
     "logoKind": "generated",
     "tags": [
@@ -6905,7 +6905,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Ferramenta de file carving para recuperar arquivos de imagens e dispositivos.",
     "url": "https://www.kali.org/tools/scalpel/",
-    "logo": "/logos/scalpel.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "scalpel",
     "logoKind": "generated",
     "tags": [
@@ -6932,7 +6932,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Biblioteca interativa para construir, enviar e analisar pacotes de rede.",
     "url": "https://www.kali.org/tools/scapy/",
-    "logo": "/logos/scapy.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "scapy",
     "logoKind": "generated",
     "tags": [
@@ -6959,7 +6959,7 @@
     "subcategory": "Cloud, containers e Kubernetes",
     "description": "Audita configurações e permissões de ambientes de nuvem pública.",
     "url": "https://github.com/nccgroup/ScoutSuite",
-    "logo": "/logos/scoutsuite.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "scoutsuite",
     "logoKind": "generated",
     "tags": [
@@ -6986,7 +6986,7 @@
     "subcategory": "Fuzzing e teste de protocolos",
     "description": "Coleção de wordlists para reconhecimento, fuzzing e testes de segurança.",
     "url": "https://www.kali.org/tools/seclists/",
-    "logo": "/logos/seclists.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "seclists",
     "logoKind": "generated",
     "tags": [
@@ -7013,7 +7013,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Análise estática de código com regras customizáveis para encontrar padrões inseguros.",
     "url": "https://github.com/semgrep/semgrep",
-    "logo": "/logos/semgrep.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "semgrep",
     "logoKind": "generated",
     "tags": [
@@ -7040,7 +7040,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Kit de simulação de engenharia social para treinamento e conscientização autorizados.",
     "url": "https://www.kali.org/tools/setoolkit/",
-    "logo": "/logos/setoolkit.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "setoolkit",
     "logoKind": "generated",
     "tags": [
@@ -7067,7 +7067,7 @@
     "subcategory": "Análise de malware e resposta a incidentes",
     "description": "Ferramenta de laboratório para estudar técnicas de injeção e detecção em executáveis.",
     "url": "https://www.kali.org/tools/shellter/",
-    "logo": "/logos/shellter.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "shellter",
     "logoKind": "generated",
     "tags": [
@@ -7094,7 +7094,7 @@
     "subcategory": "VoIP e telecomunicações",
     "description": "Conjunto de ferramentas para inventário e auditoria de serviços SIP em laboratório.",
     "url": "https://www.kali.org/tools/sipvicious/",
-    "logo": "/logos/sipvicious.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sipvicious",
     "logoKind": "generated",
     "tags": [
@@ -7121,7 +7121,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner ativo de aplicações web para identificar conteúdo e possíveis problemas.",
     "url": "https://www.kali.org/tools/skipfish/",
-    "logo": "/logos/skipfish.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "skipfish",
     "logoKind": "generated",
     "tags": [
@@ -7148,7 +7148,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Coleção de ferramentas forenses para analisar sistemas de arquivos e imagens de disco.",
     "url": "https://www.kali.org/tools/sleuthkit/",
-    "logo": "/logos/sleuthkit.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sleuthkit",
     "logoKind": "generated",
     "tags": [
@@ -7175,7 +7175,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Framework semi-automático e modular para coleta de inteligência de fontes abertas.",
     "url": "https://github.com/kpcyrd/sn0int",
-    "logo": "/logos/sn0int.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sn0int",
     "logoKind": "generated",
     "tags": [
@@ -7202,7 +7202,7 @@
     "subcategory": "Enumeração de redes e serviços",
     "description": "Consulta informações SNMP para inventário e auditoria de dispositivos.",
     "url": "https://github.com/pwnieexpress/creds",
-    "logo": "/logos/snmp-check.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "snmp-check",
     "logoKind": "generated",
     "tags": [
@@ -7229,7 +7229,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Plataforma automatizada de OSINT com módulos para domínios, IPs e identidades.",
     "url": "https://www.kali.org/tools/spiderfoot/",
-    "logo": "/logos/spiderfoot.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "spiderfoot",
     "logoKind": "generated",
     "tags": [
@@ -7256,7 +7256,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Ferramenta especializada para avaliação de injeção SQL em aplicações Microsoft SQL Server.",
     "url": "https://www.kali.org/tools/sqlninja/",
-    "logo": "/logos/sqlninja.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sqlninja",
     "logoKind": "generated",
     "tags": [
@@ -7283,7 +7283,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Analisa protocolos, cifras e configurações TLS/SSL de serviços.",
     "url": "https://www.kali.org/tools/sslscan/",
-    "logo": "/logos/sslscan.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sslscan",
     "logoKind": "generated",
     "tags": [
@@ -7310,7 +7310,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Audita configurações TLS de servidores e identifica configurações criptográficas fracas.",
     "url": "https://github.com/nabla-c0d3/sslyze",
-    "logo": "/logos/sslyze.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "sslyze",
     "logoKind": "generated",
     "tags": [
@@ -7337,7 +7337,7 @@
     "subcategory": "Criptografia e esteganografia",
     "description": "Oculta e extrai dados em imagens e arquivos de áudio compatíveis.",
     "url": "https://www.kali.org/tools/steghide/",
-    "logo": "/logos/steghide.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "steghide",
     "logoKind": "generated",
     "tags": [
@@ -7364,7 +7364,7 @@
     "subcategory": "Criptografia e esteganografia",
     "description": "Analisa arquivos Steghide e automatiza testes de senha em laboratório.",
     "url": "https://github.com/RickdeJager/stegseek",
-    "logo": "/logos/stegseek.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "stegseek",
     "logoKind": "generated",
     "tags": [
@@ -7391,7 +7391,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Motor IDS/IPS e monitoramento de segurança de rede com regras e telemetria.",
     "url": "https://suricata.io/",
-    "logo": "/logos/suricata.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "suricata",
     "logoKind": "generated",
     "tags": [
@@ -7418,7 +7418,7 @@
     "subcategory": "Análise de vulnerabilidades",
     "description": "Verifica suporte TLS/SSL, cifras e problemas conhecidos em serviços.",
     "url": "https://www.kali.org/tools/testssl.sh/",
-    "logo": "/logos/testssl-sh.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "testssl-sh",
     "logoKind": "generated",
     "tags": [
@@ -7445,7 +7445,7 @@
     "subcategory": "Reconhecimento e OSINT",
     "description": "Coleta nomes, e-mails, subdomínios e informações públicas de múltiplas fontes.",
     "url": "https://www.kali.org/tools/theharvester/",
-    "logo": "/logos/theharvester.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "theharvester",
     "logoKind": "generated",
     "tags": [
@@ -7472,7 +7472,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Executa verificações de segurança e auditoria de configuração em sistemas Unix.",
     "url": "https://www.kali.org/tools/tiger/",
-    "logo": "/logos/tiger.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "tiger",
     "logoKind": "generated",
     "tags": [
@@ -7499,7 +7499,7 @@
     "subcategory": "Captura, análise e manipulação de tráfego",
     "description": "Versão em linha de comando do Wireshark para captura e análise de protocolos.",
     "url": "https://www.wireshark.org/docs/man-pages/tshark.html",
-    "logo": "/logos/tshark.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "tshark",
     "logoKind": "generated",
     "tags": [
@@ -7526,7 +7526,7 @@
     "subcategory": "Cloud, containers e Kubernetes",
     "description": "Scanner de vulnerabilidades, misconfigurations e segredos em imagens e repositórios.",
     "url": "https://www.kali.org/tools/trivy/",
-    "logo": "/logos/trivy.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "trivy",
     "logoKind": "generated",
     "tags": [
@@ -7553,7 +7553,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Detecta segredos em repositórios, histórico Git e fontes de dados.",
     "url": "https://www.kali.org/tools/trufflehog/",
-    "logo": "/logos/trufflehog.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "trufflehog",
     "logoKind": "generated",
     "tags": [
@@ -7580,7 +7580,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Plataforma SDR para pesquisa e análise de Bluetooth com hardware Ubertooth.",
     "url": "https://www.kali.org/tools/ubertooth/",
-    "logo": "/logos/ubertooth.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "ubertooth",
     "logoKind": "generated",
     "tags": [
@@ -7607,7 +7607,7 @@
     "subcategory": "Forense digital e recuperação",
     "description": "Framework de memória forense para investigar dumps de RAM e incidentes.",
     "url": "https://github.com/volatilityfoundation/volatility3",
-    "logo": "/logos/volatility3.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "volatility3",
     "logoKind": "generated",
     "tags": [
@@ -7634,7 +7634,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Scanner web black-box para identificar vulnerabilidades em aplicações autorizadas.",
     "url": "https://www.kali.org/tools/wapiti/",
-    "logo": "/logos/wapiti.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "wapiti",
     "logoKind": "generated",
     "tags": [
@@ -7661,7 +7661,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Automatiza auditorias de segurança Wi-Fi em laboratórios com adaptadores compatíveis.",
     "url": "https://github.com/derv82/wifite",
-    "logo": "/logos/wifite.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "wifite",
     "logoKind": "generated",
     "tags": [
@@ -7688,7 +7688,7 @@
     "subcategory": "Wireless, Bluetooth e RFID",
     "description": "Framework de simulação de ameaças e treinamento de segurança Wi-Fi.",
     "url": "https://github.com/wifiphisher/wifiphisher",
-    "logo": "/logos/wifiphisher.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "wifiphisher",
     "logoKind": "generated",
     "tags": [
@@ -7715,7 +7715,7 @@
     "subcategory": "Monitoramento, defesa e hardening",
     "description": "Framework de monitoramento de segurança de rede e análise de eventos de tráfego.",
     "url": "https://zeek.org/",
-    "logo": "/logos/zeek.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "zeek",
     "logoKind": "generated",
     "tags": [
@@ -7742,7 +7742,7 @@
     "subcategory": "Segurança de aplicações web",
     "description": "Proxy e scanner open source para testes de segurança de aplicações web.",
     "url": "https://www.zaproxy.org/",
-    "logo": "/logos/zaproxy.svg",
+    "logo": "/logos/generated-security.svg",
     "logoLabel": "zaproxy",
     "logoKind": "generated",
     "tags": [
