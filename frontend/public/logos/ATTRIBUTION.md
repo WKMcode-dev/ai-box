@@ -125,6 +125,33 @@ Quando não há símbolo próprio verificado, o catálogo mostra o nome como tex
 | Deep Hat | /logos/deephath.svg |
 | OriginKit | Nome em texto; SVG próprio pendente |
 
+| **Cibersegurança — ferramentas** | Identificação textual para todas as entradas; sem logos de terceiros não verificadas |
+| mitmproxy | Nome em texto; SVG próprio pendente |
+| Wireshark | Nome em texto; SVG próprio pendente |
+| Ghidra | Nome em texto; SVG próprio pendente |
+| x64dbg | Nome em texto; SVG próprio pendente |
+| FakeNet-NG | Nome em texto; SVG próprio pendente |
+| tcpdump | Nome em texto; SVG próprio pendente |
+| Burp Suite | Nome em texto; SVG próprio pendente |
+| Nmap | Nome em texto; SVG próprio pendente |
+| OWASP ZAP | Nome em texto; SVG próprio pendente |
+| sqlmap | Nome em texto; SVG próprio pendente |
+| ffuf | Nome em texto; SVG próprio pendente |
+| Gobuster | Nome em texto; SVG próprio pendente |
+| Hashcat | Nome em texto; SVG próprio pendente |
+| John the Ripper | Nome em texto; SVG próprio pendente |
+| Autopsy | Nome em texto; SVG próprio pendente |
+| JADX | Nome em texto; SVG próprio pendente |
+| Apktool | Nome em texto; SVG próprio pendente |
+| YARA | Nome em texto; SVG próprio pendente |
+| ExifTool | Nome em texto; SVG próprio pendente |
+| TestDisk & PhotoRec | Nome em texto; SVG próprio pendente |
+| Impacket | Nome em texto; SVG próprio pendente |
+| enum4linux-ng | Nome em texto; SVG próprio pendente |
+| Nikto | Nome em texto; SVG próprio pendente |
+| WhatWeb | Nome em texto; SVG próprio pendente |
+| WAFW00F | Nome em texto; SVG próprio pendente |
+
 ## Mapeamentos de origem das coleções
 
 - ollama.svg ← icons/ollama.svg
