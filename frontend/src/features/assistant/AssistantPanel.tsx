@@ -1,4 +1,4 @@
-import {useMemo,useState,type FormEvent,type RefObject} from "react";import type {Tool} from "@ai-box/contracts";import {Icon} from "../../../components/ui/Icon";
+import {useMemo,useState,type FormEvent,type RefObject} from "react";import type {Tool} from "@ai-box/contracts";import {Icon} from "../../components/ui/Icon";
 type Source=Pick<Tool,"id"|"name"|"category"|"url">;type Message={role:"user"|"assistant";content:string;sources?:Source[]};
 interface Props{tools:Tool[];inputRef:RefObject<HTMLInputElement|null>}
 function normalize(v:string){return v.normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase()}
