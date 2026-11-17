@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.3.9",
+  "version": "1.4.0",
   "private": true,
-  "description": "A.I BOX: 297 ferramentas, incluindo 179 ferramentas de Cibersegurança catalogadas por área, com origem Kali Linux, projetos complementares e compatibilidade variável com Ubuntu/Linux.",
+  "description": "A.I BOX: 118 inteligências artificiais e 179 ferramentas de Cibersegurança em seções independentes, com identidade SVG e interface renovada.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
