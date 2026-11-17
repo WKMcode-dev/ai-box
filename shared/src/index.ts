@@ -9,15 +9,24 @@ export const TOOL_CATEGORIES = [
   "Cibersegurança",
 ] as const;
 export const SECURITY_SUBCATEGORIES = [
-  "Reconhecimento",
+  "Reconhecimento e OSINT",
+  "Enumeração de redes e serviços",
   "Análise de vulnerabilidades",
-  "Ferramentas web",
-  "Captura e análise de tráfego",
-  "Engenharia reversa",
-  "Forense digital",
-  "Auditoria de senhas",
-  "Análise de malware",
-  "Protocolos e serviços de rede",
+  "Segurança de aplicações web",
+  "Captura, análise e manipulação de tráfego",
+  "Auditoria de senhas e autenticação",
+  "Engenharia reversa e análise de binários",
+  "Análise de malware e resposta a incidentes",
+  "Forense digital e recuperação",
+  "Active Directory e ambientes Windows",
+  "Wireless, Bluetooth e RFID",
+  "Hardware, SDR e IoT",
+  "Fuzzing e teste de protocolos",
+  "Criptografia e esteganografia",
+  "Cloud, containers e Kubernetes",
+  "Monitoramento, defesa e hardening",
+  "VoIP e telecomunicações",
+  "Relatórios e gestão de pentest",
 ] as const;
 export type SecuritySubcategory = (typeof SECURITY_SUBCATEGORIES)[number];
 export type AccessMode =
@@ -28,6 +37,7 @@ export interface Tool {
   maker: string;
   category: (typeof TOOL_CATEGORIES)[number];
   subcategory?: SecuritySubcategory;
+  sourceDistro?: "Kali" | "Ubuntu" | "Complementar";
   description: string;
   url: string;
   logo: string | null;
