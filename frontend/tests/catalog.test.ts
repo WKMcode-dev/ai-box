@@ -69,3 +69,17 @@ test("categoria Cibersegurança filtra somente as ferramentas de segurança", ()
   assert.ok(results.some((tool) => tool.id === "mitmproxy"));
   assert.ok(!results.some((tool) => tool.id === "originkit"));
 });
+
+test("ferramentas de Cibersegurança possuem subcategorias e ficam separadas por área", () => {
+  const results = filterTools(tools, "Cibersegurança", "", "az");
+  const grouped = new Map<string, Tool[]>();
+  for (const tool of results) {
+    assert.ok(tool.subcategory);
+    const list = grouped.get(tool.subcategory!) ?? [];
+    list.push(tool);
+    grouped.set(tool.subcategory!, list);
+  }
+  assert.equal(grouped.size, 9);
+  assert.equal(grouped.get("Engenharia reversa")?.length, 4);
+  assert.equal(grouped.get("Captura e análise de tráfego")?.length, 3);
+});
