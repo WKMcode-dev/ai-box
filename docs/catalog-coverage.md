@@ -41,3 +41,8 @@ A revisão de 17/11/2026 adicionou uma categoria própria com 25 ferramentas. A 
 ## Cibersegurança Linux
 
 O catálogo foi ampliado com uma seleção extensa do índice Kali e ferramentas complementares do ecossistema Linux/Ubuntu. A cobertura não equivale a importar todos os pacotes Debian/Kali: dependências, bibliotecas, metapacotes, ferramentas genéricas de sistema e componentes sem função de segurança independente ficam fora do catálogo. A lista oficial deve ser revisada periodicamente: https://www.kali.org/tools/all-tools/.
+
+
+## Identidade visual e separação dos catálogos
+
+A versão 1.4.0 oferece SVG para todas as 297 entradas. Logos oficiais verificados permanecem como marca; quando não há logo oficial disponível, é usado um símbolo ilustrativo SVG próprio. A navegação e a contagem separam 118 IAs das 179 ferramentas de Cibersegurança.
