@@ -2,6 +2,7 @@ import { PricingFilter } from "./PricingFilter";
 import { AccessFilter } from "./AccessFilter";
 import type { RefObject } from "react";
 import type { Tool } from "@ai-box/contracts";
+import { SECURITY_SUBCATEGORIES } from "@ai-box/contracts";
 import { Icon } from "../../../components/ui/Icon";
 import { useCatalog } from "../hooks/useCatalog";
 import { CatalogFilters } from "./CatalogFilters";
@@ -24,6 +25,7 @@ export function CatalogSection({ catalog, searchRef, onSelect }: Props) {
     query,
     clearFilters,
   } = catalog;
+  const groupedSecurity = category === "Cibersegurança";
   return (
     <section id="catalogo" className="catalog" aria-busy={loading}>
       <div className="section-heading">
@@ -52,7 +54,9 @@ export function CatalogSection({ catalog, searchRef, onSelect }: Props) {
         <span aria-live="polite">
           {query
             ? `Resultados para “${query}”`
-            : "Encontre seu próximo favorito"}
+            : groupedSecurity
+              ? "Explore por área de atuação"
+              : "Encontre seu próximo favorito"}
         </span>
       </div>
       {loading ? (
@@ -64,11 +68,44 @@ export function CatalogSection({ catalog, searchRef, onSelect }: Props) {
           actionLabel="Tentar novamente"
         />
       ) : results.length ? (
-        <div className="cards">
-          {results.map((tool) => (
-            <ToolCard key={tool.id} tool={tool} onSelect={onSelect} />
-          ))}
-        </div>
+        groupedSecurity ? (
+          <div className="security-groups">
+            {SECURITY_SUBCATEGORIES.map((subcategory) => {
+              const items = results.filter(
+                (tool) => tool.subcategory === subcategory,
+              );
+              if (!items.length) return null;
+              return (
+                <section
+                  className="security-group"
+                  key={subcategory}
+                  aria-label={subcategory}
+                >
+                  <div className="security-group-heading">
+                    <div>
+                      <span className="security-group-kicker">ÁREA DE ATUAÇÃO</span>
+                      <h3>{subcategory}</h3>
+                    </div>
+                    <span className="security-group-count">
+                      {items.length} {items.length === 1 ? "ferramenta" : "ferramentas"}
+                    </span>
+                  </div>
+                  <div className="cards">
+                    {items.map((tool) => (
+                      <ToolCard key={tool.id} tool={tool} onSelect={onSelect} />
+                    ))}
+                  </div>
+                </section>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="cards">
+            {results.map((tool) => (
+              <ToolCard key={tool.id} tool={tool} onSelect={onSelect} />
+            ))}
+          </div>
+        )
       ) : (
         <CatalogState
           title="Nenhuma IA encontrada por aqui."
