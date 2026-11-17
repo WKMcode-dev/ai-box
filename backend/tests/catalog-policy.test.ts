@@ -51,6 +51,9 @@ test("categoria Cibersegurança contém a seleção Windows/WSL documentada", as
   assert.equal(security.length, expected.length);
   assert.deepEqual(new Set(security.map((tool) => tool.id)), new Set(expected));
   assert.ok(security.every((tool) => tool.logoKind === "text" && tool.logo === null));
+  assert.ok(security.every((tool) => typeof tool.subcategory === "string" && tool.subcategory.length > 0));
+  assert.equal(new Set(security.map((tool) => tool.subcategory)).size, 9);
+  assert.equal(security.find((tool) => tool.id === "wireshark")?.subcategory, "Captura e análise de tráfego");
   assert.ok(security.some((tool) => tool.id === "tcpdump" && tool.access === "local"));
   assert.ok(security.some((tool) => tool.id === "burp-suite" && tool.pricing === "freemium"));
 });
