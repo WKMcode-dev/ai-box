@@ -9,7 +9,8 @@ for (const target of process.argv.slice(2)) {
   if (JSON.stringify(data.tools) !== JSON.stringify(original))
     throw new Error(`${target}: catálogo incompleto`);
   for (const tool of data.tools)
-    if (tool.logo) await access(new URL(tool.logo.replace(/^\//, ""), root));
+    if (tool.logo && tool.logoKind !== "generated")
+      await access(new URL(tool.logo.replace(/^\//, ""), root));
   const scripts = [
     ...html.matchAll(/(?:src|href)="([^"]+\.(?:js|css|svg))"/g),
   ].map((match) => match[1]);
