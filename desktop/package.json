@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.4.0",
   "private": true,
-  "description": "A.I BOX 1.4.0: 118 IAs, 179 ferramentas de segurança, SVGs oficiais e símbolos inline, filtros por área e UI renovada; validação de catálogo ajustada.",
+  "description": "A.I BOX: catálogo de IAs e ferramentas de Cibersegurança em seções independentes, com símbolos SVG e filtros por área.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
