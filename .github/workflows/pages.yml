@@ -26,6 +26,7 @@ jobs:
       - run: npm test
       - run: npm run build:pages
         env:
+          VITE_ASSISTANT_API_URL: ${{ vars.VITE_ASSISTANT_API_URL }}
           PAGES_BASE_PATH: /${{ github.event.repository.name }}/
       - run: node scripts/verify-static.mjs pages
         env:
