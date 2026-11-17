@@ -44,16 +44,17 @@ test("OriginKit está presente como framework e informa os limites do plano grat
 });
 
 
-test("categoria Cibersegurança contém a seleção Windows/WSL documentada", async () => {
+test("catálogo de Cibersegurança mantém origem, subcategoria e IDs únicos", async () => {
   const tools = await readCatalog();
   const security = tools.filter((tool) => tool.category === "Cibersegurança");
-  const expected = ["mitmproxy","wireshark","ghidra","x64dbg","fakenet-ng","tcpdump","burp-suite","nmap","owasp-zap","sqlmap","ffuf","gobuster","hashcat","john-the-ripper","autopsy","jadx","apktool","yara","exiftool","testdisk","impacket","enum4linux-ng","nikto","whatweb","wafw00f"];
-  assert.equal(security.length, expected.length);
-  assert.deepEqual(new Set(security.map((tool) => tool.id)), new Set(expected));
-  assert.ok(security.every((tool) => tool.logoKind === "text" && tool.logo === null));
+  assert.ok(security.length > 100);
+  assert.equal(new Set(security.map((tool) => tool.id)).size, security.length);
   assert.ok(security.every((tool) => typeof tool.subcategory === "string" && tool.subcategory.length > 0));
-  assert.equal(new Set(security.map((tool) => tool.subcategory)).size, 9);
+  assert.ok(security.every((tool) => ["Kali", "Ubuntu", "Complementar", undefined].includes(tool.sourceDistro)));
+  assert.ok(security.some((tool) => tool.id === "aircrack-ng"));
+  assert.ok(security.some((tool) => tool.id === "bloodhound"));
+  assert.ok(security.some((tool) => tool.id === "volatility3"));
+  assert.ok(security.some((tool) => tool.id === "suricata" && tool.sourceDistro === "Complementar"));
   assert.equal(security.find((tool) => tool.id === "wireshark")?.subcategory, "Captura e análise de tráfego");
-  assert.ok(security.some((tool) => tool.id === "tcpdump" && tool.access === "local"));
   assert.ok(security.some((tool) => tool.id === "burp-suite" && tool.pricing === "freemium"));
 });
