@@ -1,4 +1,4 @@
-import { TOOL_CATEGORIES, type Tool } from "@ai-box/contracts";
+import { SECURITY_SUBCATEGORIES, TOOL_CATEGORIES, type Tool } from "@ai-box/contracts";
 const fields = [
   "id",
   "name",
@@ -40,6 +40,12 @@ export function validateCatalog(value: unknown): Tool[] {
       throw new Error("Caminho de logo inválido.");
     if (!TOOL_CATEGORIES.includes(entry.category))
       throw new Error("Categoria inválida.");
+    if (
+      (entry.category === "Cibersegurança" &&
+        !SECURITY_SUBCATEGORIES.includes(entry.subcategory)) ||
+      (entry.category !== "Cibersegurança" && entry.subcategory !== undefined)
+    )
+      throw new Error(`Subcategoria inválida para ${entry.id}: ${entry.subcategory ?? "ausente"}.`);
     if (
       !["local", "self-hosted", "browser", "online", "desktop"].includes(
         entry.access,
