@@ -545,3 +545,7 @@ body:has(.desktop-titlebar) .sidebar-label {
     gap: 10px;
   }
 }
+
+
+/* Compact Windows titlebar; hologram, floating cube and Shift cards remain unchanged. */
+.desktop-titlebar{height:44px;min-height:44px;padding-inline:16px}body:has(.desktop-titlebar) .shell{padding-top:44px}body:has(.desktop-titlebar) .sidebar{top:44px;padding-top:20px}.desktop-titlebar .titlebar-logo,.desktop-titlebar .titlebar-logo img{width:25px;height:25px}.desktop-titlebar .titlebar-brand strong{font-size:15px}.desktop-titlebar .window-controls{margin-right:-16px}.desktop-titlebar .window-controls button{width:40px;min-width:40px;padding:0;display:grid;place-items:center}.desktop-titlebar .window-controls button svg{width:13px;height:13px}.security-counter{display:flex;align-items:center;gap:10px;border:1px solid #6fd99b36;border-radius:8px;padding:10px 11px;color:#88e4ac;background:#10201880}.security-counter span{display:flex;flex-direction:column;gap:2px}.security-counter strong{font-size:17px;line-height:1}.security-counter small{font-size:9px;color:#9db4a4}
