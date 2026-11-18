@@ -31,7 +31,7 @@ export function ToolModal({
       }}
       aria-labelledby="modal-title"
     >
-      <div className={`modal-art ${tool.color}`}>
+      <div className={`modal-art ${tool.color} ${tool.category === "Cibersegurança" ? "security-tool" : ""}`}>
         <ToolLogo tool={tool} />
         <button
           className="close"
