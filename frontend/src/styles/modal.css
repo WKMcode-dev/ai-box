@@ -82,3 +82,12 @@ dialog::backdrop {
   text-underline-offset: 3px;
   color: #b9db98;
 }
+
+
+/* Logos SVG geradas no laboratório de segurança devem respeitar a escala do cabeçalho. */
+.modal-art.security-tool .tool-logo > .generated-logo {
+  width: 90px;
+  height: 90px;
+  max-width: 90px;
+  max-height: 90px;
+}
