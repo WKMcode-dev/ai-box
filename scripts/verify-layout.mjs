@@ -388,11 +388,11 @@ try {
         .click();
       await page.getByRole("dialog").waitFor();
       await page.getByRole("button", { name: "Fechar detalhes" }).click();
-      await page
-        .getByRole("textbox", { name: "Pergunte sobre o catálogo A.I BOX" })
-        .fill("chatgpt");
-      await page.getByRole("button", { name: "Enviar pergunta" }).click();
-      await page.getByRole("link", { name: /ChatGPT/ }).waitFor();
+      const search = page.getByRole("searchbox", { name: "Pesquisar IAs e ferramentas" });
+      await search.fill("chatgpt");
+      await page.getByRole("button", { name: "Conhecer ChatGPT", exact: true }).waitFor();
+      await page.getByRole("button", { name: "Limpar pesquisa" }).click();
+      await page.getByRole("button", { name: "Conhecer ChatGPT", exact: true }).waitFor();
       assert.ok((await page.locator(".shift-card").first().boundingBox()).width <= 460);
       await page
         .locator(".chip")
