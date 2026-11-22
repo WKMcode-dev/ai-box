@@ -1,9 +1,9 @@
 {
   "name": "@ai-box/desktop",
   "productName": "A.I BOX",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "private": true,
-  "description": "A.I BOX 1.4.1: menu mobile fixo, acesso direto à Cibersegurança e assistente Gemini preparado para consultas do catálogo.",
+  "description": "A.I BOX 1.4.2: pesquisa tradicional do catálogo, ajustes responsivos e logos dimensionadas nos modais.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
