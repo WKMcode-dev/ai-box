@@ -3,7 +3,7 @@
   "productName": "A.I BOX",
   "version": "1.4.2",
   "private": true,
-  "description": "A.I BOX 1.4.2: pesquisa tradicional do catálogo, ajustes responsivos e logos dimensionadas nos modais.",
+  "description": "A.I BOX 1.4.2: catálogo com pesquisa local instantânea, interface responsiva e logos contidas nos modais.",
   "author": "WKMcode-dev",
   "type": "module",
   "main": "src/main.mjs",
