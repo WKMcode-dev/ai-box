@@ -171,3 +171,6 @@ footer small {
 .mobile-menu-divider{height:1px;margin:9px 5px;background:linear-gradient(90deg,#526c55,#334236 70%,transparent)}
 .security-menu-heading{color:#82c99b}.security-menu-link{color:#9ae4b0}.security-menu-link:hover{background:#1d3828}
 @media(max-width:450px){.topbar:not(.desktop-titlebar){padding-inline:14px}.topbar:not(.desktop-titlebar) .titlebar-nav{display:none}.topbar:not(.desktop-titlebar) .mobile-menu-button{display:grid}}
+
+/* Guardas contra overflow em larguras intermediárias e mobile. */
+.shell,main,.hero,.hero-copy,.hero-visual{min-width:0}main{width:100%}@media(max-width:760px){main{padding-inline:clamp(14px,4vw,22px)}.topbar:not(.desktop-titlebar){position:sticky;top:0}.closing{align-items:flex-start;flex-wrap:wrap}.closing p{min-width:0}.footer-brand,footer small{overflow-wrap:anywhere}}@media(max-width:380px){main{padding-inline:14px}.topbar:not(.desktop-titlebar){padding-inline:12px}.titlebar-brand{gap:6px}.titlebar-brand strong{font-size:14px}.beta{font-size:7px}.closing{padding:14px}.hero{padding-top:24px}}
