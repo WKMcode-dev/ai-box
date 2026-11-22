@@ -1,76 +1,12 @@
-/* Shared tool identity styles used by cards and the detail dialog. */
-.mint {
-  background: #203c33;
-  color: #91d7b7;
-}
-.peach {
-  background: #443128;
-  color: #eeb68f;
-}
-.purple {
-  background: #322a47;
-  color: #bba2ed;
-}
-.blue {
-  background: #243845;
-  color: #9cc6e4;
-}
-.pink {
-  background: #422c3a;
-  color: #e4a2c5;
-}
-.yellow {
-  background: #3b3b25;
-  color: #d9db8d;
-}
-.tool-logo {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
-.tool-logo img {
-  width: 76px;
-  height: 76px;
-  object-fit: contain;
-}
-.modal-art .tool-logo img {
-  width: 90px;
-  height: 90px;
-}
-.logo-fallback {
-  font-family: Manrope, sans-serif;
-  font-size: 22px;
-  font-weight: 700;
-}
-.tool-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7px;
-  margin-top: 11px;
-  font-size: 9px;
-  color: #c3d7af;
-}
-.tool-meta span:last-child {
-  color: #a7b39b;
-  margin-left: auto;
-}
-.project-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 25px;
-  text-align: center;
-}
-.project-name > span {
-  font-family: Manrope, sans-serif;
-  font-size: clamp(18px, 2vw, 28px);
-  font-weight: 650;
-  letter-spacing: -0.6px;
-  line-height: 1.2;
-}
-.project-name small {
-  font-size: 10px;
-  opacity: 0.7;
-}
+/* Identidade visual compartilhada entre cards e modal de detalhes. */
+.mint{background:#203c33;color:#91d7b7}.peach{background:#443128;color:#eeb68f}.purple{background:#322a47;color:#bba2ed}.blue{background:#243845;color:#9cc6e4}.pink{background:#422c3a;color:#e4a2c5}.yellow{background:#3b3b25;color:#d9db8d}
+.tool-logo{width:100%;height:100%;min-width:0;min-height:0;display:grid;place-items:center;overflow:hidden}
+.tool-logo img,.tool-logo>.generated-logo{display:block;width:min(76px,72%);height:min(76px,72%);max-width:100%;max-height:100%;object-fit:contain}
+.modal-art{display:grid;place-items:center;overflow:hidden}
+.modal-art .tool-logo{width:100%;height:100%;padding:22px}
+.modal-art .tool-logo img,.modal-art .tool-logo>.generated-logo{width:clamp(56px,18vw,88px);height:clamp(56px,18vw,88px);max-width:88px;max-height:88px;object-fit:contain}
+.shift-logo .tool-logo img,.shift-logo .tool-logo>.generated-logo{width:76%;height:76%;max-width:76px;max-height:76px;object-fit:contain}
+.logo-fallback{font-family:Manrope,sans-serif;font-size:22px;font-weight:700}
+.tool-meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:11px;font-size:9px;color:#c3d7af}.tool-meta span:last-child{color:#a7b39b;margin-left:auto}
+.project-name{display:flex;flex-direction:column;align-items:center;gap:10px;padding:25px;text-align:center}.project-name>span{font-family:Manrope,sans-serif;font-size:clamp(18px,2vw,28px);font-weight:650;letter-spacing:-.6px;line-height:1.2}.project-name small{font-size:10px;opacity:.7}
+@media(max-width:600px){.modal-art{height:150px}.modal-body{padding:20px}.modal-body h2{font-size:clamp(23px,7vw,29px)}.modal-body p{font-size:13px;line-height:1.7}}
