@@ -1,0 +1,90 @@
+# Engenharia reversa e segurança de jogos
+
+Expansão: 86 entradas. Links e modalidades gratuitas requerem verificação individual. Logos genéricos não são marcas oficiais. Recursos integrados ao Studio não são instaladores independentes. Técnicas são classes de ameaça, não produtos. Use experiências próprias e validação autoritativa no servidor.
+
+- [IDA Free](https://hex-rays.com/ida-free) — Engenharia reversa e análise de binários
+- [Binary Ninja Cloud](https://cloud.binary.ninja/) — Engenharia reversa e análise de binários
+- [Cutter](https://cutter.re/) — Engenharia reversa e análise de binários
+- [Detect It Easy](https://github.com/horsicq/Detect-It-Easy) — Engenharia reversa e análise de binários
+- [PE-bear](https://github.com/hasherezade/pe-bear) — Engenharia reversa e análise de binários
+- [CFF Explorer](https://ntcore.com/explorer-suite/) — Engenharia reversa e análise de binários
+- [ImHex](https://imhex.werwolv.net/) — Engenharia reversa e análise de binários
+- [HxD](https://mh-nexus.de/en/hxd/) — Engenharia reversa e análise de binários
+- [FLOSS](https://github.com/mandiant/flare-floss) — Engenharia reversa e análise de binários
+- [CAPA](https://github.com/mandiant/capa) — Engenharia reversa e análise de binários
+- [Capstone](https://www.capstone-engine.org/) — Engenharia reversa e análise de binários
+- [LIEF](https://lief.re/) — Engenharia reversa e análise de binários
+- [angr](https://angr.io/) — Engenharia reversa e análise de binários
+- [dnSpyEx](https://github.com/dnSpyEx/dnSpy) — Engenharia reversa e análise de binários
+- [ILSpy](https://github.com/icsharpcode/ILSpy) — Engenharia reversa e análise de binários
+- [dotPeek](https://www.jetbrains.com/decompiler/) — Engenharia reversa e análise de binários
+- [de4dot](https://github.com/de4dot/de4dot) — Engenharia reversa e análise de binários
+- [de4dotEx](https://github.com/GDATAAdvancedAnalytics/de4dotEx) — Engenharia reversa e análise de binários
+- [ILDasm](https://learn.microsoft.com/dotnet/framework/tools/ildasm-exe-il-disassembler) — Engenharia reversa e análise de binários
+- [ILAsm](https://learn.microsoft.com/dotnet/framework/tools/ilasm-exe-il-assembler) — Engenharia reversa e análise de binários
+- [Mono.Cecil](https://github.com/jbevain/cecil) — Engenharia reversa e análise de binários
+- [dnlib](https://github.com/0xd4d/dnlib) — Engenharia reversa e análise de binários
+- [WinDbg](https://learn.microsoft.com/windows-hardware/drivers/debugger/) — Debugging e instrumentação dinâmica
+- [GDB](https://www.gnu.org/software/gdb/) — Debugging e instrumentação dinâmica
+- [LLDB](https://lldb.llvm.org/) — Debugging e instrumentação dinâmica
+- [Frida](https://frida.re/) — Debugging e instrumentação dinâmica
+- [DynamoRIO](https://dynamorio.org/) — Debugging e instrumentação dinâmica
+- [Intel Pin](https://www.intel.com/content/www/us/en/developer/articles/tool/pin-a-dynamic-binary-instrumentation-tool.html) — Debugging e instrumentação dinâmica
+- [Unicorn Engine](https://www.unicorn-engine.org/) — Debugging e instrumentação dinâmica
+- [Qiling](https://qiling.io/) — Debugging e instrumentação dinâmica
+- [Microsoft Detours](https://github.com/microsoft/Detours) — Debugging e instrumentação dinâmica
+- [MinHook](https://github.com/TsudaKageyu/minhook) — Debugging e instrumentação dinâmica
+- [API Monitor](https://www.rohitab.com/apimonitor) — Debugging e instrumentação dinâmica
+- [Dr. Memory](https://drmemory.org/) — Debugging e instrumentação dinâmica
+- [AddressSanitizer](https://clang.llvm.org/docs/AddressSanitizer.html) — Debugging e instrumentação dinâmica
+- [Application Verifier](https://learn.microsoft.com/windows-hardware/drivers/devtest/application-verifier) — Debugging e instrumentação dinâmica
+- [System Informer](https://systeminformer.sourceforge.io/) — Active Directory e ambientes Windows
+- [Process Hacker](https://github.com/processhacker/processhacker) — Active Directory e ambientes Windows
+- [Sysinternals Suite](https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite) — Active Directory e ambientes Windows
+- [Process Explorer](https://learn.microsoft.com/sysinternals/downloads/process-explorer) — Active Directory e ambientes Windows
+- [Process Monitor](https://learn.microsoft.com/sysinternals/downloads/procmon) — Active Directory e ambientes Windows
+- [VMMap](https://learn.microsoft.com/sysinternals/downloads/vmmap) — Active Directory e ambientes Windows
+- [RAMMap](https://learn.microsoft.com/sysinternals/downloads/rammap) — Active Directory e ambientes Windows
+- [WinObj](https://learn.microsoft.com/sysinternals/downloads/winobj) — Active Directory e ambientes Windows
+- [ProcDump](https://learn.microsoft.com/sysinternals/downloads/procdump) — Active Directory e ambientes Windows
+- [Handle](https://learn.microsoft.com/sysinternals/downloads/handle) — Active Directory e ambientes Windows
+- [ListDLLs](https://learn.microsoft.com/sysinternals/downloads/listdlls) — Active Directory e ambientes Windows
+- [Autoruns](https://learn.microsoft.com/sysinternals/downloads/autoruns) — Active Directory e ambientes Windows
+- [Sigcheck](https://learn.microsoft.com/sysinternals/downloads/sigcheck) — Active Directory e ambientes Windows
+- [Sysmon](https://learn.microsoft.com/sysinternals/downloads/sysmon) — Active Directory e ambientes Windows
+- [Windows Performance Recorder](https://learn.microsoft.com/windows-hardware/test/wpt/windows-performance-recorder) — Active Directory e ambientes Windows
+- [Windows Performance Analyzer](https://learn.microsoft.com/windows-hardware/test/wpt/windows-performance-analyzer) — Active Directory e ambientes Windows
+- [ReClass.NET](https://github.com/ReClassNET/ReClass.NET) — Active Directory e ambientes Windows
+- [Fiddler Classic](https://www.telerik.com/fiddler/fiddler-classic) — Captura, análise e manipulação de tráfego
+- [HTTP Toolkit](https://httptoolkit.com/) — Captura, análise e manipulação de tráfego
+- [TCPView](https://learn.microsoft.com/sysinternals/downloads/tcpview) — Captura, análise e manipulação de tráfego
+- [Postman](https://www.postman.com/) — Captura, análise e manipulação de tráfego
+- [Insomnia](https://insomnia.rest/) — Captura, análise e manipulação de tráfego
+- [VirusTotal](https://www.virustotal.com/) — Análise de malware e resposta a incidentes
+- [Hybrid Analysis](https://www.hybrid-analysis.com/) — Análise de malware e resposta a incidentes
+- [ANY.RUN](https://any.run/) — Análise de malware e resposta a incidentes
+- [CAPE Sandbox](https://github.com/kevoreilly/CAPEv2) — Análise de malware e resposta a incidentes
+- [Cuckoo Sandbox](https://cuckoosandbox.org/) — Análise de malware e resposta a incidentes
+- [REMnux](https://remnux.org/) — Análise de malware e resposta a incidentes
+- [FLARE-VM](https://github.com/mandiant/flare-vm) — Análise de malware e resposta a incidentes
+- [PEStudio](https://www.winitor.com/) — Análise de malware e resposta a incidentes
+- [PE-sieve](https://github.com/hasherezade/pe-sieve) — Análise de malware e resposta a incidentes
+- [HollowsHunter](https://github.com/hasherezade/hollows_hunter) — Análise de malware e resposta a incidentes
+- [Velociraptor](https://docs.velociraptor.app/) — Análise de malware e resposta a incidentes
+- [Microsoft Defender Antivirus](https://learn.microsoft.com/defender-endpoint/microsoft-defender-antivirus-windows) — Análise de malware e resposta a incidentes
+- [Roblox Studio](https://create.roblox.com/docs/studio) — Roblox, Luau e segurança de jogos
+- [Studio Debugger](https://create.roblox.com/docs/studio/debugging) — Roblox, Luau e segurança de jogos
+- [Script Profiler](https://create.roblox.com/docs/studio/script-profiler) — Roblox, Luau e segurança de jogos
+- [MicroProfiler](https://create.roblox.com/docs/performance-optimization/microprofiler) — Roblox, Luau e segurança de jogos
+- [Developer Console](https://create.roblox.com/docs/studio/developer-console) — Roblox, Luau e segurança de jogos
+- [Studio Testing Modes](https://create.roblox.com/docs/studio/testing-modes) — Roblox, Luau e segurança de jogos
+- [Luau CLI](https://github.com/luau-lang/luau) — Roblox, Luau e segurança de jogos
+- [Luau Compiler](https://github.com/luau-lang/luau) — Roblox, Luau e segurança de jogos
+- [Luau Analyzer](https://github.com/luau-lang/luau) — Roblox, Luau e segurança de jogos
+- [Luau VM](https://github.com/luau-lang/luau/tree/master/VM) — Roblox, Luau e segurança de jogos
+- [Luau AST](https://github.com/luau-lang/luau/tree/master/Ast) — Roblox, Luau e segurança de jogos
+- [Rojo](https://rojo.space/) — Roblox, Luau e segurança de jogos
+- [Selene](https://github.com/Kampfkarren/selene) — Roblox, Luau e segurança de jogos
+- [StyLua](https://github.com/JohnnyMorganz/StyLua) — Roblox, Luau e segurança de jogos
+- [TestEZ](https://github.com/Roblox/testez) — Roblox, Luau e segurança de jogos
+- [Lune](https://github.com/lune-org/lune) — Roblox, Luau e segurança de jogos

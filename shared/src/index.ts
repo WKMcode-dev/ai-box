@@ -27,6 +27,8 @@ export const SECURITY_SUBCATEGORIES = [
   "Monitoramento, defesa e hardening",
   "VoIP e telecomunicações",
   "Relatórios e gestão de pentest",
+  "Debugging e instrumentação dinâmica",
+  "Roblox, Luau e segurança de jogos",
 ] as const;
 export type SecuritySubcategory = (typeof SECURITY_SUBCATEGORIES)[number];
 export type AccessMode =
