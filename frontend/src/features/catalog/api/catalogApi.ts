@@ -7,7 +7,7 @@ export async function getCatalog(
     import.meta.env.VITE_CATALOG_SOURCE === "static"
       ? assetUrl("catalog.json")
       : "/api/tools";
-  const response = await fetch(endpoint, { signal });
+  const response = await fetch(endpoint, { signal, cache: "no-store" });
   if (!response.ok) throw new Error("Não foi possível carregar o catálogo.");
   return response.json() as Promise<CatalogResponse>;
 }
