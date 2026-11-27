@@ -13,12 +13,10 @@ type Catalog=ReturnType<typeof useCatalog>;
 interface Props{catalog:Catalog;searchRef:RefObject<HTMLInputElement|null>;onSelect:(tool:Tool)=>void}
 
 export function CatalogSection({catalog,searchRef,onSelect}:Props){
- const {tools,results,loading,error,retry,category,securitySubcategory,setSecuritySubcategory,clearFilters,query,setQuery}=catalog;
+ const {counts,results,loading,error,retry,category,securitySubcategory,setSecuritySubcategory,clearFilters,query,setQuery}=catalog;
  const security=category==="Cibersegurança";
- const aiCount=tools.filter(t=>t.category!=="Cibersegurança").length;
- const securityCount=tools.length-aiCount;
  return <section id="catalogo" className="catalog" aria-busy={loading}>
-  <div className="section-heading"><div><span className="eyebrow">{security?"AI BOX / SECURITY LAB":"EXPLORE A BOX"}</span><h2>{security?"Laboratório de Cibersegurança":"Catálogo de ferramentas"}<span>.</span></h2></div><span className="catalog-total">{security?securityCount:aiCount} {security?"ferramentas de segurança":"IAs disponíveis"} <Icon name={security?"shield":"box"} size={17}/></span></div>
+  <div className="section-heading"><div><span className="eyebrow">{security?"AI BOX / SECURITY LAB":"EXPLORE A BOX"}</span><h2>{security?"Laboratório de Cibersegurança":"Catálogo de ferramentas"}<span>.</span></h2></div><span className="catalog-total">{loading?"…":security?counts.security:counts.ai} {security?"ferramentas de segurança":"IAs disponíveis"} <Icon name={security?"shield":"box"} size={17}/></span></div>
   <div className="search-row">
    <label className="search" htmlFor="catalog-search"><Icon name="search" size={18}/><input id="catalog-search" ref={searchRef} type="search" value={query} onChange={e=>setQuery(e.target.value)} placeholder="Pesquisar IAs e ferramentas..." autoComplete="off" aria-label="Pesquisar IAs e ferramentas"/>{query&&<button type="button" aria-label="Limpar pesquisa" onClick={()=>setQuery("")}><Icon name="close" size={16}/></button>}<kbd>BUSCA</kbd></label>
   </div>

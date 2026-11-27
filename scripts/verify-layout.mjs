@@ -92,6 +92,28 @@ try {
         });
       await page.goto(url);
       await page.locator(".shift-card").first().waitFor();
+      if (!desktop && width === 1360) {
+        assert.equal(await page.locator(".counter-number").textContent(), "118");
+        assert.match(await page.locator(".catalog-total").textContent(), /^118 IAs disponíveis/);
+        assert.equal(await page.locator(".security-counter strong").textContent(), "265");
+        assert.equal(await page.locator(".security-nav-item .count").textContent(), "265");
+
+        await page.locator(".security-nav-item").click();
+        assert.match(await page.locator(".catalog-total").textContent(), /^265 ferramentas de segurança/);
+        assert.equal(await page.locator(".result-count").textContent(), "265");
+        assert.equal(await page.locator(".security-groups .shift-card").count(), 265);
+
+        const search = page.getByRole("searchbox");
+        await search.fill("mitmproxy");
+        const filteredCount = await page.locator(".security-groups .shift-card").count();
+        assert.ok(filteredCount > 0 && filteredCount < 265);
+        assert.equal(await page.locator(".result-count").textContent(), String(filteredCount));
+        assert.match(await page.locator(".catalog-total").textContent(), /^265 ferramentas de segurança/);
+        assert.equal(await page.locator(".security-counter strong").textContent(), "265");
+
+        await page.getByRole("button", { name: "Limpar pesquisa" }).click();
+        await page.locator(".chip").filter({ hasText: /^Todas$/ }).click();
+      }
       if (!desktop && width <= 760) {
         assert.equal(await page.locator(".topbar").evaluate((node) => getComputedStyle(node).position), "sticky");
         await page.getByRole("button", { name: "Abrir menu" }).click();
